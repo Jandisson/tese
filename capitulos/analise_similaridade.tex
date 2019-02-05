@@ -1,0 +1,1205 @@
+\chapter{Análise de similaridade entre projetos de Software}
+
+Candidatos a critério de seleção dos projetos:
+
+
+select id,description from projects  where language = 'Java' and forked_from is null and deleted =0 and not (description= "" or description is null)
+
+and description not like '%Sample%'
+and description not like '%Abandoned%'
+and description not like '%Deprecated%'
+and description not like '%Example%'
+and description not like '%Exercise%'
+and description not like '%Example%'
+and description not like '%Tutorial%'
+and description not like '%Android%'
+
+
+result: '934679'
+
+
+Para realizar a verificação da linguagem da descrição foi usado o pacote langdetect do Python.
+
+O número de descrições em ingles foi de 591754.
+
+Depois foram obtidas as quantidades de commits e autores de cada projeto com a seguinte query:
+
+select project_id,count(distinct author_id) as number_author,count(*) as number_commits ,max(created_at) as last_commit_date from commits where  project_id
+
+
+Desvio padrão: '5.739444129709218'
+Media: '1.7724'
+
+
+
+Seleção dos projetos com uma quantidade mínima de commits e autores.
+SELECT 
+   count(*)
+FROM
+    projetos
+WHERE
+    autores > 6 AND commits > (38+478)
+
+
+Resultado: '2845'
+
+
+Alguns projetos foram excluidos por questões operacionais. Eles possuiam arquivos com nomes muito grandes que não podiam ser armazenados no sistema operacional sendo utilizado.
+
+5465	https://github.com/isenseDev/iSENSE-Hardware
+11009	https://github.com/Cryptite/The-Artifact
+15952	https://github.com/svn2github/cytoscape
+21371	https://github.com/broadgsa/gatk
+32868	https://github.com/OpenIAM/openiam-idm-ce
+40854	https://github.com/enonic/cms-ce
+66968	https://github.com/atlasapi/atlas
+109070	https://github.com/Teiid-Designer/teiid-designer
+185702	https://github.com/pcpratts/rootbeer1
+375822	https://github.com/apache/tapestry5
+695047	https://github.com/apache/flex-falcon
+696536	https://github.com/SeqWare/seqware
+868557	https://github.com/apache/tomcat60
+1025395	https://github.com/keeps/roda
+1151160	https://github.com/apache/directory-shared
+1169529	https://github.com/linkedin/helix
+1406593	https://github.com/OpenLMIS/open-lmis
+1882858	https://github.com/obiba/magma
+1947284	https://github.com/ancoron/glassfish-main
+2249963	https://github.com/robovm/robovm
+2346697	https://github.com/happyjack27/autoredistrict
+2918779	https://github.com/broadgsa/gatk-protected
+2992928	https://github.com/gf-metro/jaxb
+3055228	https://github.com/Parquet/parquet-mr
+3595561	https://github.com/photon-infotech/archetypes
+3738942	https://github.com/shantanusharma/genoviz
+3811698	https://github.com/NCIP/national-biomedical-image-archive
+3903781	https://github.com/GrizzlyNIO/grizzly-mirror
+4032393	https://github.com/svn2github/ehcache
+4054274	https://github.com/testify-no/ecFeed
+5505858	https://github.com/SeqWare/queryengine
+5587405	https://github.com/gf-metro/jaxws
+5607198	https://github.com/jembi/bsis
+5676860	https://github.com/Studentmediene/barweb
+5732503	https://github.com/holmbergius/Wildbook
+6003535	https://github.com/cloudfoundry/cf-java-client
+6154948	https://github.com/britzke/shareezy
+6849644	https://github.com/ap251/rumpus-room
+6940587	https://github.com/ResurrectionRemix/android_frameworks_base
+7214480	https://github.com/kjian279/RISC
+7528140	https://github.com/Microsoft-CISL/REEF
+7664056	https://github.com/Mrbilec/CMPUT301W14T09-GPSForm
+8688318	https://github.com/apache/incubator-streams
+10328584	https://github.com/Rise-Vision/storage-server
+10519875	https://github.com/peterjohnlawrence/inova8.odata4jv3
+10544875	https://github.com/iotcloud/iotrobots
+10603222	https://github.com/dibyendu-rakshit/Test-EC
+10825037	https://github.com/Veritiv/xcomv2
+10864473	https://github.com/fabric8io/fabric8-devops
+10957971	https://github.com/CCATObservatory/alma-ot
+11017314	https://github.com/goalhub/grammar
+11035744	https://github.com/robertsdionne/js-test-driver
+11403437	https://github.com/jasstionzyf/mahout-edanz
+11718430	https://github.com/Starbase/Starbase
+11833478	https://github.com/Battlecruiser/L2J_Server_EXPERIMENTAL
+11858522	https://github.com/ansell/semweb4j
+12121657	https://github.com/sabitinc/sga
+12269195	https://github.com/eric-lemesre/openjump
+12408462	https://github.com/dmatej/Glassfish
+12971959	https://github.com/igarape/copcast-android
+13380474	https://github.com/seomin/TypicalRepo
+13614770	https://github.com/42IN02VTSOb/deslimstemens-GroepB
+14125426	https://github.com/jgheerardyn/yields
+14344278	https://github.com/niklasf/jason
+15433706	https://github.com/kole9273/SER316-AsthmaGame
+15584942	https://github.com/Wurst-Imperium/Wurst-Client
+15813315	https://github.com/nusla/insights-dataflow
+16171311	https://github.com/Produban/OpenbusBR
+16212700	https://github.com/johnrklein/obs-prototype
+16537000	https://github.com/raeffu/ch.bfh.bti7081.s2015.Blue
+17363530	https://github.com/scottshuffler/Wags_Backup
+17409760	https://github.com/cbarrette/flaming-flamingo
+17581452	https://github.com/carllee1991/practice
+17954671	https://github.com/xlukema/RemoteLukeMaWorkGit
+18024724	https://github.com/codenameone/CodenameOne
+18581459	https://github.com/IKANOW/Aleph2-contrib
+18856551	https://github.com/apache/qpid-java
+19568325	https://github.com/katharsis-project/katharsis-core
+19939357	https://github.com/rage/tmc-cli
+21055738	https://github.com/madhuteamchat/Teamchat
+21209226	https://github.com/dcubillor/QA_repository_2
+22052719	https://github.com/HubSpot/Blazar
+22070081	https://github.com/iceleaf-eu/FitPOS
+22073327	https://github.com/SparkTC/systemml
+22080167	https://github.com/svn2github/l2jtw_server
+22205189	https://github.com/apache/ignite
+22736740	https://github.com/sn0w/jdownloader
+22871628	https://github.com/scalpri/master
+24299960	https://github.com/hbz/lobid-resources
+24782422	https://github.com/TriMontana/douggithub
+24921669	https://github.com/Cas-B/Group17-BubbleBobble
+25427381	https://github.com/ckarthickit/HelloWorld
+25791918	https://github.com/streamsets/datacollector
+26172129	https://github.com/sbinet/lsst-ccs-toolkit
+26172181	https://github.com/sbinet/lsst-ccs-subsystem-fcs
+27557084	https://github.com/Microsoft/vso-intellij
+27721700	https://github.com/tn5250j/test
+28731991	https://github.com/sytac/resumator
+28932956	https://github.com/apache/incubator-eagle
+28937864	https://github.com/clarin-eric/VLO
+28959542	https://github.com/allam001/hermes
+29049642	https://github.com/erhaosan/new_seastar
+29995975	https://github.com/Blackjubel/frameworks_base
+30060614	https://github.com/bullhorn/dataloader
+30515222	https://github.com/sn0w/jdownloader
+30573771	https://github.com/Nearsoft/questions
+30634483	https://github.com/mmdavid/InterProScan_FOAM
+31663600	https://github.com/fact-project/fact-tools
+32188479	https://github.com/Fermat-ORG/fermat
+35081865	https://github.com/exponentus/nb
+35668081	https://github.com/ForgeRock/openam
+36767182	https://github.com/sandogeorge/jade-mirror
+37292894	https://github.com/commercetools/commercetools-jvm-sdk
+42204238	https://github.com/SteelHouse/adserver
+42740827	https://github.com/marklogic/marklogic-contentpump
+44040825	https://github.com/nicholaschum/substratum
+44618017	https://github.com/brodykellish/VoogaSalad
+46959509	https://github.com/traiansf/org.eclipse.linuxtools
+52603341	https://github.com/marekr/netbeans
+53240978	https://github.com/geneontology/obo-edit
+53297225	https://github.com/emilianbold/releases
+53364534	https://github.com/tomjenkinson/jbossts-legacy-anonsvn-mirror
+53819039	https://github.com/aburasali/CS362W17Section-001
+56183106	https://github.com/maxml/Zahata
+57253465	https://github.com/nosovae-dev/hybris-idea-plugin
+64059870	https://github.com/omahoito/oda-fhir-service
+
+Projetos  Excluidos por serem  Muitos grande:
+
+11493960
+29790
+17423238
+25199990
+3559997
+55219
+17957648
+20777682
+48656541
+27145008
+20113366
+27135772
+54270
+10432015
+20350220
+23472581
+30011247
+12175597
+4552627
+2339805
+9534533
+67874
+12123150
+22283902
+3285289
+29812736
+13591071
+2344415
+3458713
+11663957
+12455216
+2416647
+3844185
+4428950
+1377549
+30164069
+36544019
+4186200
+4362388
+5040659
+51996169
+8137623
+9459
+23676
+3406875
+41192
+44805664
+47734374
+11667667
+13645425
+15803300
+20543557
+24292280
+9243058
+16725754
+2291113
+3111449
+31515051
+33170
+4366366
+5758647
+9736326
+10518752
+11152139
+13135558
+15352649
+2255746
+25033125
+29267035
+33393590
+4819
+8042873
+
+
+Projetos excluidos por terem um README muito pequeno
+
+313
+366
+1380
+2315
+2739
+3796
+5378
+5874
+6966
+7511
+7836
+8612
+10083
+10112
+11958
+12333
+13033
+13191
+13802
+13874
+14398
+15202
+17032
+17042
+18489
+19539
+19559
+22349
+23599
+24167
+24302
+35039
+35846
+36569
+36730
+38929
+39129
+39247
+39443
+39604
+40423
+40622
+40930
+41310
+41339
+42166
+42313
+42937
+43256
+43735
+47421
+48358
+51271
+51690
+52266
+56272
+56537
+57344
+59903
+60853
+61198
+63996
+64396
+64801
+66920
+67746
+70101
+70160
+70634
+73636
+74713
+76442
+76857
+82374
+83937
+86465
+86740
+92171
+92535
+92907
+98268
+100722
+104080
+110105
+112999
+119895
+120232
+124212
+128036
+128903
+129172
+129484
+136587
+136944
+138238
+139807
+144967
+155485
+156699
+156841
+166173
+166871
+169679
+188939
+191300
+195656
+199769
+200621
+204845
+204937
+226268
+226475
+230938
+232203
+253596
+259475
+278096
+278099
+279911
+288489
+288694
+300035
+301222
+316904
+317593
+323615
+347533
+350169
+381115
+382681
+395979
+411438
+449190
+462931
+481567
+487512
+500132
+520623
+522041
+524848
+545246
+623608
+651068
+674195
+685834
+697058
+761793
+777645
+824631
+834358
+875396
+907959
+1150291
+1223023
+1314541
+1372677
+1429841
+1666305
+1846832
+1910358
+1920336
+1940573
+1950274
+1953682
+1958216
+1974512
+2165195
+2225918
+2243354
+2256763
+2257570
+2264138
+2273477
+2291594
+2308433
+2322987
+2324318
+2329425
+2344267
+2410878
+2412088
+2443184
+2467911
+2474223
+2537979
+2553124
+2595873
+2596225
+2710065
+2715331
+2768058
+2776451
+2845608
+2867436
+2868910
+2885371
+3019095
+3027411
+3046806
+3062717
+3072589
+3075023
+3099535
+3177160
+3207342
+3238171
+3300396
+3345379
+3374900
+3381711
+3394187
+3451265
+3471780
+3477976
+3478841
+3482927
+3491561
+3494930
+3546043
+3556954
+3593078
+3622008
+3696500
+3763338
+3763705
+3794083
+3798450
+3810046
+3811364
+3957586
+3996066
+4115292
+4148854
+4156160
+4176275
+4179077
+4191308
+4203516
+4216450
+4232929
+4252005
+4410591
+4426791
+4474517
+4626953
+4636539
+4737834
+4805417
+4876617
+4905073
+4952333
+4952414
+4978967
+4979651
+5019045
+5079830
+5087157
+5164108
+5314883
+5318941
+5376241
+5399879
+5404409
+5479075
+5523023
+5546244
+5550001
+5568239
+5631697
+5769828
+5827907
+5831093
+5851583
+6027158
+6059880
+6072775
+6341675
+6359116
+6405451
+6660639
+6701025
+6707279
+6849892
+6913416
+6964241
+6968706
+7117279
+7299600
+7323193
+7380964
+7384184
+7436692
+7484311
+7505465
+7577016
+7580293
+7650231
+7654719
+7660641
+7676495
+7679946
+7799028
+7846650
+7852194
+7927353
+7935833
+7937689
+7972518
+8113065
+8217531
+8453183
+8464335
+8790633
+8819408
+8834770
+8840106
+8963597
+8987617
+9020424
+9106047
+9119157
+9161888
+9369204
+9382054
+9482767
+9616000
+9643644
+9678582
+9684809
+9715845
+9810451
+9830504
+9832401
+9841271
+9842544
+9843639
+9851240
+9877440
+9938795
+9965076
+10028876
+10052463
+10129044
+10161591
+10163572
+10177960
+10224304
+10224563
+10228127
+10261993
+10262664
+10360981
+10363277
+10374934
+10425779
+10458921
+10469180
+10475417
+10489347
+10494786
+10494922
+10500113
+10541088
+10573325
+10576225
+10645258
+10746376
+10767720
+10776151
+10802549
+10870541
+10880945
+10882164
+10898985
+10902048
+10907893
+10948715
+10960803
+10994073
+11009085
+11041306
+11053888
+11056317
+11056989
+11078699
+11151329
+11171820
+11212832
+11261197
+11331290
+11354994
+11441020
+11471667
+11484506
+11498663
+11565710
+11583313
+11596720
+11634240
+11637006
+11666502
+11700197
+11708861
+11810878
+11818600
+11820099
+11832442
+11906149
+12141002
+12169301
+12249230
+12385907
+12390666
+12451080
+12509788
+12631911
+12640042
+12650682
+12691141
+12704639
+12745235
+12770182
+12779889
+12780571
+12821831
+12835234
+12848649
+12979215
+12997468
+13036289
+13111257
+13124244
+13131792
+13380483
+13383020
+13385733
+13388398
+13400648
+13453981
+13533467
+13626469
+13689208
+13717697
+13722952
+13724767
+13741976
+13742174
+13764122
+13769828
+13813104
+13834189
+13834193
+13834277
+13924714
+14047122
+14066077
+14142047
+14217817
+14300171
+14414839
+14633908
+14730937
+14757964
+14828420
+14844194
+14877681
+14885621
+14888093
+14933302
+14949004
+15166724
+15182400
+15221066
+15424191
+15455967
+15614003
+15804892
+15824766
+15834717
+15851489
+15888097
+15892077
+16112385
+16151659
+16151669
+16244691
+16246149
+16265811
+16296183
+16300818
+16390674
+16435407
+16601915
+16614244
+16739188
+16919492
+17051185
+17289028
+17387773
+17423214
+17433406
+17443380
+17463503
+17464562
+17561871
+17612314
+17661749
+17679685
+17681075
+17738384
+17885678
+17925170
+17957713
+18014824
+18045297
+18050165
+18089958
+18259304
+18260656
+18301459
+18765798
+18786232
+18803428
+18842815
+19302516
+19405156
+19520883
+19619652
+19787907
+19868405
+19882627
+19968081
+19975597
+20006636
+20152833
+20604613
+20607197
+20643845
+20831407
+20849270
+21107109
+21196989
+21295578
+21296885
+21309970
+21433175
+21602068
+21618925
+21623832
+21631483
+21929297
+22027538
+22045790
+22061914
+22066915
+22069972
+22073556
+22084460
+22094795
+22094983
+22130730
+22151209
+22151818
+22769750
+22862335
+22944881
+23720992
+23919825
+24015347
+24128497
+24151788
+24165356
+24170727
+24183700
+24187288
+24187291
+24217046
+24228557
+24271936
+24295806
+24350320
+24621518
+24645493
+24674662
+24696305
+24772675
+24777094
+24807510
+24810085
+24920877
+24924654
+24931012
+24931161
+24981168
+25022674
+25025145
+25195709
+25271742
+25366557
+25519584
+25543617
+25838610
+26014282
+26028050
+26028827
+26054730
+26149956
+26351964
+26432645
+26476288
+26511905
+26594054
+26856677
+26897436
+26979852
+27053633
+27061909
+27099499
+27260690
+27390440
+27497393
+27711430
+27770916
+27820453
+28057973
+28058903
+28174972
+28183874
+28334470
+28437339
+28517765
+28612073
+28723351
+28756572
+28771725
+29111528
+29156201
+29270104
+29279399
+29470092
+29662558
+29938741
+29942958
+30000352
+30752717
+30800413
+30808440
+31007141
+31054494
+31061087
+31099307
+31333119
+31448009
+31560117
+31624079
+31699482
+31793327
+31801275
+31846614
+32894636
+32895264
+32920681
+33135808
+33299740
+33827353
+33886258
+34765880
+34828614
+34857281
+34858929
+34859199
+35109266
+35366325
+35886555
+36621736
+36676092
+36750818
+38512928
+38619513
+38783591
+40068787
+40281297
+40284326
+40725034
+41079048
+41102139
+41369607
+42297655
+42366740
+42979201
+43142421
+43173133
+43624041
+45659376
+46774896
+47787410
+47826558
+48099312
+48211526
+49308459
+52763732
+53298035
+55101748
+55572916
+55892876
+56242341
+56246311
+56332427
+56349088
+57174738
+57375398
+57380247
+59555300
+59568028
+60266403
+60271876
+60320605
+60391687
+60396254
+60397255
+60520795
+62572562
+69708864
+75486120
+75486475
+77209423
+
+
+Projetos removidos por não conseguir rodar o SONAR:
+
+
+80653
+691908
+993770
+3442593
+4702136
+5735577
+6260617
+11416169
+12382760
+13557248
+25044492
+28811652
+29021454
+30845919
+31111670
+32567918
+42628598
+26591
+67473
+87806
+1664289
+2891309
+3392818
+3497246
+3542506
+3629468
+4304960
+5510561
+8234517
+9775067
+9810545
+10257810
+12768796
+18626606
+42184506
+
+48485
+68907
+382128
+704428
+4523793
+5581406
+5614283
+6029850
+7774687
+10374213
+12841842
+12887161
+15374618
+22485587
+24371521
+25185708
+27439966
+31850182
+34263553
+
+Quais usuarios entram no pagerank?
+
+1 - Fizeram commit em um dos projetos analisados.
+ Query:  insert into AUTORES_RELACIONADOS 
+(select author_id from  commits where project_id in (PROJECT_LIST) group by author_id)
+
+2 - Deram watch em um dos projetos analisados.
+
+
+
+
+QUERY para obter usuarios corelacionados
+
+insert into AUTORES_CORELACIONADOS 
+(
+  
+      select follower_id,0 from followers where user_id in(
+            select user_id from AUTORES_CORELACIONADOS
+	  ) and follower_id not in ( select user_id from AUTORES_CORELACIONADOS)
+group by follower_id
+)
+
+TOTAL DE Usuários corelacionados
+
+'''1936855'''
+
+
+Query para obter relações dos usuários selecionados
+
+select follower_id,user_id as followed_id INTO OUTFILE 'follow_followed.csv'  FIELDS TERMINATED BY ',' OPTIONALLY ENCLOSED BY '"'
+  LINES TERMINATED BY '\n' from followers where follower_id in (select user_id from AUTORES_CORELACIONADOS) 
+
+
+
+\\ EXEMPLOS DO PAGE RANK
+
+Exemplo 1 :  Sem ciclos
+Descricão:  (Faça o gráfico)
+
+10 nós. Todos apontam para o 5 exceto 10,7,4
+5 Aponta para o 4.
+
+O 4 é o melhor pois o 5 aponta pra ele e tem o pagerank dele próprio.
+
+1/0.01363636363636364
+2/0.01363636363636364
+3/0.01363636363636364
+4/0.0843409090909091
+5/0.08318181818181819
+6/0.01363636363636364
+7/0.01363636363636364
+8/0.01363636363636364
+9/0.01363636363636364
+10/0.01363636363636364
+
+Exemplo 2 :  Com ciclos
+
+Edges:  
+1,2 
+2,1 
+4,5,6, e 7 apontam para 3 
+9,8
+8,10
+10,9
+
+Resultado:
+1/0.0909090909090909
+2/0.0909090909090909
+3/0.13999999999999999
+4/0.06363636363636363
+5/0.06363636363636363
+6/0.06363636363636363
+7/0.06363636363636363
+8/0.0909090909090909
+9/0.0909090909090909
+10/0.0909090909090909
+
+O dumpFactor precisa ser menor quando os dados são pequenos
+
+
+
+TÉCNICA DE CONTINGENCIA:
+
+Usei os valores mais antigos caso houvesse e os mais recentes caso contrário.
+
+
+
+REMOVIDOS POR ESTAREM DUPLICADOS NO GHTORRENT:
+
+4095
+13347
+251132
+622299
+4931722
+5995618
+6420988
+8838487
+9684473
+9839226
+10474054
+11645112
+12832010
+13383864
+13389331
+13673906
+14696016
+14997791
+15522520
+17463107
+17899114
+18856552
+19245896
+19980008
+21823610
+26157775
+28286301
+
+
+QUERY PARA OBTER EQUACAO 3:
+
+SELECT 3594,sum(pagerank/contrib_outdegree) FROM ghtorrent.PAGERANK_USER where user_id in (select author_id from COMMITS_PROJETOS  where project_id = 3594) UNION ALL
+
+
+QUERY PARA OBTER EQUACAO 4:
+select 39778545 as user_id,sum(pagerank*(quantidade_projetos/colab_outdegree)) as colab_rank from (select author_id,count(distinct project_id) as quantidade_projetos from COMMITS_PROJETOS where project_id in (select project_id from COMMITS_PROJETOS where author_id = 39778545 group by project_id)   and author_id <> 39778545  group by author_id ) as colaboradores inner join PAGERANK_USER rank on (rank.user_id = colaboradores.author_id) where colab_outdegree <> 0 
+
+
+PROBLEMAS NA CLASSIFICACAO
+
+ - Muitas descrições não falam sobre o software e suas funcionalidades. São apenas descrição técnicas sobre compilação ou outro aspecto.
+  - Eu poderia usar alguma das outras técnicas de classificação mas, isso demandaria muito código. O melhor talvez seja categorizar manualmente esses projetos.
+  - Poderia ser usado um sistema de ML para determinar se uma descrição explica ou não um software.
+  - Projetos muito conhecidos normalmente não tem uma descrição.
+
+
+
+
+
+
+\begin{itemize}
+\item Projetos com descrição em inglês.
+\item Projetos Java (JVM). Não foram incluídos projetos para android ART.
+\item Projetos com um número mínimo de commits. Esse número pode ser calculado por meio dos percentils. 
+\item Projetos que sejam efetivamente projetos de software. Existem muitos repositórios no github que são exemplos, testes  e etc. Essa filtragem pode ser feita pela aplicação de heurísticas usando a descrição do projeto. Além disso, pode ser realizada uma filtragem manual. Projetos que não tem uma descrição, serão descartados.
+\item Número mínimo de colaboradores.
+\item Projetos que não são forks de outros projetos. Isso envitará a comparação de projetos idênticos. 
+\item Projetos que não foram removidos do Github.
+\item Projetos a muito tempo inativos.
+\item Projetos com um número mínimo de estrelas. Podem ser usados percentils.
+
+
+\end{itemize}
+
+Candidatos a critério de similaridade:
+
+\begin{itemize}
+\item Domínio da aplicação ou tipo de projeto.
+\item Tempo do projeto
+\end{itemize}
+
+\label{capitulo:similaridade}
+
+Eu posso criar uma seção na análise exploratória para investigar algumas anomalias nos dados. Exemplos:
+- Quantidade muito alta de dívida técnica.
+- Diminuição na quantidade  de código.

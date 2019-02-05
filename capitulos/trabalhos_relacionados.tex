@@ -1,0 +1,91 @@
+\chapter{Trabalhos relacionados}
+\label{relacionados}
+
+Neste capítulo forneceremos um panorama da pesquisa a respeito da dívida técnica em projetos de desenvolvimento de software. Iremos fornecer um breve histórico e descrever alguns dos trabalhos feitos na área. Por fim, forneceremos uma discussão a respeito da relação desses trabalhos com os objetivos que serão propostos nesta pesquisa. 
+
+
+\section{Introdução}
+
+
+O termo dívida técnica foi criado em 1993 por Cunningham \cite{cunningham1993wycash} como uma forma de explicar as consequências futuras de adicionar código de má qualidade em projetos de software. 
+
+
+
+
+
+
+
+
+
+
+
+
+\section{Identificação e estimação da dívida técnica}
+
+As formas de identificação da dívida técnica podem ser dividas em automáticas e manuais. De acordo com \cite{zazworka2013case},  as ferramentas automáticas são mais eficientes na detecção da dívida técnica quando comparadas com a inspeção manual. Entretanto, alguns estudos mostram que a inspeção manual é imprescindível para estimar as propriedades da dívida técnica e priorizar o pagamento. Técnicas como o método delphi\cite{szabados2015technical} em que as estimativas são definidas por especialistas, mostraram-se eficazes. Entretanto, essas estimativas são caras, pois exigem que esses especialistas discutam entre si as estimativas até chegarem a um consenso. Enquanto isso, a identificação automática é realizada por ferramentas como Sonar Qube\cite{campbell2013sonarqube}. Essa ferramenta possui um conjunto de regras customizáveis de como identificar dívida técnica no código da aplicação. A tabela \ref{table_regras} apresenta alguns exemplos das regras presentes na configuração padrão do Sonar Qube. Conforme pode ser visto, as regras são divididas em categorias. Além disso, existe uma pré-definição a respeito de quanto tempo é necessário para resolver cada tipo de dívida técnica. Esse tempo é mostrado em minutos na tabela \ref{table_regras}. O Sonar Qube é capaz de identificar dívidas de código e design. Entretanto, não existem até o momento ferramentas automatizadas que possam detectar outros tipos de dívida técnica tais como arquitetura e documentação.
+
+\begin{table}[!ht]
+\centering
+\caption{Technical debt rules examples}
+\label{table_regras}
+\def\arraystretch{2.5}%
+\begin{tabular}{|c|c|c|}
+\hline
+Category  & Description & Minutes  \\ \hline
+Changeability           &  \pbox{7cm}{Duplicated source code block.} & \pbox{1cm}{ 60 }  \\ \hline
+Maintainability         &  \pbox{7cm}{Variable not utilized.} & \pbox{1cm}{ 10 }  \\ \hline
+Testability           &   \pbox{7cm}{Cyclomatic complexity\cite{mccabe1976complexity} greater than 10.} & \pbox{1cm}{ 11  }  \\ \hline
+Reusability        &   \pbox{7cm}{ Parameter used as the selection in a public method. } & \pbox{1cm}{ 15  }  \\ \hline
+Reliability         &   \pbox{7cm}{The conditions of a looping will never be true.} & \pbox{1cm}{ 10  }  \\ \hline
+Security                &   \pbox{7cm}{Commands sent to the operational system without any validation. } & \pbox{1cm}{ 30  }  \\ \hline
+Portability         &  \pbox{7cm}{Use of deprecated methods.} & \pbox{1cm}{ 15  }  \\ \hline
+Maintainability         &  \pbox{7cm}{Existence of commented source code.} & \pbox{1cm}{ 5 }  \\ \hline
+
+
+\end{tabular}
+\end{table}
+
+Em \cite{zazworka2014comparing} os autores realizam uma pesquisa empírica para descobrir se diferentes abordagens de identificação da dívida técnica produzem resultados semelhantes. Foram utilizadas quatro abordagens diferentes: \textit{code smell}, análise estática de código, antipadrões e violações de modularidade. Foi descoberto que diferentes tipos de abordagens de identificação da dívida técnica produzem resultados diferentes. Cada uma das abordagens indicou como problemáticas um conjunto diferente de classes. 
+
+Em \cite{chatzigeorgiou2015estimating}, os autores sugerem uma forma de estimar o tempo necessário para que 
+o valor acumulado dos juros da dívida técnica atinja um valor maior do que o valor do principal. Os autores acreditam que essa informação auxiliará os
+gerentes de projeto em seus processos de decisão ao indicar quanto tempo demorará para que o recurso poupado, ao não pagar a dívida técnica,
+seja superado pelo aumento no gasto de recursos para a  manutenção devido as implicações. Se o tempo para que essa superação ocorra for muito 
+grande, então, provavelmente, fará pouco sentido pagar a dívida técnica no instante em que a avaliação foi realizada. Entretanto, caso o tempo para que essa superação 
+ocorra seja curto, os responsáveis pelo projeto deverão considerar fortemente o pagamento da dívida técnica. Para estimar o principal da dívida técnica os autores utilizam funções de \textit{fitness} que medem a coesão e acoplamento de um determinado 
+software orientado a objetos. Depois são utilizados algoritmos de otimização para encontrar o design do sistema que produza um valor ótimo para essas funções. A diferença entre o design ótimo e o atual constituem uma estimativa para o principal  da dívida técnica. O esforço necessário para a manutenção desse sistema é calculado pelo valor da função de \textit{fitness} multiplicado por uma constante. O esforço de manutenção para o estado atual será maior do que o esforço
+para o estado ótimo. Os juros da dívida técnica para cada nova versão é igual à diferença entre esses dois esforços. Logo, o número de versões necessárias para que os juros acumulados seja igual ao principal será igual ao principal dividido pelos juros acumulados. Os autores ainda disponibilizam uma ferramenta chamada JCaliper para facilitar a aplicação da proposta. Essa ferramenta é então aplicada em um estudo de caso onde a dívida técnica do projeto Junit é analisada. Ao aplicar a proposta, os autores concluem que levaria 5.4 anos para que o valor acumulado dos juros supere o valor atual da dívida técnica deste projeto. Apesar dos resultados apresentados mostrarem-se promissores, os autores descrevem algumas limitações na proposta apresentada. As principais delas  são a  de considerar apenas coesão e acoplamento como dívida técnica e também a de considerar esforço de manutenção apenas como a quantidade de linhas de código.
+
+Em \cite{ghanbari2016seeking} afirmam que não puderam encontrar estudos empíricos que ajudassem a entender o que leva a existência da dívida técnica mesmo em projetos de software crítico. Por isso, foi realizado um estudo de campo exploratório com o objetivo de identificar essas causas. Os dados obtidos desse estudo foram analisados sistematicamente utilizando técnicas de \textit{Grounded Theory}. O estudo de campo exploratório foi realizado em duas fases. Na primeira fase, foram realizadas entrevistas semiestruturadas com cinco desenvolvedores de diversos setores de sistemas críticos como automotivo, saúde e finanças. Na segunda fase, foi realizado um estudo de caso em uma empresa que desenvolve sistemas aeroespaciais. Nessa fase foram entrevistados sete  engenheiros de software desta empresa que participam de diferentes times com diferentes tipos de projetos. Além dessas entrevistas, foram utilizados documentos da empresa como histórico de projetos e documentação sobre os processos internos. Após a análise dos dados colhidos nas duas fases, foi possível identificar os aspectos que contribuem para a criação de dívidas técnicas. Esses aspectos do processo de desenvolvimento de software que levam à criação de dívidas técnicas foram agrupados em quatro categorias:  ambiguidade nos requisitos, diversidade de projetos, gerenciamento de conhecimento inadequado e recursos limitados. Ou seja, esses aspectos contribuem para que o plano de desenvolvimento do software muitas vezes não possam ser seguidos plenamente o que gera a criação de dívidas técnicas. Os resultados desse estudo mostram que a dívida técnica ocorre também em projetos de software crítico. Os autores sugerem que a utilização de técnicas do desenvolvimento ágil de software pode ajudar a minimizar a ocorrência dessas dívidas técnicas. Entretanto, eles afirmam que mais estudos precisam ser realizados  para embasar essa sugestão.
+
+Os métodos de identificação da dívida técnica apresentam a limitação de não capturar informações sobre o seu acúmulo entre as versões do software. Essas informações podem ser importantes para realizar previsões a respeito da dívida técnica. Um dos aspectos que podem ser observados ao comparar as versões do software é a propagação de dependência entre os elementos do software. Em \cite{inpHoLaRaKaLe13a} é analisada a hipótese de que existe uma relação entre a propagação das dependências entre  os  elementos do software e o acúmulo da dívida técnica. Para analisar essa hipótese, é conduzido um estudo de caso sobre um projeto de refatoração de um software de ensino. Os objetivos desse estudo de casos são entender a estrutura da dívida técnica desse sistema e o papel da propagação de dependências na formação dessa estrutura. A forma como a dívida técnica se agrega ao software acontece de duas maneiras. A primeira é resultado das decisões feitas durante o desenvolvimento de um novo componente e a qualidade na qual esse componente é integrado ao software. A segunda está ligada à dívida presente em elementos que estão indiretamente relacionados a um novo componente como por exemplo documentação. Devido à literatura a respeito da relação entre a propagação de dependência e o acúmulo da dívida técnica ser escassa, foram utilizados resultados da área de evolução e análise de impacto para concluir que os modelos do domínio possuem informações importantes para identificar os caminhos pelos quais as mudanças em um elemento do software podem se propagar.  O estudo de caso foi conduzido de forma a atingir os dois objetivos da pesquisa, i.e., identificar a estrutura da dívida técnica e entender a relação da propagação de dependências com a formação dessa estrutura. Para tal, foi analisado o histórico de versões de um projeto para refatorar um sistema de apoio ao ensino. Com base nesses dados, foram construídas árvores para modelar as modificações feitas no software e as dependências dos elementos relacionados. Analisando essas informações, os autores concluem que a propagação de dependências pode ser usada para predizer o tamanho e a distribuição da dívida técnica.
+
+\section{Tipos de dívida técnica}
+
+Foram encontrados alguns estudos que investigam as características de um determinado tipo de dívida técnica. Essa abordagem de investigação aparenta ser adequada já que as diferenças entre os tipos de dívida técnica podem ser muito acentuadas. A seguir, descreveremos alguns dos trabalhos que investigam exclusivamente um tipo de dívida técnica. 
+
+
+
+
+\subsection{Testes e defeitos}
+
+Adiar a correção de defeitos causa o acúmulo de dívida técnica que onera o time de desenvolvimento de software e os clientes. A comissão de controle de mudanças utiliza um conjunto de critérios para decidir se irá ou não adiar a correção de defeitos. Esse conjunto de critérios tem grande influência sobre como a dívida técnica de defeitos é acumulada no sistema. Caso sejam utilizados critérios inadequados, esses defeitos podem ser acumulados em quantidade que prejudique a manutibilidade do sistema no longo prazo.  O objetivo deste trabalho \cite{snipes2012defining} é verificar quais as categorias de custos são necessárias para corrigir um defeito e quais são os fatores atualmente utilizados pelas comissões de controle de mudança para decidir se irão corrigi-lo ou adiar a correção. Esse estudo foi realizado em duas fases. Na primeira fase, foi realizada uma análise no repositório de defeitos de dois projetos de software. O resultado dessa fase foi um conjunto de tipos de categorias de custos, uma descrição das condições nas quais os custos foram empregados e alguns exemplos de defeitos de cada categoria para serem utilizados na segunda fase. Na segunda fase, foram realizadas entrevistas semiestruturadas com integrantes das comissões responsáveis por decidir a respeito do adiamento ou correção de defeitos. O resultado dessas entrevistas foi a adição de categorias de custos que não haviam sido identificadas na primeira fase. Além disso, as entrevistas foram utilizadas para identificar os fatores que são utilizados para realizar decisões a respeito do gerenciamento de defeitos. Após a realização da análise no repositório e das entrevistas, foram identificadas cinco categorias de custos associadas a correção de defeitos e seis fatores que influenciam a decisão de adiar ou corrigir um defeito. As categorias de custos são: investigação,  modificação, \textit{workaround}, suporte ao cliente, correção temporária e validação. Os autores indicam que a investigação e correção dos defeitos são as categorias que apresentam um maior custo. A correção temporária é uma modificação provisória que provavelmente não segue os padrões de qualidade do projeto, mas, que resolve, mesmo que parcialmente ou provisoriamente, o problema gerado pelo defeito. Os fatores que influenciam o processo de decisão são: severidade, existência de um \textit{workaround}, urgência ou exigência do cliente, esforço necessário para correção, risco da correção proposta e escopo de teste requerido.  Todos ou parte desses fatores são normalmente utilizados pela comissão de controle de mudanças para decidir se um defeito será corrigido ou terá sua correção adiada. Os autores sugerem a utilização de uma modelo mais formal para o gerenciamento dos defeitos. Uma alternativa é a utilização da técnica do custo benefício. Essa técnica consiste na utilização de uma equação da razão entre o principal da dívida técnica e os custos que serão necessários caso o pagamento dessa dívida seja postergado. Caso o resultado dessa divisão seja maior que 1, então vale a pena adiar a correção. 
+
+
+
+
+
+
+
+
+
+\section{Conclusões}
+
+Neste capítulo fornecemos uma amostra dos trabalhos encontrados na literatura a respeito da dívida técnica. Pudemos observar que existem muitos trabalhos a respeito da identificação da dívida técnica. Isso se materializou na existência de algumas ferramentas como o SonarQube e o DebtFlag \cite{holvitie2013debtflag}. 
+
+Outro ponto observado é o de que a dívida técnica de banco de dados  é pouco estudada na literatura. Inclusive grande parte dos mapeamentos sistemáticos encontrados nem mesmo citam esse tipo de dívida técnica. Isso causa estranheza já que os sistemas objeto-relacional são amplamente utilizados atualmente. Logo,  as dívidas técnicas relacionadas ao banco de dados deveriam ser mais estudadas.
+
+A respeito do gerenciamento da dívida técnica pudemos perceber que a literatura normalmente não considera os aspectos de negócio relacionados. Muitas vezes uma dívida técnica é criada devido a necessidade de disponibilizar rapidamente uma funcionalidade. As implicações das decisões sobre adquirir ou não uma dívida devem considerar esse aspecto.  Não foi encontrado nenhum trabalho que aborde o processo de decisão a respeito da aquisição ou não de uma dívida técnica. Todos os trabalhos consideram que a dívida já existe e precisa ser gerenciada. Existe uma ausência de trabalhos que abordem a possibilidade da dívida técnica ser utilizada como uma ferramenta  estratégica no gerenciamento de projetos de software.
+
+Não existe muita incerteza a respeito do custo para resolver o principal da dívida técnica. Foram sugeridas diversas formas de identificação e cálculo do principal. Por outro lado, existem mais particularidades para quantificar os juros decorrentes de uma dívida técnica. Isso acontece porque o quanto uma dívida técnica irá influenciar o futuro do software depende de como será o contexto desse software no futuro. Dessa forma, enxergamos duas alternativas: (i) a utilização de estratégias de predição para definir uma estimativa de como o software estará no futuro e assim quantificar os juros da dívida técnica. (ii) Realizar uma análise em retrospecto tendo a disposição o histórico de evolução do software. Neste trabalho exploraremos a segunda opção conforme descreveremos nos Capítulos \ref{cap:objetivos} e \ref{cap:metodologia}.
+

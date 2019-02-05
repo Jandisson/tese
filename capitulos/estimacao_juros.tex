@@ -1,0 +1,174 @@
+\chapter{O modelo de estimação do juros da dívida técnica}
+\label{estimacao:juros}
+
+Neste capítulo falaremos sobre os juros da dívida técnica e as suas relações com a produtividade nos projetos de desenvolvimento de software.
+
+\section{Introdução}
+
+
+
+Os juros da dívida técnica são todo o esforço adicional necessário para realizar as atividades de desenvolvimento de software. Esse esforço adicional é necessário, exclusivamente, devido aos inconvenientes que a existência da dívida técnica causa, e portanto, não seria necessário caso a dívida técnica não existisse. Nesta pesquisa sugerimos uma nova perspectiva para analisar os juros da dívida técnica: considerá-lo como um déficit na produtividade dos projetos. Quanto mais juros um projeto tem, mais a sua produtividade real é menor do que a produtividade que seria obtida em um cenário onde não houvesse dívida técnica. Isso acontece, pois, mais recursos terão de ser utilizados para atingir os objetivos do projeto.  Vamos ilustrar esse déficit de produtividade com um exemplo: Uma empresa de desenvolvimento de software resolve iniciar um projeto para o desenvolvimento de algumas novas funcionalidades para um sistema de vendas existente. Ao realizar uma análise de viabilidade, o time responsável descobre que o código atual do sistema apresenta uma documentação insuficiente, problemas de arquitetura e design e quantidade de testes unitários não compatível com o tamanho do projeto. O time conclui, corretamente, que haverá uma série de dificuldades adicionais para a conclusão do projeto. Com isso, as estimativas são realizadas considerando essas dificuldades adicionais. Nesse exemplo, fica claro que a produtividade do time seria melhor caso esses problemas identificados não existissem. Levando o exemplo para o contexto da dívida técnica, os problemas encontrados no sistema atual são as dívidas técnicas que foram sendo adquiridas com o passar do tempo. As dificuldades para realizar o projeto de adição de funcionalidades são os juros causados por essas dívidas. Nossa abordagem para estimar esses juros será calcular a diferença entre a produtividade em um cenário onde não exista dívida técnica com um cenário onde exista. Como falaremos mais à frente, na verdade o cenário onde não exista dívida técnica não existe. O que usaremos será uma aproximação. Para calcular os juros, usaremos cenários onde a dívida técnica seja muito baixa. Logo, a produtividade do projeto estará muito próxima da melhor possível. Então compararemos essa produtividade com outros projetos semelhantes. A diferença entre a produtividade dos projetos nesses dois cenários será uma estimativa dos juros da dívida técnica.
+
+
+\section{Os cenários de produtividade}
+
+
+Para estimarmos os juros da dívida técnica dividiremos os projetos analisados em dois cenários. Chamaremos de \textbf{produtividade ótima} o cenário onde a produtividade do projeto  de software é a melhor possível com os recursos disponíveis. Ou seja, levando em consideração todo o contexto no qual o projeto é desenvolvido, a produtividade obtida é a esperada. Esse contexto é formado por uma série de variáveis relacionadas.  Algumas dessas variáveis estão relacionadas ao time de desenvolvimento. Entre elas estão a competência, quantidade e experiência dos participantes. Outras variáveis estão associadas a complexidade do projeto a ser realizado e aos recursos de treinamento e capacitação disponibilizados ao time. Como dissemos anteriormente, a dívida técnica é um fator que influência negativamente a produtividade de um projeto. Entretanto,  no cenário de \textbf{produtividade ótima} isso não acontece pois só estarão nesse cenário projetos com uma quantidade muito pequena de dívida técnica.  É importante destacar que no cenário  de \textbf{produtividade ótima} ainda sim haverá uma degradação da produtividade já que não é possível a existência de um software sem nenhuma dívida técnica. Temos algumas razões para afirmar a inexistência de projetos sem nenhuma dívida técnica. A primeira delas é o fato de que a própria identificação do que é ou não de uma dívida técnica é subjetiva e muitas vezes intangível. A segunda razão é associada às dívidas técnicas de tecnologia. Com o passar do tempo uma tecnologia vai se tornando obsoleta e continuar a utilizá-la pode trazer esforços adicionais. Com isso, devida a contínua criação de novas tecnologias, é impossível garantir que não haja algum tipo de obsolescência. No entanto, ignoraremos o impacto que essa dívida técnica mínima terá na produtividade e ainda sim chamamos esse cenário de \textbf{produtividade ótima}.
+
+
+
+
+Chamaremos de \textbf{produtividade afetada} o cenário onde existe um déficit de produtividade no projeto causado pela existência de uma quantidade significativa de dívida técnica. Neste cenário, a produtividade não é a melhor que poderia ser obtida considerando o contexto e os recursos disponíveis. E isso é causado pela existência de uma quantidade significativa de dívida técnica. Ou seja, a causa da  produtividade dos projetos  no cenário de \textbf{produtividade afetada} não ser tão boa quanto os do cenário de  \textbf{produtividade ótima} é exclusivamente a existência de dívida técnica.  Conforme discutiremos, garantir que essa diferença de produtividade ocorre apenas pela existência da dívida técnica é um dos principais desafios desta pesquisa. É importante destacar que não estamos sugerindo que um projeto não tem uma produtividade melhor exclusivamente pela existência de dívida técnica. Existem diversos elementos que podem aprimorar a produtividade dos projetos de software tais como uma melhor eficiência na utilização de recursos, melhorias no processo de desenvolvimento, a utilização de uma tecnologia mais adequada. 
+
+
+\section{Estimação do déficit de produtividade}
+
+
+Nossa hipótese é a de que a diferença média entre os projetos de  \textbf{produtividade ótima} e \textbf{produtividade afetada} pode ser usada como uma estimativa dos juros da dívida técnica presente nos projetos dentro do cenário de  \textbf{produtividade afetada}. A base lógica da nossa metodologia para calcular essa estimação pode ser explicada por meio da seguinte situação fictícia: existiu um determinado projeto de  desenvolvimento que consistia em adicionar um conjunto de novas funcionalidades a um sistema já existente. Esse sistema existente possui um conjunto de dívidas técnicas que denominaremos como $X$.  Esse projeto foi realizado por uma equipe de desenvolvimento de software obtendo uma produtividade $Y$.  Agora imaginemos outro cenário onde esse mesmo projeto será realizado pela mesma equipe e em um mesmo contexto. Entretanto, neste cenário a dívida técnica $X$ do sistema  não existe. Logo, a produtividade do time de desenvolvimento será outra que chamaremos de $\overline{Y}$. É evidente que  a produtividade $\overline{Y}$ será melhor do que a produtividade  $Y$ já que a única diferença entre os dois cenários é a existência ou não de dívida técnica. Sem a dívida técnica, o time terá mais facilidade para desenvolver as funcionalidades do projeto e com isso elas serão desenvolvidas em um menor tempo aumentando assim a produtividade. Observando esse cenário fictício podemos concluir que $\overline{Y} - Y$ é o juros da dívida técnica que foi pago durante a execução do projeto de desenvolvimento. Note que não estamos dizendo que  $\overline{Y} - Y$  é uma estimativa dos juros e sim uma medição exata. Entretanto, esse cenário fictício obviamente não pode ser reproduzido exatamente como descrito. Um motivo é a impossibilidade de executar o mesmo projeto duas vezes com o mesmo time sem que a segunda execução seja facilitada pelas experiências obtidas pela primeira. Outro motivo é a impossibilidade de remover totalmente a dívida técnica $X$ do sistema existente. Contudo, esse cenário fictício apresenta-se útil como uma argumentação lógica para a metodologia que utilizamos para estimar $\overline{Y} - Y$ em situações reais.
+
+Conforme descrito anteriormente, não podemos calcular precisamente os juros da dívida técnica utilizando a fórmula $\overline{Y} - Y$. Porém, utilizaremos essa fórmula e a situação fictícia que descrevemos como uma base lógica para o cálculo de uma estimativa dos juros da dívida técnica. Para isso, precisamos de valores estimados para $Y$ e $\overline{Y}$. Nossa estratégia será a de estimar o valor de $Y$ utilizando os projetos no cenário de \textbf{produtividade afetada} e o valor de $\overline{Y}$ utilizando os projetos no cenário de  \textbf{produtividade ótima}. Essa estratégia consiste em realizar uma aproximação da situação fictícia que descrevemos já que não podemos reproduzi-la.  Como não podemos executar um mesmo projeto duas vezes sem que a segunda vez seja facilitada pelas experiências da primeira vez, vamos utilizar dois ou mais projetos semelhantes desenvolvidos por equipes também semelhantes.  Ou seja, só iremos calcular  $\overline{Y} - Y$ utilizando projetos nos cenários de \textbf{produtividade ótima} e \textbf{produtividade afetada} que sejam semelhantes tanto em relação a suas características quanto em relação ao time de desenvolvimento. Com isso, vamos simular a remoção da dívida $X$ de um projeto. Essa simulação será feita ao usarmos dois projetos. Um projeto que possua um nível de dívida técnica $X$ e outro projeto que possua um nível de dívida técnica $\overline{X}$. Sendo que $\overline{X}$ será muito menor do que $X$. Podemos identificar algumas dificuldades em realizar a estimação dos juros utilizando essa estratégia. A seguir destacamos algumas delas:
+ 
+ \begin{itemize}
+ \item A dificuldade em si de medir a produtividade no desenvolvimento de software.
+ \item Identificar qual a \textbf{produtividade ótima} para um projeto de software. Para isso, utilizaremos analogia. Ou seja, para um determinado projeto iremos identificar projetos semelhantes e com um baixo índice de dívida técnica.
+ \item Identificar se um projeto é semelhante a outro. Na literatura existem algumas abordagens para realizar essa atividade. Iremos descrever essas abordagens e explicar como iremos adaptá-las nesse projeto.
+ \item Isolar a interferência da dívida técnica nos projetos de software da interferência de outros fatores que estão prejudicando a produtividade. Ou seja, identificar e garantir que o que está fazendo um projeto não estar no cenário de \textbf{produtividade ótima} é exclusivamente a dívida técnica.
+ \end{itemize}
+ 
+Descreveremos cada uma dessas dificuldades e como iremos resolvê-las ou diminuir sua interferência nos resultados desta pesquisa.
+ 
+ 
+ \subsection{Medição da produtividade em projetos de Software}
+ 
+ O termo produtividade é usado para descrever a proporção entre o valor dos recursos utilizados em um processo e o valor do que é efetivamente produzido. Os recursos aplicados são chamados de entradas enquanto que os resultados do processo são chamados de saídas. O problema de medir a produtividade de um processo pode ser resumido em duas partes. A primeira é identificar quais são as entradas e as saídas. A segunda é quantificar  as entradas e saídas de tal forma que a relação entre elas possa ser calculada. O processo mais eficiência é aquele no qual mais valor é produzido com menos valor gasto nas entradas.
+
+Existe uma série de desafios para identificar e quantificar as entradas e saídas do processo de desenvolvimento de software. Devido a inerente complexidade desse processo, existem diversas possibilidades para quais serão as entradas e saídas a serem incluídas na análise de produtividade. A quantidade de homens/hora e a quantidade de linhas de código produzidas são métricas normalmente utilizadas como entrada e saída respectivamente.  Entretanto essas métricas, apesar de poderem ser consistentemente medidas, são demasiadamente imprecisas já que existem diversos outros fatores relevantes conforme mostrado no estudo de \cite{maccormack2003trade}. No caso da quantidade de homens/hora, por exemplo, um outro fator importante é o nível de experiência das pessoas envolvidas. A hora de um colaborador inexperiente naturalmente custará menos do que a hora de um com mais experiência. Semelhantemente, a quantidade de linhas de código produzidas, apesar de muito utilizada, também é uma métrica imprecisa já que não inclui uma quantificação do valor dessas linhas de código. Entretanto,  é possível que uma grande quantidade de linhas de código seja criada para realizar uma atividade, porém, que essa mesma atividade possa ser desenvolvimento com uma quantidade bem menor. Além destes dois exemplos, existem outras entradas e saídas que podem ser utilizadas em modelos de medição de produtividade conforme mostrado por Hernández-López at. all.,\cite{hernandez2015productivity}. Podemos observar que não existe uma forma totalmente precisa para se avaliar a produtividade dos processos de desenvolvimento de software. Isso se dá tanto pela existência de diversas medidas possíveis como os aspectos subjetivos dessas medidas. Logo, é necessário que seja adotado um modelo que seja o mais adequado para as necessidades de cada organização.
+
+ Nesta pesquisa iremos sugerir um modelo de avaliação de produtividade baseado no trabalho de  Kitchenham e Mendes \cite{kitchenham2004software}. No modelo sugerido por esses autores, a produtividade é avaliada comparando o esforço estimado para a realização de um determinado projeto de software com o esforço efetivamente gasto conforme mostrado na equação ~\ref{eq:model}. O esforço estimado, representado pela variável \textit{AdjustedSize} no modelo da equação ~\ref{eq:model} é calculado utilizados dados históricos de projetos similares. Ou seja, a partir de alguns parâmetros previamente selecionados é realizada uma estimação de quanto teria de ser gasto de recursos para produzir o projeto. Essa estimação é feita utilizando um modelo de regressão linear.  A variável $Effort$ é o esforço efetivamente gasto para a realização do projeto. Se a variável $Productivity$ for maior que 1 quer dizer que o projeto foi realizado com menos esforço do que a média dos outros projetos semelhantes.
+ 
+ 
+ 
+
+\begin{equation}
+\label{eq:model}
+  Productivity = AdjustedSize/Effort
+\end{equation}
+
+
+O modelo descrito na equação ~\ref{eq:model} não determina quais medidas serão utilizadas para quantificar as variáveis $AdjustedSize$ e $Effort$. Isso é esperado já que essas medidas são diferentes para cada domínio da aplicação sendo desenvolvida. Os autores fornecem um exemplo da aplicação do modelo em um projeto de desenvolvimento web. Nesse exemplo, é utilizado o número de páginas, o número de imagens e o número de funcionalidades da aplicação como medidas para estimar o esforço. Essas medidas são extraídas de um conjunto de projetos anteriores. Depois é criado um modelo de regressão linear com base nesses dados. A avaliação de um projeto consiste em calcular a variável \textit{AdjustedSize} utilizando esse modelo de regressão. A produtividade então é avaliada utilizando a equação ~\ref{eq:model}.
+
+\section{Modelo de avaliação de produtividade}
+
+
+
+
+\section{Modelo de quantifcação das entradas}
+
+Consideraremos a contribuição dos colaboradores dos projetos como a entrada do nosso modelo de avaliação da produtividade. Essa colaboração será avaliada tanto em relação a quantidade de pessoas que efetivamente contribuiram com o projeto quanto em relação a qualidade dessa contribuição. Essa qualidade será avaliada observando algumas características dos colaboradores do projeto. Algumas delas são a proeficiência dos colaboradores, assiduidade da contribuiçãoe e experiência dos colaboradores. A seguir descreveremos como serão calculadas essas características.
+
+\subsection{Medição da qualidade dos colaboradores}
+
+
+\subsection{Medição da assiduidade dos colaboradores}
+
+
+
+
+\section{Modelo de assiduidade}
+
+Estrelas: Ao dar uma estrela para um projeto o usuário indica que acha aquele projeto relevante e gostaria de de alguma forma marcá-lo para tê-lo associado a sua conta. Todos os projetos marcados com estrelas podem ser consultados em uma página da conta do usuário.
+
+Assistir: Ao marcar um projeto com assistir o usuário irá receber notificações push a respeito do projeto. Essas notificações incluem dentre outras, a liberação de uma nova release, a criação de issues e seus comentários e a criação de pull requests.
+
+Iremos calcular o grau de participação de um colaborador em um projeto por meio de uma análise dos commits que esse colaborador realizou. Nosso modelo irá utilizar a frequência média de commits que um colaborador realiza em um projeto. Se um colaborador realiza mais commits que a média, então esse colaborador tem uma participação maior no projeto do que um colaborador médio. Quanto maior a frequência de commits, mais um colaborador está colaborando para a projeto.
+
+Analisando o banco de dados de commits disponibilizado pelo projeto GHTorrent até o mês de dezembro de 2017 pudemos calcular a média de commits que um caborador faz por dia em um mesmo projeto. O resultado desse calculo foi: 1.16.
+
+Com isso, a assiduidade de um colaborador será calculada como $1.16 dividido  (quantidade de dias projeto divido  numero total de commits do colaborador)$
+
+Vejamos alguns exemplos de resultados para este calculo
+
+
+Calculo da média de commits:
+
+\begin{lstlisting}
+SELECT Avg(number_commits / number_of_days) 
+FROM   (SELECT Datediff(Max(created_at), Min(created_at)) AS number_of_days, 
+       project_id 
+        FROM   commits 
+        GROUP BY project_id) AS project_days 
+       INNER JOIN (SELECT Count(*) AS number_commits, 
+                          project_id 
+                   FROM   commits 
+                   GROUP  BY author_id, 
+                             project_id) AS commit_counts 
+               ON ( project_days.project_id = commit_counts.project_id )
+               
++--------------------------------------+
+| Avg(number_commits / number_of_days) |
++--------------------------------------+
+|                           1.16008948 |
++--------------------------------------+
+1 row in set (1 day 9 hours 48 min 13.93 sec) 
+
+\end{lstlisting}
+
+\section{Indice de colaboração}
+
+Deverá ser somado o valor 1 ao índice de colaboração para que ele sempre seja maior ou igual a 1. Isso é necessário para que não haja uma variação decorrente da mudança de 0,xx para 1,xx já que ele será o divisor no índice. 
+
+
+
+\section{Modelo de quantifcação das saídas}
+
+Consideraremos o quanto foi produzido como a saída do nosso modelo de avaliação da produtividade. 
+
+\section{Análise das linhas de código}
+
+\section{Análise dos pull requests}
+
+A base para a filosofia de software livre é a contribuição. O modelo de pull request é essencial para a efetivação desse princípio. Logo, faz sentido avaliar a constância em que colaboradores externos conseguem contribuir para um projeto como um aspecto da evolução de um projeto.
+
+
+\subsection{O modelo de estimação da do déficit de produtividade}
+
+Iremos estimar a produtividade de um projeto por meio de um índice que indicará a proporção entre o que era esperado para ser produzido em relação ao que efetivamente foi produzido. Nossa abordagem se assemelha a utilizada na equação  ~\ref{eq:model}. Entretanto, existem algumas diferenças significativas. A primeira delas é a de que estamos utilizando apenas as saídas do processo.  Normalmente, em uma avaliação de produtividade é analisada a relação entre o quanto é usado como entrada e o quanto de resultado é obtido. A segunda diferença é que não estamos utilizando dados de esforço. Essa é uma decisão feita para que pudéssemos incluir uma quantidade de projetos expressivamente maior em nosso estudo. Isso acontece, pois, os repositórios de dados que possuem informações sobre esforço são poucos e com um número de projetos pequenos. 
+
+Calcular a produtividade esperada de acordo com os fatores associados é uma atividade complexa e que também não pode ser feita com precisão absoluta \cite{petersen2011measuring}. Iremos realizar uma estimação dessa produtividade utilizando  a equação ~\ref{eq:our_model}. Nessa equação apresentamos o nosso modelo para estimação da produtividade. A produtividade é medida como uma proporção entre o tamanho esperado do projeto em relação ao tamanho real. Esse tamanho será medido utilizando a quantidade de commits, quantidade de linhas de código, qualidade do código dos commits e a quantidade de pull requests aceitos.  
+. O tamanho esperado será calculado utilizando um modelo de regressão linear. Os parâmetros para esse modelo serão a quantidade de colaboradores do projeto e a proficiência e assiduidade desses colaboradores.
+
+\begin{equation}
+\label{eq:our_model}
+  Produtividade = TamanhoReal/TamanhoEsperado
+\end{equation}
+
+
+
+O fator de maior impacto na qualidade dessa estimação é conseguir isolar atributos dos projetos que influenciam a produtividade, mas, não estão presentes no modelo. Por exemplo, uma das propriedades utilizadas para compor a estimativa de produtividade é a quantidade de linhas de código. Entretanto, comparar projetos de diferentes linguagens produziria uma estimativa muito imprecisa. Uma linguagem de programação como Scala, por ser declarativa, normalmente terá uma quantidade de linhas de código muito menor do que um programa em uma linguagem imperativa. Mesmo que esses programas realizem o mesmo processamento.  A seguir descreveremos como classificaremos dois projetos como similares. Só utilizaremos o modelo  da equação ~\ref{eq:our_model} em projetos que sejam classificados como similares. Essa classificação, terá como objetivo considerar todos os atributos que, assim como a linguagem de programação, afetam a produtividade de um projeto. Entendemos que é que possível que haja atributos que afetem a produtividade e que não pudemos identificar ou medir com os dados que temos disponíveis.
+ 
+
+\subsection{Quantificação da similaridade entre projetos}
+
+Na literatura são encontradas muitas abordagens para a estimação de esforço em projetos de software. Uma das estratégias de estimação é encontrar o esforço que foi efetivamente realizado em projetos anteriores e com características semelhantes. O que diferencia essas abordagens entre si são quais características são usadas para comparar os projetos.  Nesta pesquisa iremos agrupar projetos semelhantes para compararmos sua produtividade em relação ao seu nível de dívida técnica. Iremos nos utilizar de resultados anteriores a respeito da comparação de similaridade de projetos com o objetivo de estimar esforço. Faremos isso, pois, faz sentido que comparemos projetos que terão um esforço esperado semelhante. Assim, a não ser que outros fatores, como por exemplo a dívida técnica, interfiram,  a produtividade desses projetos deverá ser também semelhante. 
+
+
+Em \cite{barreto2010analyzing} Barreto et. at., realizam um survey para verificar a opinião de especialistas sobre quais são as características que devem ser levadas em consideração para calcular a similaridade entre projetos.  Foram consideradas apenas as respostas de especialistas com mais de 5 anos de experiência no gerenciamento de projetos de software.  Foi aplicado um questionário onde o especialista tinha que indicar o quanto ele concorda a respeito da utilização de 12 características previamente mapeadas da literatura. Foram utilizadas características numéricas como número de colaboradores e tamanho do software como também variáveis nominais como linguagem de programação, domínio da aplicação e paradigma de desenvolvimento. As 5 características mais relevantes de acordo com os especialistas foram objetivo do projeto, medida usada para indicar os objetivos do projeto, cliente, experiência do time de desenvolvimento e experiência do gerente de projetos. 
+Para calcular uma medida numérica de similaridade entre os projetos é fornecido um modelo matemático. Neste modelo, a similaridade entre dois projetos é calculada pelo somatório do inverso da diferença entre cada uma das características do projeto. Cada uma das características tem um peso calculado de acordo com a relevância indicada pelos especialistas. A similaridade das características nominais é calculada como 1 quando os dois projetos têm o mesmo valor e 0 quando não tem.
+Por fim, os autores indicam a possibilidade de melhorias para  a pesquisa. Uma delas é a possibilidade de que a opinião dos especialistas não seja precisa, pois, se baseia apenas em experiências e não em um método científico. 
+
+Algumas características de um projeto de software podem ser medidas por meio de variáveis categóricas ou numéricas. Exemplos de variáveis numéricas são o número de linhas de código, tempo do projeto em semanas e número de colaboradores. As variáveis categóricas por sua vez representam informações qualitativas do projeto. Um exemplo seria a variável complexidade. Ela pode possuir valores como baixa, média ou alta. Em \cite{idri2001fuzzy} Idri et. at., sugerem que as formas de avaliação de similaridade entre projetos existentes são apropriadas apenas para projetos com características expressas em variáveis numéricas. Por isso, eles propõem uma abordagem baseada em lógica fuzzy para a avaliação de similaridade entre projeto. Essa abordagem pode ser utilizada para avaliar a similaridade de projetos com variáveis categóricas.
+
+Neste trabalho iremos utilizar apenas dados numéricos. Logo, utilizamos uma abordagem baseada no modelo sugerido em \cite{barreto2010analyzing} . Dos atributos sugeridos pelos autores desse modelo, os seguintes podem ser medidos por meio dos dados disponibilizados no GitHub: experiência do time, tipo de aplicação, tamanho do projeto, tecnologia do projeto, domínio da aplicação, tamanho do time e paradigma de desenvolvimento.
+
+
+ \subsection{Identificação da produtividade ótima}
+ 
+ 
+Iremos identificar a produtividade ótima de um projeto por analogia. Para isso, iremos identificar a produtividade média de projetos semelhantes e que possuem um baixo nível de dívida técnica. 
+ 
+ 
+ 
+ \subsection{Isolar a variação de produtividade de outros fatores}
+ 
+ A maior dificuldade da nossa abordagem é garantir que a variação de produtividade está sendo causada exclusivamente pela existência da dívida técnica. Caso isso não seja feito apropriadamente, os juros será estimado de forma equivocada.
+ 

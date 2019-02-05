@@ -1,0 +1,78 @@
+\chapter{Estudo de caso}
+
+\section{Ferramenta de apoio: GitResearch}
+\label{cap_estudo_caso_ferramenta}
+
+
+\section{GHTorrent}
+
+\section{LDA}
+
+- História
+- Um documento pode estar associado a mais de um tópico.
+
+- O que é um modelo bag of words.
+- Etapas da aplicação de um modelo de tópicos
+	- Pre-processamento:  Quantidade minima de palavras para determinar um tópico, stoplists,lemmatização
+	- Treinamento: Collapsed  Gibbs sampling.
+- Outras formas de categorização de projetos
+- Outros trabalhos que usam o LDA	
+ 
+ 
+ 
+\subsection{Mineração de repositórios}
+
+Plataformas como GitHub, SourceForge e Bitbucket ganharam popularidade devido à evolução nas ferramentas de controle de versão e o reconhecimento, por parte da comunidade de software,  das vantagens de utilizar ferramentas de colaboração. Além de ferramentas para armazenamento e organização do código, essas plataformas fornecem uma variedade de facilidades para a interação entre os colaboradores dos projetos. Com isso, essas ferramentas acumularam uma quantidade imensa de dados sobre os projetos hospedados e a forma como colaboradores interagem com esses projetos. Esses dados têm sido reconhecidos como altamente relevantes para as pesquisas na área de engenharia de software. Foi chamado de mineração de repositórios de software \cite{bai2008mining} o conjunto de técnicas de investigação que utilizam informações provenientes de repositórios de software. Como exemplos de estudos que exploram essas técnicas, podemos citar aqueles envolvendo a predição de defeitos \cite{wang2014software}, propagação de mudanças \cite{wiese2015predicting} e confiabilidade do software \cite{de2015software}. Neste trabalho utilizaremos a mineração de repositórios de software para extrairmos dados relevantes para o desenvolvimento do modelo de estimativa dos juros da dívida técnica. 
+
+
+
+\subsection{Introdução}
+\subsection{Spring Batch}
+\subsection{Arquitetura}
+
+
+
+Os dois projetos usados no piloto foram:
+
+https://github.com/Netflix/blitz4j
+
+e
+
+https://github.com/pmwmedia/tinylog
+
+
+
+https://github.com/caelum/vraptor
+
+e 
+
+https://github.com/vaadin/framework
+
+
+
+
+Preciso de alguma forma considerar se o projeto foi desenvolvido por uma empresa ou por um indivíduo.
+
+É possível que a popularidade do projeto seja influenciada significativamente quando ele é desenvolvido por uma empresa grande. Ou seja,a causa de um projeto ter um alto número de estrelas não necessariamente é devido a relevância que a comunidade dá ao projeto. Ao invés disso, a popularidade do projeto pode ter sido obtida devido a popularidade da empresa. Um exemplo é o caso do projeto blitz4j que possui 504 estrelas. Enquanto isso, o projeto tinylog possui apenas 142. Entretanto, uma pesquisa em sites de buscas revelam que o tinylog é 4 vezes mais citado que o blitz4j. Logo, a maior quantidade de estrelas do blitz4j não reflete a sua popularidade entre os desenvolvedores.
+
+Os pull-requests precisam ser colocados como entrada do modelo de produtividade. Em grande parte dos projetos de software livre a colaboração é feita usando o modelo de pull request. Então apenas considerar os caboladores que tem acesso direto ao repositório pode levar a resultados muito imprecisos.
+
+
+Talvez seja bom excluir projetos com poucos ou apenas um colaborador e sem pull requests. 
+
+
+Poderia ter um capítulo falando sobre as relações entre a atratividade de um projeto (quantas pessoas procuram colaborar com ele) e a dívida técnica.
+A existência de muita dívida técnica afasta novos colaboradores?
+
+
+Pode ser que a relação entre dívida técnica e linhas de código seja inversamente proporcional. Ou seja, quanto mais dívida técnica um projeto tem, mais linhas de código ele tem também. Falar sobre isso seria uma boa oportunidade para inserir o artigo apresentado na CBI e o Jornal.
+
+Pode ser que o projeto tenha sido migrado de outro repositório ou outro sistema de versionamento. Isso precisa ser contornado de alguma forma. Uma alternativa seria verificar o tamanho do commit inicial.
+
+
+Preciso resolver os problemas com os commits. Alguns projetos como o vaadin não tem todos os commits na tabela commits. Alguns commits que vieram de pull requests por algum motivo não estão lá.
+
+Nos dados obtidos dos projetos do piloto é possível notar que os projetos com mais pull requests possuem menos dívida técnica.
+
+Um assunto a ser abordado poderia ser a relação entre a quantidade de forks e a quantidade de pull requests. É possível nota no pilo que alguns projetos tem uma quantidade de forks muito maior do que a quantidade de pull requests. Ou seja, muitas pessoas fizeram uma cópia do projeto com a interação de realizar alterações mas, muitas delas não o fizeram.
+

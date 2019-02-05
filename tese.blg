@@ -1,0 +1,110 @@
+This is BibTeX, Version 0.99d (TeX Live 2016/W32TeX)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: tese.aux
+The style file: alpha-ime.bst
+Database file #1: bibliografia.bib
+Repeated entry---line 35 of file bibliografia.bib
+ : @book{sterling2010managing
+ :                           ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 226 of file bibliografia.bib
+ : @article{seaman2011measuring
+ :                             ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 236 of file bibliografia.bib
+ : @inproceedings{guo2011portfolio
+ :                                ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 329 of file bibliografia.bib
+ : @inproceedings{maldonado2015detecting
+ :                                      ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 356 of file bibliografia.bib
+ : @inproceedings{szabados2015technical
+ :                                     ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 442 of file bibliografia.bib
+ : @article{kruchten2013technical
+ :                               ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 472 of file bibliografia.bib
+ : @book{campbell2013sonarqube
+ :                            ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 521 of file bibliografia.bib
+ : @inproceedings{guo2011portfolio
+ :                                ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 771 of file bibliografia.bib
+ : @inproceedings{idri2001fuzzy
+ :                             ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 855 of file bibliografia.bib
+ : @inproceedings{singh2014framework
+ :                                  ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 864 of file bibliografia.bib
+ : @incollection{seaman2011measuring
+ :                                  ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 902 of file bibliografia.bib
+ : @inproceedings{brown2010managing
+ :                                 ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1011 of file bibliografia.bib
+ : @inproceedings{brown2010managing
+ :                                 ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1027 of file bibliografia.bib
+ : @inproceedings{kalliamvakou2014promises
+ :                                        ,
+I'm skipping whatever remains of this entry
+Warning--empty journal in de2015software
+Warning--there's a number but no volume in lanning1994modeling
+Warning--there's a number but no volume in mccabe1976complexity
+Warning--empty journal in poliakov2015systematic
+Warning--can't use both volume and number fields in park2012similarity
+Warning--empty year in park2012similarity
+Warning--empty journal in wang2014software
+You've used 86 entries,
+            2543 wiz_defined-function locations,
+            1007 strings with 19927 characters,
+and the built_in function-call counts, 39477 in all, are:
+= -- 4074
+> -- 1813
+< -- 70
++ -- 653
+- -- 631
+* -- 2683
+:= -- 6198
+add.period$ -- 297
+call.type$ -- 86
+change.case$ -- 556
+chr.to.int$ -- 86
+cite$ -- 93
+duplicate$ -- 1677
+empty$ -- 2917
+format.name$ -- 732
+if$ -- 8391
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 96
+newline$ -- 432
+num.names$ -- 260
+pop$ -- 652
+preamble$ -- 1
+purify$ -- 654
+quote$ -- 0
+skip$ -- 1382
+stack$ -- 0
+substring$ -- 2222
+swap$ -- 447
+text.length$ -- 70
+text.prefix$ -- 23
+top$ -- 0
+type$ -- 640
+warning$ -- 7
+while$ -- 404
+width$ -- 93
+write$ -- 1136
+(There were 14 error messages)

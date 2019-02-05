@@ -1,0 +1,29 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1521426206327.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "1FD8BF23",
+    "lastKnownWriteTime" : 2314917541698157885,
+    "last_content_update" : 1521426206327,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "27049E83",
+        "caption" : "authors_and_commits",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=authors_and_commits&cache_key=27049E83",
+        "displayedObservations" : "591754",
+        "environment" : "",
+        "object" : "authors_and_commits",
+        "preview" : "0",
+        "totalObservations" : "591754",
+        "variables" : "4"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

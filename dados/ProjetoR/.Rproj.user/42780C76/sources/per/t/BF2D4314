@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1521426113765.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1745629637",
+    "id" : "BF2D4314",
+    "lastKnownWriteTime" : 1521426276,
+    "last_content_update" : 1521426276699,
+    "path" : "C:/Users/jandi/Dropbox/DOUTORADO/TESE/dados/ProjetoR/ImportaCommits.R",
+    "project_path" : "ImportaCommits.R",
+    "properties" : {
+        "cursorPosition" : "3,0",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

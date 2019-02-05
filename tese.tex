@@ -1,0 +1,335 @@
+% Arquivo LaTeX de exemplo de dissertação/tese a ser apresentados à CPG do IME-USP
+% 
+% Versão 5: Sex Mar  9 18:05:40 BRT 2012
+%
+% Criação: Jesús P. Mena-Chalco
+% Revisão: Fabio Kon e Paulo Feofiloff
+%  
+% Obs: Leia previamente o texto do arquivo README.txt
+
+\documentclass[11pt,twoside,a4paper]{book}
+
+% ---------------------------------------------------------------------------- %
+% Pacotes 
+%\usepackage[T1]{fontenc}
+\usepackage{dirtytalk}
+\usepackage[brazil]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[pdftex]{graphicx}           % usamos arquivos pdf/png como figuras
+\usepackage{setspace}                   % espaçamento flexível
+\usepackage{indentfirst}                % indentação do primeiro parágrafo
+\usepackage{makeidx}                    % índice remissivo
+\usepackage[nottoc]{tocbibind}          % acrescentamos a bibliografia/indice/conteudo no Table of Contents
+\usepackage{courier}                    % usa o Adobe Courier no lugar de Computer Modern Typewriter
+\usepackage{type1cm}                    % fontes realmente escaláveis
+\usepackage{listings}                   % para formatar código-fonte (ex. em Java)
+\usepackage{float}
+\usepackage{titletoc}
+%\usepackage[bf,small,compact]{titlesec} % cabeçalhos dos títulos: menores e compactos
+\usepackage[fixlanguage]{babelbib}
+\usepackage[font=small,format=plain,labelfont=bf,up,textfont=it,up]{caption}
+\usepackage[usenames,svgnames,dvipsnames]{xcolor}
+\usepackage[a4paper,top=2.54cm,bottom=2.0cm,left=2.0cm,right=2.54cm]{geometry} % margens
+%\usepackage[pdftex,plainpages=false,pdfpagelabels,pagebackref,colorlinks=true,citecolor=black,linkcolor=black,urlcolor=black,filecolor=black,bookmarksopen=true]{hyperref} % links em preto
+\usepackage[pdftex,plainpages=false,pdfpagelabels,pagebackref,colorlinks=true,citecolor=DarkGreen,linkcolor=NavyBlue,urlcolor=DarkRed,filecolor=green,bookmarksopen=true]{hyperref} % links coloridos
+\usepackage[all]{hypcap}                % soluciona o problema com o hyperref e capitulos
+\usepackage[square,sort,nonamebreak,comma]{natbib}  % citação bibliográfica alpha (alpha-ime.bst)
+\fontsize{60}{62}\usefont{OT1}{cmr}{m}{n}{\selectfont}
+\usepackage{pbox}
+
+% ---------------------------------------------------------------------------- %
+% Cabeçalhos similares ao TAOCP de Donald E. Knuth
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\chaptermark}[1]{\markboth{\MakeUppercase{#1}}{}}
+\renewcommand{\sectionmark}[1]{\markright{\MakeUppercase{#1}}{}}
+\renewcommand{\headrulewidth}{0pt}
+
+% ---------------------------------------------------------------------------- %
+\graphicspath{{./figuras/}}             % caminho das figuras (recomendável)
+\frenchspacing                          % arruma o espaço: id est (i.e.) e exempli gratia (e.g.) 
+\urlstyle{same}                         % URL com o mesmo estilo do texto e não mono-spaced
+\makeindex                              % para o índice remissivo
+\raggedbottom                           % para não permitir espaços extra no texto
+\fontsize{60}{62}\usefont{OT1}{cmr}{m}{n}{\selectfont}
+\cleardoublepage
+\normalsize
+
+% ---------------------------------------------------------------------------- %
+% Opções de listing usados para o código fonte
+% Ref: http://en.wikibooks.org/wiki/LaTeX/Packages/Listings
+\lstset{ %
+language=Java,                  % choose the language of the code
+basicstyle=\footnotesize,       % the size of the fonts that are used for the code
+numbers=left,                   % where to put the line-numbers
+numberstyle=\footnotesize,      % the size of the fonts that are used for the line-numbers
+stepnumber=1,                   % the step between two line-numbers. If it's 1 each line will be numbered
+numbersep=5pt,                  % how far the line-numbers are from the code
+showspaces=false,               % show spaces adding particular underscores
+showstringspaces=false,         % underline spaces within strings
+showtabs=false,                 % show tabs within strings adding particular underscores
+frame=single,	                % adds a frame around the code
+framerule=0.6pt,
+tabsize=2,	                    % sets default tabsize to 2 spaces
+captionpos=b,                   % sets the caption-position to bottom
+breaklines=true,                % sets automatic line breaking
+breakatwhitespace=false,        % sets if automatic breaks should only happen at whitespace
+%escapeinside={\%*}{*)},         % if you want to add a comment within your code
+backgroundcolor=\color[rgb]{1.0,1.0,1.0}, % choose the background color.
+rulecolor=\color[rgb]{0.8,0.8,0.8},
+extendedchars=true,
+xleftmargin=10pt,
+xrightmargin=10pt,
+framexleftmargin=10pt,
+framexrightmargin=10pt
+}
+
+% ---------------------------------------------------------------------------- %
+% Corpo do texto
+
+\begin{document}
+
+\frontmatter 
+% cabeçalho para as páginas das seções anteriores ao capítulo 1 (frontmatter)
+\fancyhead[RO]{{\footnotesize\rightmark}\hspace{2em}\thepage}
+\setcounter{tocdepth}{2}
+\fancyhead[LE]{\thepage\hspace{2em}\footnotesize{\leftmark}}
+\fancyhead[RE,LO]{}
+\fancyhead[RO]{{\footnotesize\rightmark}\hspace{2em}\thepage}
+
+\onehalfspacing  % espaçamento
+
+% ---------------------------------------------------------------------------- %
+% CAPA
+% Nota: O título para as dissertações/teses do IME-USP devem caber em um 
+% orifício de 10,7cm de largura x 6,0cm de altura que há na capa fornecida pela SPG.
+\thispagestyle{empty}
+\begin{center}
+    \vspace*{2.3cm}
+    \textbf{\Large{Um modelo baseado em dados históricos para a estimação da dívida técnica}}\\
+    
+    \vspace*{1.2cm}
+    \Large{Jandisson Soares de Jesus}
+    
+    \vskip 2cm
+    \textsc{
+    Texto da Tese de Doutorado apresentada\\[-0.25cm] 
+    ao\\[-0.25cm]
+    Instituto de Matemática e Estatística\\[-0.25cm]
+    da\\[-0.25cm]
+    Universidade de São Paulo\\[-0.25cm]
+    para\\[-0.25cm]
+    obtenção do título\\[-0.25cm]
+    de\\[-0.25cm]
+    Doutor em Ciências}
+    
+    \vskip 1.5cm
+    Programa: Ciência da Computação\\
+    Orientadora: Profa. Dra. Ana Cristina V. de Melo\\
+
+
+   	\vskip 1cm
+    \normalsize{Durante o desenvolvimento deste trabalho o autor recebeu auxílio
+    financeiro da CAPES}
+    
+    \vskip 0.5cm
+    \normalsize{São Paulo, Julho de 2016}
+\end{center}
+
+% ---------------------------------------------------------------------------- %
+% Página de rosto (SÓ PARA A VERSÃO DEPOSITADA - ANTES DA DEFESA)
+% Resolução CoPGr 5890 (20/12/2010)
+%
+% IMPORTANTE:
+%   Coloque um '%' em todas as linhas
+%   desta página antes de compilar a versão
+%   final, corrigida, do trabalho
+%
+%
+\newpage
+\thispagestyle{empty}
+    \begin{center}
+        \vspace*{2.3 cm}
+        \textbf{\Large{Um modelo baseado em dados históricos para a estimação da dívida técnica}}\\
+        \vspace*{2 cm}
+    \end{center}
+
+    \vskip 2cm
+
+    \begin{flushright}
+	Esta é a versão original da tese elaborada pelo\\
+	candidato Jandisson Soares de Jesus, tal como \\
+	submetida à Comissão Julgadora.
+    \end{flushright}
+
+\pagebreak
+
+
+% ---------------------------------------------------------------------------- %
+% Página de rosto (SÓ PARA A VERSÃO CORRIGIDA - APÓS DEFESA)
+% Resolução CoPGr 5890 (20/12/2010)
+%
+% Nota: O título para as dissertações/teses do IME-USP devem caber em um 
+% orifício de 10,7cm de largura x 6,0cm de altura que há na capa fornecida pela SPG.
+%
+% IMPORTANTE:
+%   Coloque um '%' em todas as linhas desta
+%   página antes de compilar a versão do trabalho que será entregue
+%   à Comissão Julgadora antes da defesa
+%
+%
+%\newpage
+%\thispagestyle{empty}
+  %  \begin{center}
+    %    \vspace*{2.3 cm}
+      %  \textbf{\Large{Título do trabalho a ser apresentado à \\
+       % CPG para a dissertação/tese}}\\
+        %\vspace*{2 cm}
+    %\end{center}
+
+%    \vskip 2cm
+
+   % \begin{flushright}
+	%Esta versão da dissertação/tese contém as correções e alterações sugeridas\\
+	%pela Comissão Julgadora durante a defesa da versão original do trabalho,\\
+	%realizada em 14/12/2010. Uma cópia da versão original está disponível no\\
+%	Instituto de Matemática e Estatística da Universidade de São Paulo.
+
+   % \vskip 2cm
+
+    %\end{flushright}
+    %\vskip 4.2cm
+
+  %  \begin{quote}
+   % \noindent Comissão Julgadora:
+    
+%    \begin{itemize}
+%		\item Profª. Drª. Nome Completo (orientadora) - IME-USP [sem ponto final]
+%		\item Prof. Dr. Nome Completo - IME-USP [sem ponto final]
+	%	\item Prof. Dr. Nome Completo - IMPA [sem ponto final]
+    %\end{itemize}
+      
+   % \end{quote}
+%\pagebreak
+
+
+\pagenumbering{roman}     % começamos a numerar 
+
+% ---------------------------------------------------------------------------- %
+% Agradecimentos:
+% Se o candidato não quer fazer agradecimentos, deve simplesmente eliminar esta página 
+%\chapter*{Agradecimentos}
+%Texto texto texto texto texto texto texto texto texto texto texto texto texto
+%texto texto texto texto texto texto texto texto texto texto texto texto texto
+%texto texto texto texto texto texto texto texto texto texto texto texto texto
+%texto texto texto texto. Texto opcional.
+
+
+% ---------------------------------------------------------------------------- %
+% Resumo
+\chapter*{Resumo}
+
+\noindent Jesus, J. S. \textbf{Um modelo baseado em dados históricos para a estimação da dívida técnica}. 
+2016. 120 f.
+Tese (Doutorado) - Instituto de Matemática e Estatística,
+Universidade de São Paulo, São Paulo, 2016.
+\\
+
+Negligenciar o gerenciamento da dívida técnica traz consequências negativas para os projetos de desenvolvimento de software. Caso a dívida técnica atinja patamares muito altos, é possível que a continuidade do projeto se torne inviável.
+Uma das atividades do gerenciamento é estimar o esforço adicional, causado pela existência da dívida técnica, para realizar as futuras atividades de desenvolvimento. Esse esforço adicional é chamado de juros da dívida técnica. Apesar de sua importância, pouco se sabe a respeito dele. Essa falta de informação dificulta o gerenciamento, pois a estimativa dos juros é essencial para a priorização do pagamento da dívida técnica. Caso uma dívida apresente  juros muito baixos, não faz sentido que seu pagamento seja priorizado. Semelhantemente, caso uma dívida tenha os juros muito alto, o pagamento dela deve ser priorizado. Além disso, saber quais tipos de dívida apresentam maiores juros permitiria a definição de estratégias para evitar a criação desses tipos de dívida técnica. Neste projeto iremos propor um modelo para estimar o comportamento dos juros da dívida técnica. Esse modelo irá utilizar dados de projetos presentes em repositórios de software para analisar o impacto da dívida técnica no desenvolvimento e evolução dos projetos. Iremos estimar, para um determinado tipo de dívida técnica, o quanto de esforço extra será necessário para realizar as atividades de desenvolvimento e evolução do software em decorrência da existência dessa dívida.
+\\
+
+\noindent \textbf{Palavras-chave:} dívida técnica, repositório de software, estimativa de software.
+
+% ---------------------------------------------------------------------------- %
+% Abstract
+\chapter*{Abstract}
+\noindent Jesus, J. S. \textbf{A repository-based model to estimate technical debt.}. 
+2016. 120 f.
+Tese (Doutorado) - Instituto de Matemática e Estatística,
+Universidade de São Paulo, São Paulo, 2016.
+\\
+
+
+An insuficient technical debt management can bring bad consequences to software development projects. If the technical debt reaches a too high level, it is possible that the continuity of the project becomes unfeasible.
+One of the management activities is the estimation of the additional effort  to make future development activities. We call this additional effort as the  interest of the technical debt. Despite its importance, little is known about him. This lack of information difficults its management because the estimation of the interest is essential for the prioritization of the technical debt payment. If a technical debt presents a very low interest, is payment do not neeed to be prioritized. Similarly, if a debt has very high interest, the payment it should be prioritized. Also, finding which debt types have higher interest rates would allow the development of strategies to prevent the creation of these kinds of technical debt. In this project we propose a model to estimate the behavior of technical debt interest. This model will use data of  projects in software repositories to analyze the impact of technical debt in the development and evolution of projects. We estimate, for a given type of technical debt, how much extra effort will be needed to carry out development activities and progress of the software due to the existence of that debt.
+\\
+
+\noindent \textbf{Keywords:} techncial debt, software repository, software estimation.
+
+% ---------------------------------------------------------------------------- %
+% Sumário
+\tableofcontents    % imprime o sumário
+
+% ---------------------------------------------------------------------------- %
+\chapter{Lista de Abreviaturas}
+\begin{tabular}{ll}
+         TD         & Dívida Técnica (\emph{Technical Debt})\\
+         
+\end{tabular}
+
+% ---------------------------------------------------------------------------- %
+%\chapter{Lista de Símbolos}
+%\begin{tabular}{ll}
+   %     $\omega$    & Frequência angular\\
+      %  $\psi$      & Função de análise \emph{wavelet}\\
+       % $\Psi$      & Transformada de Fourier de $\psi$\\
+% \end{tabular}
+
+% ---------------------------------------------------------------------------- %
+% Listas de figuras e tabelas criadas automaticamente
+\listoffigures            
+\listoftables            
+
+% ---------------------------------------------------------------------------- %
+% Capítulos do trabalho
+\mainmatter
+
+% cabeçalho para as páginas de todos os capítulos
+\fancyhead[RE,LO]{\thesection}
+
+\doublespacing
+
+%\input capitulos/introducao        
+\input capitulos/divida_tecnica    
+%\input capitulos/trabalhos_relacionados  
+\input capitulos/metodologia
+%\input capitulos/estimacao_juros
+%\input capitulos/experimento
+%\input capitulos/resultados
+%\input capitulos/conclusao
+
+
+
+
+
+
+
+     
+
+
+% cabeçalho para os apêndices
+\renewcommand{\chaptermark}[1]{\markboth{\MakeUppercase{\appendixname\ \thechapter}} {\MakeUppercase{#1}} }
+\fancyhead[RE,LO]{}
+\appendix
+
+%\include{ape-conjuntos}      % associado ao arquivo: 'ape-conjuntos.tex'
+
+% ---------------------------------------------------------------------------- %
+% Bibliografia
+\backmatter \singlespacing   % espaçamento simples
+\bibliographystyle{alpha-ime}% citação bibliográfica alpha
+\bibliography{bibliografia}  % associado ao arquivo: 'bibliografia.bib'
+
+% ---------------------------------------------------------------------------- %
+% Índice remissivo
+%\index{TBP|see{periodicidade região codificante}}
+%\index{DSP|see{processamento digital de sinais}}
+%\index{STFT|see{transformada de Fourier de tempo reduzido}}
+%\index{DFT|see{transformada discreta de Fourier}}
+\index{Fourier!transformada|see{transformada de Fourier}}
+
+\printindex   % imprime o índice remissivo no documento 
+
+\end{document}
