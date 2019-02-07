@@ -50,13 +50,16 @@ Jie BAI e Chun-ping LI.
 \newblock Mining software repository: a survey.
 \newblock {\em Application Research of Computers}, 1:006, 2008.
 
-\bibitem[BR10]{barreto2010analyzing}
-Andrea Oliveira~Soares Barreto e Ana~Regina Rocha.
-\newblock Analyzing the similarity among software projects to improve software
-  project monitoring processes.
-\newblock Em {\em Quality of Information and Communications Technology
-  (QUATIC), 2010 Seventh International Conference on the}, p\'{a}ginas
-  441--446. IEEE, 2010.
+\bibitem[BNJ02]{blei2002latent}
+David~M Blei, Andrew~Y Ng e Michael~I Jordan.
+\newblock Latent dirichlet allocation.
+\newblock Em {\em Advances in neural information processing systems},
+  p\'{a}ginas 601--608, 2002.
+
+\bibitem[BNJ03]{blei2003latent}
+David~M Blei, Andrew~Y Ng e Michael~I Jordan.
+\newblock Latent dirichlet allocation.
+\newblock {\em Journal of machine Learning research}, 3(Jan):993--1022, 2003.
 
 \bibitem[CAAA15]{chatzigeorgiou2015estimating}
 Alexander Chatzigeorgiou, Apostolos Ampatzoglou, Areti Ampatzoglou e Theodoros
@@ -146,24 +149,11 @@ Carlos Fern{\'a}ndez-S{\'a}nchez, Juan Garbajosa e Agustin Yague.
 \newblock Em {\em Managing Technical Debt (MTD), 2015 IEEE 7th International
   Workshop on}, p\'{a}ginas 69--76. IEEE, 2015.
 
-\bibitem[Gha16]{ghanbari2016seeking}
-Hadi Ghanbari.
-\newblock Seeking technical debt in critical software development projects: An
-  exploratory field study.
-\newblock Em {\em 2016 49th Hawaii International Conference on System Sciences
-  (HICSS)}, p\'{a}ginas 5407--5416. IEEE, 2016.
-
 \bibitem[GK07]{goldman2007maven}
 Max Goldman e Shmuel Katz.
 \newblock Maven: Modular aspect verification.
 \newblock Em {\em International Conference on Tools and Algorithms for the
   Construction and Analysis of Systems}, p\'{a}ginas 308--322. Springer, 2007.
-
-\bibitem[Gre02]{grenning2002planning}
-James Grenning.
-\newblock Planning poker or how to avoid analysis paralysis while release
-  planning.
-\newblock {\em Hawthorn Woods: Renaissance Software Consulting}, 3, 2002.
 
 \bibitem[GS11]{guo2011portfolio}
 Yuepu Guo e Carolyn Seaman.
@@ -176,39 +166,11 @@ Yuepu Guo, Rodrigo~Oliveira Sp{\'\i}nola e Carolyn Seaman.
 \newblock Exploring the costs of technical debt management--a case study.
 \newblock {\em Empirical Software Engineering}, 21(1):159--182, 2016.
 
-\bibitem[Hau06]{haugen2006empirical}
-Nils~Christian Haugen.
-\newblock An empirical study of using planning poker for user story estimation.
-\newblock Em {\em AGILE 2006 (AGILE'06)}, p\'{a}ginas 9--pp. IEEE, 2006.
-
-\bibitem[HL13]{holvitie2013debtflag}
-Johannes Holvitie e Ville Lepp{\"a}nen.
-\newblock Debtflag: Technical debt management with a development environment
-  integrated tool.
-\newblock Em {\em Proceedings of the 4th International Workshop on Managing
-  Technical Debt}, p\'{a}ginas 20--27. IEEE Press, 2013.
-
-\bibitem[HLCPSAL15]{hernandez2015productivity}
-Adri{\'a}n Hern{\'a}ndez-L{\'o}pez, Ricardo Colomo-Palacios, Pedro Soto-Acosta
-  e Cristina~Casado Lumberas.
-\newblock Productivity measurement in software engineering: a study of the
-  inputs and the outputs.
-\newblock {\em International Journal of Information Technologies and Systems
-  Approach (IJITSA)}, 8(1):46--68, 2015.
-
-\bibitem[HLR{\etalchar{+}}13]{inpHoLaRaKaLe13a}
-Johannes Holvitie, Mikko-Jussi Laakso, Teemu Rajala, Erkki Kaila e Ville
-  Leppanen.
-\newblock The role of dependency propagation in the accumulation of technical
-  debt for software implementations.
-\newblock Em Akoss Kiss, editor, {\em 13th Symposium on Programming Languages
-  and Software Tools}, p\'{a}ginas 61--75. University of Szeged, 2013.
-
-\bibitem[HS07]{hsu2007delphi}
-Chia-Chien Hsu e Brian~A Sandford.
-\newblock The delphi technique: making sense of consensus.
-\newblock {\em Practical assessment, research \& evaluation}, 12(10):1--8,
-  2007.
+\bibitem[HBB10]{hoffman2010online}
+Matthew Hoffman, Francis~R Bach e David~M Blei.
+\newblock Online learning for latent dirichlet allocation.
+\newblock Em {\em advances in neural information processing systems},
+  p\'{a}ginas 856--864, 2010.
 
 \bibitem[IA01]{idri2001fuzzy}
 Ali Idri e Alain Abran.
@@ -228,6 +190,12 @@ Eirini Kalliamvakou, Georgios Gousios, Kelly Blincoe, Leif Singer, Daniel~M
 \newblock The promises and perils of mining github.
 \newblock Em {\em Proceedings of the 11th working conference on mining software
   repositories}, p\'{a}ginas 92--101. ACM, 2014.
+
+\bibitem[KGMI06]{kawaguchi2006mudablue}
+Shinji Kawaguchi, Pankaj~K Garg, Makoto Matsushita e Katsuro Inoue.
+\newblock Mudablue: An automatic categorization system for open source
+  repositories.
+\newblock {\em Journal of Systems and Software}, 79(7):939--953, 2006.
 
 \bibitem[KM04]{kitchenham2004software}
 Barbara Kitchenham e Emilia Mendes.
@@ -286,11 +254,6 @@ Antonio Martini, Jan Bosch e Michel Chaudron.
 \newblock Em {\em Software Engineering and Advanced Applications (SEAA), 2014
   40th EUROMICRO Conference on}, p\'{a}ginas 85--92. IEEE, 2014.
 
-\bibitem[McC76]{mccabe1976complexity}
-Thomas~J McCabe.
-\newblock A complexity measure.
-\newblock {\em Software Engineering, IEEE Transactions on}, (4):308--320, 1976.
-
 \bibitem[MFC00]{mackinnon2000endo}
 Tim Mackinnon, Steve Freeman e Philip Craig.
 \newblock Endo-testing: unit testing with mock objects.
@@ -314,12 +277,6 @@ Shane McIntosh, Yasutaka Kamei, Bram Adams e Ahmed~E Hassan.
 \newblock Em {\em Proceedings of the 11th Working Conference on Mining Software
   Repositories}, p\'{a}ginas 192--201. ACM, 2014.
 
-\bibitem[MKCC03]{maccormack2003trade}
-Alan MacCormack, Chris~F Kemerer, Michael Cusumano e Bill Crandall.
-\newblock Trade-offs between productivity and quality in selecting software
-  development practices.
-\newblock {\em Ieee Software}, 20(5):78--85, 2003.
-
 \bibitem[MS15]{maldonado2015detecting}
 Everton da~S Maldonado e Emad Shihab.
 \newblock Detecting and quantifying different types of self-admitted technical
@@ -340,12 +297,6 @@ Benjamin Muschko.
 \newblock {\em Gradle in action}.
 \newblock Manning, 2014.
 
-\bibitem[NVK11]{nugroho2011empirical}
-Ariadi Nugroho, Joost Visser e Tobias Kuipers.
-\newblock An empirical model of technical debt and interest.
-\newblock Em {\em Proceedings of the 2nd Workshop on Managing Technical Debt},
-  p\'{a}ginas 1--8. ACM, 2011.
-
 \bibitem[OCBZ09]{olbrich2009evolution}
 Steffen Olbrich, Daniela~S Cruzes, Victor Basili e Nico Zazworka.
 \newblock The evolution and impact of code smells: A case study of two open
@@ -365,17 +316,10 @@ Dmitrii Poliakov et~al.
 \newblock A systematic mapping study on technical debt definition.
 \newblock 2015.
 
-\bibitem[Pet11]{petersen2011measuring}
-Kai Petersen.
-\newblock Measuring and predicting software productivity: A systematic map and
-  review.
-\newblock {\em Information and Software Technology}, 53(4):317--343, 2011.
-
-\bibitem[PH]{park2012similarity}
-Seongsoo Park e H~Han.
-\newblock Similarity detection for large scale software using abstracted source
-  code.
-\newblock Em {\em Proc. of KIISE Korea Computer Congress 2012}, volume~35.
+\bibitem[PBMW99]{page1999pagerank}
+Lawrence Page, Sergey Brin, Rajeev Motwani e Terry Winograd.
+\newblock The pagerank citation ranking: Bringing order to the web.
+\newblock Relat{\'o}rio t{\'e}cnico, Stanford InfoLab, 1999.
 
 \bibitem[Pow13]{power2013understanding}
 Ken Power.
@@ -413,19 +357,6 @@ Michael Smit, Barry Gergel, H~James Hoover e Eleni Stroulia.
 \newblock Code convention adherence in evolving software.
 \newblock Em {\em Software Maintenance (ICSM), 2011 27th IEEE International
   Conference on}, p\'{a}ginas 504--507. IEEE, 2011.
-
-\bibitem[SK15]{szabados2015technical}
-Krist{\'o}f Szabados e Attila Kov{\'a}cs.
-\newblock Technical debt of standardized test software.
-\newblock Em {\em Managing Technical Debt (MTD), 2015 IEEE 7th International
-  Workshop on}, p\'{a}ginas 57--60. IEEE, 2015.
-
-\bibitem[SRGS12]{snipes2012defining}
-Will Snipes, Brian Robinson, Yuepu Guo e Carolyn Seaman.
-\newblock Defining the decision factors for managing defects: A technical debt
-  perspective.
-\newblock Em {\em Managing Technical Debt (MTD), 2012 Third International
-  Workshop on}, p\'{a}ginas 54--60. IEEE, 2012.
 
 \bibitem[SSFM07]{santos2007teoria}
 Jos{\'e} Luiz~dos SANTOS, Paulo SCHMIDT, Luciane~Alves FERNANDES e
@@ -506,25 +437,5 @@ Tetsuo Yamamoto, Makoto Matsushita, Toshihiro Kamiya e Katsuro Inoue.
   correspondence.
 \newblock Em {\em International Conference on Product Focused Software Process
   Improvement}, p\'{a}ginas 530--544. Springer, 2005.
-
-\bibitem[ZIW{\etalchar{+}}14]{zazworka2014comparing}
-Nico Zazworka, Clemente Izurieta, Sunny Wong, Yuanfang Cai, Carolyn Seaman,
-  Forrest Shull et~al.
-\newblock Comparing four approaches for technical debt identification.
-\newblock {\em Software Quality Journal}, 22(3):403--426, 2014.
-
-\bibitem[ZSSS11]{zazworka2011investigating}
-Nico Zazworka, Michele~A Shaw, Forrest Shull e Carolyn Seaman.
-\newblock Investigating the impact of design debt on software quality.
-\newblock Em {\em Proceedings of the 2nd Workshop on Managing Technical Debt},
-  p\'{a}ginas 17--23. ACM, 2011.
-
-\bibitem[ZSV{\etalchar{+}}13]{zazworka2013case}
-Nico Zazworka, Rodrigo~O Sp{\'\i}nola, Antonio Vetro, Forrest Shull e Carolyn
-  Seaman.
-\newblock A case study on effectively identifying technical debt.
-\newblock Em {\em Proceedings of the 17th International Conference on
-  Evaluation and Assessment in Software Engineering}, p\'{a}ginas 42--47. ACM,
-  2013.
 
 \end{thebibliography}
