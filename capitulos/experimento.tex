@@ -1,56 +1,63 @@
 \chapter{Estudo de caso}
 \label{cap_estudo_caso}
 
+\section{Introdução}
+
+Realizaremos um estudo de caso múltiplo para avaliarmos o nosso modelo concreto de estimação dos juros da dívida técnica em projetos de software livre descrito no Capítulo \ref{estimacao:juros}.  Com esse estudo de caso observaremos a adequação do modelo na avaliação dos juros em projetos reais hospedados em uma plataforma pública de versionamento de software. Adicionalmente, descreveremos a ferramenta GitResearch. Essa ferramenta foi criada para automatizar partes das atividades realizadas durante o estudo de caso.
+
+\section{O repositório de software}
+
+No contexto do \textit{open source}, tornar público o código fonte de um projeto de software não se trata apenas de uma característica positiva. Isso é uma necessidade que caracteriza os princípios dessa filosofia de desenvolvimento de software. A comunidade interessada no software deve ter livre acesso a ele para que possa usá-lo, alterá-lo e distribuí-lo. Por conta dessas necessidades, houve uma popularização dos repositórios públicos de software. Esse tipo de plataforma fornece aos usuários meios para acessar o código de softwares de terceiros como também permite que eles mesmos disponibilizem seus projetos de software. A popularização dessas plataformas fez com que elas fossem a fonte de uma grande quantidade de dados. Essa diversificada e imensa quantidade de dados é produzida de diversas formas. Seja ela obtida por meio do próprio código fonte desses projetos como também pela interação realizada entre os usuários.  Em todos os casos, a facilidade de acesso e a pluralidade de dados faz com que os repositórios de software sejam uma opção interessante para a obtenção de dados para pesquisas. Em nosso estudo de caso, obteremos dados do GitHub: Um repositório de projetos  de software baseado na tecnologia versionamento.
+
+
+
+\subsubsection{Controle de versões utilizando o protocolo GIT }
+
+
+Um sistema de controle de versões - ou configurações - é um sistema que fornece uma série de funcionalidades para controlar a evolução de um conjunto de arquivos. Entre essas funcionalidades está ter acesso às versões anteriores de arquivos, controlar quem realizou uma determinada alteração e comparar versões com o intuito de analisar as diferenças.  Além disso, conforme Otte. \cite{otte2009version}, esses sistemas têm sido utilizados como uma ferramenta de backup, pois  permitem voltar a uma versão anteriro caso algo esteja errado com a versão atual. O GIT é um sistema moderno de controle de versão desenvolvido pelo também criador do Linux Linus Torvalds. Conforme Loeliger et al.\cite{loeliger2012version}, ele pode ser visto como uma evolução de sistemas mais antigos como o CVS\cite{vesperman2006essential} e o Subversion\cite{pilato2008version}. 
+
+O principal diferencial do GIT em relação aos outros sistemas de versionamento é a sua característica distribuida. O GIT foi projetado para funcionar muito bem em contextos onde exista uma grande quantidade de pessoas interagindo com o mesmo projeto e ainda assim, haja a necessidade que essa interação ocorra de uma forma organizada e rastreável. Essa característica distribuída é alcançada por meio de alguns recursos:
+
+\begin{itemize}
+\item Facilidade na cópia dos repositórios.
+\item Permite múltiplos repositórios de origem.
+\item Não existe um repositório central único.
+\item Não possui um daemon ou algo assim.
+\item É extremamente eficiente comparado às alternativas anteriores como o subversion e o CVS.
+
+\end{itemize}
+
+Por ter essas caracteristicas o GIT tornou-se o sistema de gerenciamento de versões mais utilizado pela comunidade de desenvolvimento de software livre.  
+
+- Distribuido
+- Comandos
+- Armazenamento
+
+
+\subsection{GitHub}
+
+- Popularidade
+- O modelo de forks e pull requests 
+-Uma rede social
+
+
+
+\subsection{GHTorrent}
+
 \section{Ferramenta de apoio: GitResearch}
 \label{cap_estudo_caso_ferramenta}
-
-
-\section{GHTorrent}
-
-\section{LDA}
-
-- História
-- Um documento pode estar associado a mais de um tópico.
-
-- O que é um modelo bag of words.
-- Etapas da aplicação de um modelo de tópicos
-	- Pre-processamento:  Quantidade minima de palavras para determinar um tópico, stoplists,lemmatização
-	- Treinamento: Collapsed  Gibbs sampling.
-- Outras formas de categorização de projetos
-- Outros trabalhos que usam o LDA	
- 
- 
- 
-
-
-
 
 \subsection{Introdução}
 \subsection{Spring Batch}
 \subsection{Arquitetura}
+\subsection{Etapas}
 
 
 
-Os dois projetos usados no piloto foram:
+\section{Etapas do estudo de caso}
 
-https://github.com/Netflix/blitz4j
+\subsection{Piloto}
 
-e
-
-https://github.com/pmwmedia/tinylog
-
-
-
-https://github.com/caelum/vraptor
-
-e 
-
-https://github.com/vaadin/framework
-
-
-
-
-Preciso de alguma forma considerar se o projeto foi desenvolvido por uma empresa ou por um indivíduo.
 
 É possível que a popularidade do projeto seja influenciada significativamente quando ele é desenvolvido por uma empresa grande. Ou seja,a causa de um projeto ter um alto número de estrelas não necessariamente é devido a relevância que a comunidade dá ao projeto. Ao invés disso, a popularidade do projeto pode ter sido obtida devido a popularidade da empresa. Um exemplo é o caso do projeto blitz4j que possui 504 estrelas. Enquanto isso, o projeto tinylog possui apenas 142. Entretanto, uma pesquisa em sites de buscas revelam que o tinylog é 4 vezes mais citado que o blitz4j. Logo, a maior quantidade de estrelas do blitz4j não reflete a sua popularidade entre os desenvolvedores.
 
@@ -74,4 +81,109 @@ Preciso resolver os problemas com os commits. Alguns projetos como o vaadin não
 Nos dados obtidos dos projetos do piloto é possível notar que os projetos com mais pull requests possuem menos dívida técnica.
 
 Um assunto a ser abordado poderia ser a relação entre a quantidade de forks e a quantidade de pull requests. É possível nota no pilo que alguns projetos tem uma quantidade de forks muito maior do que a quantidade de pull requests. Ou seja, muitas pessoas fizeram uma cópia do projeto com a interação de realizar alterações mas, muitas delas não o fizeram.
+
+Os dois projetos usados no piloto foram:
+
+https://github.com/Netflix/blitz4j
+
+e
+
+https://github.com/pmwmedia/tinylog
+
+
+
+https://github.com/caelum/vraptor
+
+e 
+
+https://github.com/vaadin/framework
+
+
+\subsection{Seleção dos projetos}
+
+COLOCAR UM GRAFICO QUE MOSTRE CADA ETAPA DE EXCLUSAO DOS PROJETOS JAVA DO GITHUB.
+
+Github -> Exclusão dos projetos com característica X  e assim por diante.
+                                   |
+                                   -> 34 removidos 
+
+
+
+\section{Agrupamento dos projetos}
+
+\subsubsection{LDA}
+
+- História
+- Um documento pode estar associado a mais de um tópico.
+
+- O que é um modelo bag of words.
+- Etapas da aplicação de um modelo de tópicos
+	- Pre-processamento:  Quantidade minima de palavras para determinar um tópico, stoplists,lemmatização
+	- Treinamento: Collapsed  Gibbs sampling.
+- Outras formas de categorização de projetos
+- Outros trabalhos que usam o LDA	
+ 
+
+
+\section{Extração dos dados}
+
+\section{Divisão temporal do código}
+ - Fizemos a extração das métricas em 5 pontos diferentes na evolução do software.
+ - COLOCAR O CODIGO DO GIT RESEARCH QUE E RESPONSAVEL POR FAZER ISSO E EXPLICAR
+
+\subsection{O SonarQube}
+\subsubsection{Cálculo das linhas de código}
+\subsubsection{Cálculo da dívida técnica}
+
+
+
+
+
+\section{Cálculo das variáveis de entrada do modelo}
+
+\subsection{Colaboração}
+
+\subsection{Assiduidade}
+
+Analisando o banco de dados de commits disponibilizado pelo projeto GHTorrent até o mês de dezembro de 2017 pudemos calcular a média de commits que um caborador faz por dia em um mesmo projeto. O resultado desse calculo foi: 1.16.
+
+Com isso, a assiduidade de um colaborador será calculada como $1.16 dividido  (quantidade de dias projeto divido  numero total de commits do colaborador)$
+
+Vejamos alguns exemplos de resultados para este calculo
+
+
+Calculo da média de commits:
+
+\begin{lstlisting}
+SELECT Avg(number_commits / number_of_days) 
+FROM   (SELECT Datediff(Max(created_at), Min(created_at)) AS number_of_days, 
+       project_id 
+        FROM   commits 
+        GROUP BY project_id) AS project_days 
+       INNER JOIN (SELECT Count(*) AS number_commits, 
+                          project_id 
+                   FROM   commits 
+                   GROUP  BY author_id, 
+                             project_id) AS commit_counts 
+               ON ( project_days.project_id = commit_counts.project_id )
+               
++--------------------------------------+
+| Avg(number_commits / number_of_days) |
++--------------------------------------+
+|                           1.16008948 |
++--------------------------------------+
+1 row in set (1 day 9 hours 48 min 13.93 sec) 
+
+\end{lstlisting}
+
+\section{Cálculo das variáveis de saída do modelo}
+
+\section{Dados obtidos}
+
+\subsection{Análise exploratória dos dados}
+
+\section{Conclusão}
+
+
+
 

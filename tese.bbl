@@ -61,6 +61,20 @@ David~M Blei, Andrew~Y Ng e Michael~I Jordan.
 \newblock Latent dirichlet allocation.
 \newblock {\em Journal of machine Learning research}, 3(Jan):993--1022, 2003.
 
+\bibitem[BR10]{barreto2010analyzing}
+Andrea Oliveira~Soares Barreto e Ana~Regina Rocha.
+\newblock Analyzing the similarity among software projects to improve software
+  project monitoring processes.
+\newblock Em {\em Quality of Information and Communications Technology
+  (QUATIC), 2010 Seventh International Conference on the}, p\'{a}ginas
+  441--446. IEEE, 2010.
+
+\bibitem[BTP{\etalchar{+}}12]{bhatt2012analysis}
+Kaushal Bhatt, Vinit Tarey, Pushpraj Patel, Kaushal~Bhatt Mits e Datana Ujjain.
+\newblock Analysis of source lines of code (sloc) metric.
+\newblock {\em International Journal of Emerging Technology and Advanced
+  Engineering}, 2(5):150--154, 2012.
+
 \bibitem[CAAA15]{chatzigeorgiou2015estimating}
 Alexander Chatzigeorgiou, Apostolos Ampatzoglou, Areti Ampatzoglou e Theodoros
   Amanatidis.
@@ -91,6 +105,12 @@ Bill Curtis, Jay Sappidi e Alexandra Szynkarski.
 \newblock Em {\em Proceedings of the Third International Workshop on Managing
   Technical Debt}, p\'{a}ginas 49--53. IEEE Press, 2012.
 
+\bibitem[CTNH12]{chen2012explaining}
+Tse-Hsun Chen, Stephen~W Thomas, Meiyappan Nagappan e Ahmed~E Hassan.
+\newblock Explaining software defects using topic models.
+\newblock Em {\em 2012 9th IEEE Working Conference on Mining Software
+  Repositories (MSR)}, p\'{a}ginas 189--198. IEEE, 2012.
+
 \bibitem[Cun93]{cunningham1993wycash}
 Ward Cunningham.
 \newblock The wycash portfolio management system.
@@ -119,6 +139,14 @@ M{\'a}rcio de~Oliveira~Barros, F{\'a}bio de~Almeida~Farzat e Guilherme~Horta
 Ramez Elmasri e Sham Navathe.
 \newblock {\em Fundamentals of database systems}.
 \newblock Pearson London, 2016.
+
+\bibitem[FBHK05]{funk2005application}
+Andrew Funk, Victor Basili, Lorin Hochstein e Jeremy Kepner.
+\newblock Application of a development time productivity metric to parallel
+  software development.
+\newblock Em {\em Proceedings of the second international workshop on Software
+  engineering for high performance computing system applications}, p\'{a}ginas
+  8--12. ACM, 2005.
 
 \bibitem[FKNO14]{falessi2014technical}
 Davide Falessi, Philippe Kruchten, Robert~L Nord e Ipek Ozkaya.
@@ -172,6 +200,42 @@ Matthew Hoffman, Francis~R Bach e David~M Blei.
 \newblock Em {\em advances in neural information processing systems},
   p\'{a}ginas 856--864, 2010.
 
+\bibitem[HLCPSAL15]{hernandez2015productivity}
+Adri{\'a}n Hern{\'a}ndez-L{\'o}pez, Ricardo Colomo-Palacios, Pedro Soto-Acosta
+  e Cristina~Casado Lumberas.
+\newblock Productivity measurement in software engineering: a study of the
+  inputs and the outputs.
+\newblock {\em International Journal of Information Technologies and Systems
+  Approach (IJITSA)}, 8(1):46--68, 2015.
+
+\bibitem[Hof00]{hoffman2000darker}
+Doug Hoffman.
+\newblock The darker side of metrics.
+\newblock Em {\em Pacific Northwest Software Quality Conference}, volume~17,
+  p\'{a}gina 2000, 2000.
+
+\bibitem[HRGB{\etalchar{+}}06]{herraiz2006comparison}
+Israel Herraiz, Gregorio Robles, Jes{\'u}s~M Gonz{\'a}lez-Barahona, Andrea
+  Capiluppi e Juan~F Ramil.
+\newblock Comparison between slocs and number of files as size metrics for
+  software evolution analysis.
+\newblock Em {\em Conference on Software Maintenance and Reengineering
+  (CSMR'06)}, p\'{a}ginas 8--pp. IEEE, 2006.
+
+\bibitem[HRWD10]{hupa2010interdisciplinary}
+Albert Hupa, Krzysztof Rzadca, Adam Wierzbicki e Anwitaman Datta.
+\newblock Interdisciplinary matchmaking: Choosing collaborators by skill,
+  acquaintance and trust.
+\newblock Em {\em Computational social network analysis}, p\'{a}ginas 319--347.
+  Springer, 2010.
+
+\bibitem[HYW{\etalchar{+}}17]{huang2017expert}
+Chaoran Huang, Lina Yao, Xianzhi Wang, Boualem Benatallah e Quan~Z Sheng.
+\newblock Expert as a service: Software expert recommendation via knowledge
+  domain embeddings in stack overflow.
+\newblock Em {\em 2017 IEEE International Conference on Web Services (ICWS)},
+  p\'{a}ginas 317--324. IEEE, 2017.
+
 \bibitem[IA01]{idri2001fuzzy}
 Ali Idri e Alain Abran.
 \newblock A fuzzy logic based set of measures for software project similarity:
@@ -179,10 +243,28 @@ Ali Idri e Alain Abran.
 \newblock Em {\em Software Metrics Symposium, 2001. METRICS 2001. Proceedings.
   Seventh International}, p\'{a}ginas 85--96. IEEE, 2001.
 
+\bibitem[JL97]{jeffery1997function}
+R~Jeffery e G~Low.
+\newblock Function points and their use.
+\newblock {\em Australian Computer Journal}, 29(4):148--156, 1997.
+
+\bibitem[KAAH11]{kelly2011recovering}
+Matthew~B Kelly, Jason~S Alexander, Bram Adams e Ahmed~E Hassan.
+\newblock Recovering a balanced overview of topics in a software domain.
+\newblock Em {\em 2011 IEEE 11th International Working Conference on Source
+  Code Analysis and Manipulation}, p\'{a}ginas 135--144. IEEE, 2011.
+
 \bibitem[Kac12]{kaczanowski2012practical}
 Tomek Kaczanowski.
 \newblock {\em Practical Unit Testing with TestNG and Mockito}.
 \newblock Tomasz Kaczanowski, 2012.
+
+\bibitem[KB13]{kalaiselvi2013ontological}
+K~Kalaiselvi e PS~Balamurugan.
+\newblock An ontological approach to identify expert knowledge in academic
+  institution.
+\newblock Em {\em 2013 International Conference on Current Trends in
+  Engineering and Technology (ICCTET)}, p\'{a}ginas 120--122. IEEE, 2013.
 
 \bibitem[KGB{\etalchar{+}}14]{kalliamvakou2014promises}
 Eirini Kalliamvakou, Georgios Gousios, Kelly Blincoe, Leif Singer, Daniel~M
@@ -241,6 +323,12 @@ David~L Lanning e Taghi~M Khoshgoftaar.
   maintenance difficulty.
 \newblock {\em Computer}, (9):35--40, 1994.
 
+\bibitem[LM12]{loeliger2012version}
+Jon Loeliger e Matthew McCullough.
+\newblock {\em Version Control with Git: Powerful tools and techniques for
+  collaborative software development}.
+\newblock " O'Reilly Media, Inc.", 2012.
+
 \bibitem[LTS12]{lim2012balancing}
 Erin Lim, Nitin Taksande e Carolyn Seaman.
 \newblock A balancing act: What software practitioners have to say about
@@ -266,6 +354,12 @@ J~David Morgenthaler, Misha Gridnev, Raluca Sauciuc e Sanjay Bhansali.
 \newblock Em {\em Proceedings of the Third International Workshop on Managing
   Technical Debt}, p\'{a}ginas 1--6. IEEE Press, 2012.
 
+\bibitem[MH02]{mockus2002expertise}
+Audris Mockus e James~D Herbsleb.
+\newblock Expertise browser: a quantitative approach to identifying expertise.
+\newblock Em {\em Proceedings of the 24th International Conference on Software
+  Engineering. ICSE 2002}, p\'{a}ginas 503--512. IEEE, 2002.
+
 \bibitem[MJ06]{mar2006technical}
 Kane Mar e Michael James.
 \newblock Technical debt and design death, 2006.
@@ -277,12 +371,38 @@ Shane McIntosh, Yasutaka Kamei, Bram Adams e Ahmed~E Hassan.
 \newblock Em {\em Proceedings of the 11th Working Conference on Mining Software
   Repositories}, p\'{a}ginas 192--201. ACM, 2014.
 
+\bibitem[MKCC03]{maccormack2003trade}
+Alan MacCormack, Chris~F Kemerer, Michael Cusumano e Bill Crandall.
+\newblock Trade-offs between productivity and quality in selecting software
+  development practices.
+\newblock {\em Ieee Software}, 20(5):78--85, 2003.
+
+\bibitem[MLVPG11]{mcmillan2011categorizing}
+Collin McMillan, Mario Linares-Vasquez, Denys Poshyvanyk e Mark Grechanik.
+\newblock Categorizing software applications for maintenance.
+\newblock Em {\em 2011 27th IEEE International Conference on Software
+  Maintenance (ICSM)}, p\'{a}ginas 343--352. IEEE, 2011.
+
 \bibitem[MS15]{maldonado2015detecting}
 Everton da~S Maldonado e Emad Shihab.
 \newblock Detecting and quantifying different types of self-admitted technical
   debt.
 \newblock Em {\em Managing Technical Debt (MTD), 2015 IEEE 7th International
   Workshop on}, p\'{a}ginas 9--15. IEEE, 2015.
+
+\bibitem[MSH08]{maskeri2008mining}
+Girish Maskeri, Santonu Sarkar e Kenneth Heafield.
+\newblock Mining business topics in source code using latent dirichlet
+  allocation.
+\newblock Em {\em Proceedings of the 1st India software engineering
+  conference}, p\'{a}ginas 113--120. ACM, 2008.
+
+\bibitem[MSHZ15]{mo2015geminer}
+Wenkai Mo, Beijun Shen, Yuming He e Hao Zhong.
+\newblock Geminer: Mining social and programming behaviors to identify experts
+  in github.
+\newblock Em {\em Proceedings of the 7th Asia-Pacific Symposium on
+  Internetware}, p\'{a}ginas 93--101. ACM, 2015.
 
 \bibitem[MSM{\etalchar{+}}16]{morales2016finding}
 Rodrigo Morales, Aminata Sabane, Pooya Musavi, Foutse Khomh, Francisco Chicano
@@ -296,6 +416,14 @@ Rodrigo Morales, Aminata Sabane, Pooya Musavi, Foutse Khomh, Francisco Chicano
 Benjamin Muschko.
 \newblock {\em Gradle in action}.
 \newblock Manning, 2014.
+
+\bibitem[MZ14]{munger2014automatically}
+Tyler Munger e Jiabin Zhao.
+\newblock Automatically identifying experts in on-line support forums using
+  social interactions and post content.
+\newblock Em {\em Proceedings of the 2014 IEEE/ACM International Conference on
+  Advances in Social Networks Analysis and Mining}, p\'{a}ginas 930--935. IEEE
+  Press, 2014.
 
 \bibitem[OCBZ09]{olbrich2009evolution}
 Steffen Olbrich, Daniela~S Cruzes, Victor Basili e Nico Zazworka.
@@ -311,15 +439,39 @@ Frederico Oliveira, Alfredo Goldman e Viviane Santos.
 \newblock Em {\em Agile Conference (AGILE), 2015}, p\'{a}ginas 50--59. IEEE,
   2015.
 
+\bibitem[Ott09]{otte2009version}
+Stefan Otte.
+\newblock Version control systems.
+\newblock {\em Computer Systems and Telematics}, p\'{a}ginas 11--13, 2009.
+
 \bibitem[P{\etalchar{+}}15]{poliakov2015systematic}
 Dmitrii Poliakov et~al.
 \newblock A systematic mapping study on technical debt definition.
 \newblock 2015.
 
+\bibitem[Par92]{park1992software}
+Robert~E Park.
+\newblock Software size measurement: A framework for counting source
+  statements.
+\newblock Relat{\'o}rio t{\'e}cnico, Carnegie-Mellon Univ Pittsburgh Pa
+  Software Engineering Inst, 1992.
+
 \bibitem[PBMW99]{page1999pagerank}
 Lawrence Page, Sergey Brin, Rajeev Motwani e Terry Winograd.
 \newblock The pagerank citation ranking: Bringing order to the web.
 \newblock Relat{\'o}rio t{\'e}cnico, Stanford InfoLab, 1999.
+
+\bibitem[PCSF08]{pilato2008version}
+C~Michael Pilato, Ben Collins-Sussman e Brian~W Fitzpatrick.
+\newblock {\em Version Control with Subversion: Next Generation Open Source
+  Version Control}.
+\newblock " O'Reilly Media, Inc.", 2008.
+
+\bibitem[Pet11]{petersen2011measuring}
+Kai Petersen.
+\newblock Measuring and predicting software productivity: A systematic map and
+  review.
+\newblock {\em Information and Software Technology}, 53(4):317--343, 2011.
 
 \bibitem[Pow13]{power2013understanding}
 Ken Power.
@@ -328,6 +480,32 @@ Ken Power.
   as a portfolio of real options.
 \newblock Em {\em Managing Technical Debt (MTD), 2013 4th International
   Workshop on}, p\'{a}ginas 28--31. IEEE, 2013.
+
+\bibitem[RD02]{richardson2002intelligent}
+Matthew Richardson e Pedro Domingos.
+\newblock The intelligent surfer: Probabilistic combination of link and content
+  information in pagerank.
+\newblock Em {\em Advances in neural information processing systems},
+  p\'{a}ginas 1441--1448, 2002.
+
+\bibitem[Ros97]{rosenberg1997some}
+Jarrett Rosenberg.
+\newblock Some misconceptions about lines of code.
+\newblock Em {\em Proceedings Fourth International Software Metrics Symposium},
+  p\'{a}ginas 137--142. IEEE, 1997.
+
+\bibitem[RPFD14]{ray2014large}
+Baishakhi Ray, Daryl Posnett, Vladimir Filkov e Premkumar Devanbu.
+\newblock A large scale study of programming languages and code quality in
+  github.
+\newblock Em {\em Proceedings of the 22nd ACM SIGSOFT International Symposium
+  on Foundations of Software Engineering}, p\'{a}ginas 155--165. ACM, 2014.
+
+\bibitem[RR13]{robbes2013using}
+Romain Robbes e David R{\"o}thlisberger.
+\newblock Using developer interaction data to compare expertise metrics.
+\newblock Em {\em Proceedings of the 10th Working Conference on Mining Software
+  Repositories}, p\'{a}ginas 297--300. IEEE Press, 2013.
 
 \bibitem[Run06]{runeson2006survey}
 Per Runeson.
@@ -347,6 +525,11 @@ Klaus Schmid.
 \newblock Em {\em Proceedings of the 4th International Workshop on Managing
   Technical Debt}, p\'{a}ginas 63--66. IEEE Press, 2013.
 
+\bibitem[SFP12]{sudhakar2012measuring}
+Goparaju Sudhakar, Ayesha Farooq e Sanghamitra Patnaik.
+\newblock Measuring productivity of software development teams.
+\newblock 2012.
+
 \bibitem[SG11]{seaman2011measuring}
 Carolyn Seaman e Yuepu Guo.
 \newblock Measuring and monitoring technical debt.
@@ -357,6 +540,19 @@ Michael Smit, Barry Gergel, H~James Hoover e Eleni Stroulia.
 \newblock Code convention adherence in evolving software.
 \newblock Em {\em Software Maintenance (ICSM), 2011 27th IEEE International
   Conference on}, p\'{a}ginas 504--507. IEEE, 2011.
+
+\bibitem[SL11]{shira2011expert}
+Elben Shira e Matthew Lease.
+\newblock Expert search on code repositories.
+\newblock Relat{\'o}rio t{\'e}cnico, Technical Report TR-11-42, Department of
+  Computer Science, University of~…, 2011.
+
+\bibitem[SPK13]{san2013multiple}
+Jose San~Pedro e Alexandros Karatzoglou.
+\newblock Multiple outcome supervised latent dirichlet allocation for expert
+  discovery in online forums.
+\newblock Em {\em Workshops at the Twenty-Seventh AAAI Conference on Artificial
+  Intelligence}, 2013.
 
 \bibitem[SSFM07]{santos2007teoria}
 Jos{\'e} Luiz~dos SANTOS, Paulo SCHMIDT, Luciane~Alves FERNANDES e
@@ -377,11 +573,30 @@ Chris Sterling.
 \newblock {\em Managing software debt: building for inevitable change}.
 \newblock Addison-Wesley Professional, 2010.
 
+\bibitem[TLB{\etalchar{+}}09]{tan2009productivity}
+Thomas Tan, Qi~Li, Barry Boehm, Ye~Yang, Mei He e Ramin Moazeni.
+\newblock Productivity trends in incremental and iterative software
+  development.
+\newblock Em {\em 2009 3rd International Symposium on Empirical Software
+  Engineering and Measurement}, p\'{a}ginas 1--10. IEEE, 2009.
+
+\bibitem[TRP09]{tian2009using}
+Kai Tian, Meghan Revelle e Denys Poshyvanyk.
+\newblock Using latent dirichlet allocation for automatic categorization of
+  software.
+\newblock Em {\em 2009 6th IEEE International Working Conference on Mining
+  Software Repositories}, p\'{a}ginas 163--166. IEEE, 2009.
+
 \bibitem[VEM02]{van2002java}
 Eva Van~Emden e Leon Moonen.
 \newblock Java quality assurance by detecting code smells.
 \newblock Em {\em Reverse Engineering, 2002. Proceedings. Ninth Working
   Conference on}, p\'{a}ginas 97--106. IEEE, 2002.
+
+\bibitem[Ves06]{vesperman2006essential}
+Jennifer Vesperman.
+\newblock {\em Essential CVS: Version Control and Source Code Management}.
+\newblock " O'Reilly Media, Inc.", 2006.
 
 \bibitem[Wan14]{wang2014software}
 Hui Wang.
@@ -406,6 +621,11 @@ Claes Wohlin, Martin H{\"o}st e Kennet Henningsson.
 \newblock Empirical research methods in software engineering.
 \newblock Em {\em Empirical methods and studies in software engineering},
   p\'{a}ginas 7--23. Springer, 2003.
+
+\bibitem[WR18]{wagner2018systematic}
+Stefan Wagner e Melanie Ruhe.
+\newblock A systematic review of productivity factors in software development.
+\newblock {\em arXiv preprint arXiv:1801.06475}, 2018.
 
 \bibitem[WRS{\etalchar{+}}15]{wiese2015predicting}
 Igor~Scaliante Wiese, Reginaldo R{\'e}, Igor Steinmacher, Rodrigo~Takashi

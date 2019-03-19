@@ -26,4 +26,58 @@
 \BOOKMARK [2][]{subsection.2.2.1}{Minera\347\343o de reposit\363rios}{section.2.2}% 26
 \BOOKMARK [1][]{section.2.3}{O estudo de caso}{chapter.2}% 27
 \BOOKMARK [2][]{subsection.2.3.1}{Etapas do estudo de caso}{section.2.3}% 28
-\BOOKMARK [0][]{appendix*.29}{Refer\352ncias Bibliogr\341ficas}{}% 29
+\BOOKMARK [0][]{chapter.3}{O modelo de estima\347\343o do juros da d\355vida t\351cnica}{}% 29
+\BOOKMARK [1][]{section.3.1}{Introdu\347\343o}{chapter.3}% 30
+\BOOKMARK [1][]{section.3.2}{Estima\347\343o da produtividade em projetos de software}{chapter.3}% 31
+\BOOKMARK [1][]{section.3.3}{O modelo de estima\347\343o}{chapter.3}% 32
+\BOOKMARK [1][]{section.3.4}{O modelo abstrato de estima\347\343o dos juros da d\355vida t\351cnica}{chapter.3}% 33
+\BOOKMARK [1][]{section.3.5}{Os modelos concretos de estima\347\343o dos juros da d\355vida t\351cnica}{chapter.3}% 34
+\BOOKMARK [2][]{subsection.3.5.1}{Sele\347\343o das m\351tricas que representam as entradas do processo}{section.3.5}% 35
+\BOOKMARK [2][]{subsection.3.5.2}{Sele\347\343o das m\351tricas que representam as sa\355das do processo}{section.3.5}% 36
+\BOOKMARK [2][]{subsection.3.5.3}{Defini\347\343o do m\351todo de agrupamento dos projetos semelhantes }{section.3.5}% 37
+\BOOKMARK [2][]{subsection.3.5.4}{Defini\347\343o do m\351todo de particionamento dos grupos de projetos}{section.3.5}% 38
+\BOOKMARK [1][]{section.3.6}{O modelo de estima\347\343o dos juros em projetos de software livre}{chapter.3}% 39
+\BOOKMARK [1][]{section.3.7}{Entradas}{chapter.3}% 40
+\BOOKMARK [2][]{subsection.3.7.1}{Qualidade da colabora\347\343o}{section.3.7}% 41
+\BOOKMARK [2][]{subsection.3.7.2}{Assiduidade dos colaboradores}{section.3.7}% 42
+\BOOKMARK [2][]{subsection.3.7.3}{\315ndice de colabora\347\343o}{section.3.7}% 43
+\BOOKMARK [1][]{section.3.8}{Sa\355das}{chapter.3}% 44
+\BOOKMARK [2][]{subsection.3.8.1}{Linhas de c\363digo}{section.3.8}% 45
+\BOOKMARK [2][]{subsection.3.8.2}{Pull Requests}{section.3.8}% 46
+\BOOKMARK [2][]{subsection.3.8.3}{Popularidade}{section.3.8}% 47
+\BOOKMARK [1][]{section.3.9}{M\351todo de agrupamento dos projetos semelhantes}{chapter.3}% 48
+\BOOKMARK [1][]{section.3.10}{M\351todo de particionamento dos grupos de projetos}{chapter.3}% 49
+\BOOKMARK [0][]{chapter.4}{Estudo de caso}{}% 50
+\BOOKMARK [1][]{section.4.1}{Introdu\347\343o}{chapter.4}% 51
+\BOOKMARK [1][]{section.4.2}{O reposit\363rio de software}{chapter.4}% 52
+\BOOKMARK [2][]{subsection.4.2.1}{GitHub}{section.4.2}% 53
+\BOOKMARK [2][]{subsection.4.2.2}{GHTorrent}{section.4.2}% 54
+\BOOKMARK [1][]{section.4.3}{Ferramenta de apoio: GitResearch}{chapter.4}% 55
+\BOOKMARK [2][]{subsection.4.3.1}{Introdu\347\343o}{section.4.3}% 56
+\BOOKMARK [2][]{subsection.4.3.2}{Spring Batch}{section.4.3}% 57
+\BOOKMARK [2][]{subsection.4.3.3}{Arquitetura}{section.4.3}% 58
+\BOOKMARK [2][]{subsection.4.3.4}{Etapas}{section.4.3}% 59
+\BOOKMARK [1][]{section.4.4}{Etapas do estudo de caso}{chapter.4}% 60
+\BOOKMARK [2][]{subsection.4.4.1}{Piloto}{section.4.4}% 61
+\BOOKMARK [2][]{subsection.4.4.2}{Sele\347\343o dos projetos}{section.4.4}% 62
+\BOOKMARK [1][]{section.4.5}{Agrupamento dos projetos}{chapter.4}% 63
+\BOOKMARK [1][]{section.4.6}{Extra\347\343o dos dados}{chapter.4}% 64
+\BOOKMARK [1][]{section.4.7}{Divis\343o temporal do c\363digo}{chapter.4}% 65
+\BOOKMARK [2][]{subsection.4.7.1}{O SonarQube}{section.4.7}% 66
+\BOOKMARK [1][]{section.4.8}{C\341lculo das vari\341veis de entrada do modelo}{chapter.4}% 67
+\BOOKMARK [2][]{subsection.4.8.1}{Colabora\347\343o}{section.4.8}% 68
+\BOOKMARK [2][]{subsection.4.8.2}{Assiduidade}{section.4.8}% 69
+\BOOKMARK [1][]{section.4.9}{C\341lculo das vari\341veis de sa\355da do modelo}{chapter.4}% 70
+\BOOKMARK [1][]{section.4.10}{Dados obtidos}{chapter.4}% 71
+\BOOKMARK [2][]{subsection.4.10.1}{An\341lise explorat\363ria dos dados}{section.4.10}% 72
+\BOOKMARK [1][]{section.4.11}{Conclus\343o}{chapter.4}% 73
+\BOOKMARK [0][]{chapter.5}{Resultados e discuss\343o}{}% 74
+\BOOKMARK [1][]{section.5.1}{Contribui\347\365es}{chapter.5}% 75
+\BOOKMARK [1][]{section.5.2}{Respostas as quest\365es de pesquisa}{chapter.5}% 76
+\BOOKMARK [0][]{chapter.6}{Amea\347as \340 validade}{}% 77
+\BOOKMARK [1][]{section.6.1}{Escala}{chapter.6}% 78
+\BOOKMARK [1][]{section.6.2}{Avalia\347\343o emp\355rica das m\351tricas utilizadas}{chapter.6}% 79
+\BOOKMARK [1][]{section.6.3}{Coisas a serem feitas caso haja tempo dispon\355vel}{chapter.6}% 80
+\BOOKMARK [0][]{chapter.7}{Conclus\343o}{}% 81
+\BOOKMARK [1][]{section.7.1}{Trabalhos futuros}{chapter.7}% 82
+\BOOKMARK [0][]{appendix*.36}{Refer\352ncias Bibliogr\341ficas}{}% 83

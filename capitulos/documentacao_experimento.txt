@@ -1,9 +1,10 @@
-\chapter{An√°lise de similaridade entre projetos de Software}
+\chapter{An·lise de similaridade entre projetos de Software}
 
-Candidatos a crit√©rio de sele√ß√£o dos projetos:
+Candidatos a critÈrio de seleÁ„o dos projetos:
 
+\begin{lstlisting}
 
-select id,description from projects  where language = 'Java' and forked_from is null and deleted =0 and not (description= "" or description is null)
+select id,description from projects  where language = Java and forked_from is null and deleted =0 and not (description=  or description is null)
 
 and description not like '%Sample%'
 and description not like '%Abandoned%'
@@ -18,21 +19,21 @@ and description not like '%Android%'
 result: '934679'
 
 
-Para realizar a verifica√ß√£o da linguagem da descri√ß√£o foi usado o pacote langdetect do Python.
+Para realizar a verificaÁ„o da linguagem da descricao foi usado o pacote langdetect do Python.
 
-O n√∫mero de descri√ß√µes em ingles foi de 591754.
+O numero de descriÁıes em ingles foi de 591754.
 
 Depois foram obtidas as quantidades de commits e autores de cada projeto com a seguinte query:
 
 select project_id,count(distinct author_id) as number_author,count(*) as number_commits ,max(created_at) as last_commit_date from commits where  project_id
 
 
-Desvio padr√£o: '5.739444129709218'
+Desvio padr„o: '5.739444129709218'
 Media: '1.7724'
 
 
 
-Sele√ß√£o dos projetos com uma quantidade m√≠nima de commits e autores.
+SeleÁ„o dos projetos com uma quantidade mÌnima de commits e autores.
 SELECT 
    count(*)
 FROM
@@ -44,7 +45,7 @@ WHERE
 Resultado: '2845'
 
 
-Alguns projetos foram excluidos por quest√µes operacionais. Eles possuiam arquivos com nomes muito grandes que n√£o podiam ser armazenados no sistema operacional sendo utilizado.
+Alguns projetos foram excluidos por questıes operacionais. Eles possuiam arquivos com nomes muito grandes que n„o podiam ser armazenados no sistema operacional sendo utilizado.
 
 5465	https://github.com/isenseDev/iSENSE-Hardware
 11009	https://github.com/Cryptite/The-Artifact
@@ -979,7 +980,7 @@ Projetos excluidos por terem um README muito pequeno
 77209423
 
 
-Projetos removidos por n√£o conseguir rodar o SONAR:
+Projetos removidos por n„o conseguir rodar o SONAR:
 
 
 80653
@@ -1060,12 +1061,12 @@ insert into AUTORES_CORELACIONADOS
 group by follower_id
 )
 
-TOTAL DE Usu√°rios corelacionados
+TOTAL DE Usu·rios corelacionados
 
 '''1936855'''
 
 
-Query para obter rela√ß√µes dos usu√°rios selecionados
+Query para obter relaÁıes dos usu·rios selecionados
 
 select follower_id,user_id as followed_id INTO OUTFILE 'follow_followed.csv'  FIELDS TERMINATED BY ',' OPTIONALLY ENCLOSED BY '"'
   LINES TERMINATED BY '\n' from followers where follower_id in (select user_id from AUTORES_CORELACIONADOS) 
@@ -1075,12 +1076,12 @@ select follower_id,user_id as followed_id INTO OUTFILE 'follow_followed.csv'  FI
 \\ EXEMPLOS DO PAGE RANK
 
 Exemplo 1 :  Sem ciclos
-Descric√£o:  (Fa√ßa o gr√°fico)
+Descric„o:  (FaÁa o gr·fico)
 
-10 n√≥s. Todos apontam para o 5 exceto 10,7,4
+10 nÛs. Todos apontam para o 5 exceto 10,7,4
 5 Aponta para o 4.
 
-O 4 √© o melhor pois o 5 aponta pra ele e tem o pagerank dele pr√≥prio.
+O 4 È o melhor pois o 5 aponta pra ele e tem o pagerank dele prÛprio.
 
 1/0.01363636363636364
 2/0.01363636363636364
@@ -1115,13 +1116,13 @@ Resultado:
 9/0.0909090909090909
 10/0.0909090909090909
 
-O dumpFactor precisa ser menor quando os dados s√£o pequenos
+O dumpFactor precisa ser menor quando os dados s„o pequenos
 
 
 
-T√âCNICA DE CONTINGENCIA:
+T…CNICA DE CONTINGENCIA:
 
-Usei os valores mais antigos caso houvesse e os mais recentes caso contr√°rio.
+Usei os valores mais antigos caso houvesse e os mais recentes caso contr·rio.
 
 
 
@@ -1167,39 +1168,39 @@ select 39778545 as user_id,sum(pagerank*(quantidade_projetos/colab_outdegree)) a
 
 PROBLEMAS NA CLASSIFICACAO
 
- - Muitas descri√ß√µes n√£o falam sobre o software e suas funcionalidades. S√£o apenas descri√ß√£o t√©cnicas sobre compila√ß√£o ou outro aspecto.
-  - Eu poderia usar alguma das outras t√©cnicas de classifica√ß√£o mas, isso demandaria muito c√≥digo. O melhor talvez seja categorizar manualmente esses projetos.
-  - Poderia ser usado um sistema de ML para determinar se uma descri√ß√£o explica ou n√£o um software.
-  - Projetos muito conhecidos normalmente n√£o tem uma descri√ß√£o.
+ - Muitas descriÁıes n„o falam sobre o software e suas funcionalidades. S„o apenas descriÁ„o tÈcnicas sobre compilaÁ„o ou outro aspecto.
+  - Eu poderia usar alguma das outras tÈcnicas de classificaÁ„o mas, isso demandaria muito cÛdigo. O melhor talvez seja categorizar manualmente esses projetos.
+  - Poderia ser usado um sistema de ML para determinar se uma descriÁ„o explica ou n„o um software.
+  - Projetos muito conhecidos normalmente n„o tem uma descriÁ„o.
 
 
 
 
-
+\end{lstlisting}
 
 \begin{itemize}
-\item Projetos com descri√ß√£o em ingl√™s.
-\item Projetos Java (JVM). N√£o foram inclu√≠dos projetos para android ART.
-\item Projetos com um n√∫mero m√≠nimo de commits. Esse n√∫mero pode ser calculado por meio dos percentils. 
-\item Projetos que sejam efetivamente projetos de software. Existem muitos reposit√≥rios no github que s√£o exemplos, testes  e etc. Essa filtragem pode ser feita pela aplica√ß√£o de heur√≠sticas usando a descri√ß√£o do projeto. Al√©m disso, pode ser realizada uma filtragem manual. Projetos que n√£o tem uma descri√ß√£o, ser√£o descartados.
-\item N√∫mero m√≠nimo de colaboradores.
-\item Projetos que n√£o s√£o forks de outros projetos. Isso envitar√° a compara√ß√£o de projetos id√™nticos. 
-\item Projetos que n√£o foram removidos do Github.
+\item Projetos com descriÁ„o em inglÍs.
+\item Projetos Java (JVM). N„o foram incluÌdos projetos para android ART.
+\item Projetos com um n˙mero mÌnimo de commits. Esse n˙mero pode ser calculado por meio dos percentils. 
+\item Projetos que sejam efetivamente projetos de software. Existem muitos repositÛrios no github que s„o exemplos, testes  e etc. Essa filtragem pode ser feita pela aplicaÁ„o de heurÌsticas usando a descriÁ„o do projeto. AlÈm disso, pode ser realizada uma filtragem manual. Projetos que n„o tem uma descriÁ„o, ser„o descartados.
+\item N˙mero mÌnimo de colaboradores.
+\item Projetos que n„o s„o forks de outros projetos. Isso envitar· a comparaÁ„o de projetos idÍnticos. 
+\item Projetos que n„o foram removidos do Github.
 \item Projetos a muito tempo inativos.
-\item Projetos com um n√∫mero m√≠nimo de estrelas. Podem ser usados percentils.
+\item Projetos com um n˙mero mÌnimo de estrelas. Podem ser usados percentils.
 
 
 \end{itemize}
 
-Candidatos a crit√©rio de similaridade:
+Candidatos a critÈrio de similaridade:
 
 \begin{itemize}
-\item Dom√≠nio da aplica√ß√£o ou tipo de projeto.
+\item DomÌnio da aplicaÁ„o ou tipo de projeto.
 \item Tempo do projeto
 \end{itemize}
 
 \label{capitulo:similaridade}
 
-Eu posso criar uma se√ß√£o na an√°lise explorat√≥ria para investigar algumas anomalias nos dados. Exemplos:
-- Quantidade muito alta de d√≠vida t√©cnica.
-- Diminui√ß√£o na quantidade  de c√≥digo.
+Eu posso criar uma seÁ„o na an·lise exploratÛria para investigar algumas anomalias nos dados. Exemplos:
+- Quantidade muito alta de dÌvida tÈcnica.
+- DiminuiÁ„o na quantidade  de cÛdigo.
