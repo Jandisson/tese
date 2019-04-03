@@ -63,39 +63,40 @@
 \contentsline {chapter}{\numberline {4}Estudo de caso}{59}{chapter.4}
 \contentsline {section}{\numberline {4.1}Introdu\IeC {\c c}\IeC {\~a}o}{59}{section.4.1}
 \contentsline {section}{\numberline {4.2}O reposit\IeC {\'o}rio de software}{59}{section.4.2}
-\contentsline {subsubsection}{Controle de vers\IeC {\~o}es utilizando o protocolo GIT }{60}{section*.32}
-\contentsline {subsection}{\numberline {4.2.1}GitHub}{60}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}GHTorrent}{61}{subsection.4.2.2}
-\contentsline {section}{\numberline {4.3}Ferramenta de apoio: GitResearch}{61}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Introdu\IeC {\c c}\IeC {\~a}o}{61}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Spring Batch}{61}{subsection.4.3.2}
-\contentsline {subsection}{\numberline {4.3.3}Arquitetura}{61}{subsection.4.3.3}
-\contentsline {subsection}{\numberline {4.3.4}Etapas}{61}{subsection.4.3.4}
-\contentsline {section}{\numberline {4.4}Etapas do estudo de caso}{61}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Piloto}{61}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}Sele\IeC {\c c}\IeC {\~a}o dos projetos}{62}{subsection.4.4.2}
-\contentsline {section}{\numberline {4.5}Agrupamento dos projetos}{62}{section.4.5}
-\contentsline {subsubsection}{LDA}{62}{section*.33}
-\contentsline {section}{\numberline {4.6}Extra\IeC {\c c}\IeC {\~a}o dos dados}{63}{section.4.6}
-\contentsline {section}{\numberline {4.7}Divis\IeC {\~a}o temporal do c\IeC {\'o}digo}{63}{section.4.7}
-\contentsline {subsection}{\numberline {4.7.1}O SonarQube}{63}{subsection.4.7.1}
-\contentsline {subsubsection}{C\IeC {\'a}lculo das linhas de c\IeC {\'o}digo}{63}{section*.34}
-\contentsline {subsubsection}{C\IeC {\'a}lculo da d\IeC {\'\i }vida t\IeC {\'e}cnica}{63}{section*.35}
-\contentsline {section}{\numberline {4.8}C\IeC {\'a}lculo das vari\IeC {\'a}veis de entrada do modelo}{63}{section.4.8}
-\contentsline {subsection}{\numberline {4.8.1}Colabora\IeC {\c c}\IeC {\~a}o}{63}{subsection.4.8.1}
-\contentsline {subsection}{\numberline {4.8.2}Assiduidade}{63}{subsection.4.8.2}
-\contentsline {section}{\numberline {4.9}C\IeC {\'a}lculo das vari\IeC {\'a}veis de sa\IeC {\'\i }da do modelo}{64}{section.4.9}
-\contentsline {section}{\numberline {4.10}Dados obtidos}{64}{section.4.10}
-\contentsline {subsection}{\numberline {4.10.1}An\IeC {\'a}lise explorat\IeC {\'o}ria dos dados}{64}{subsection.4.10.1}
-\contentsline {section}{\numberline {4.11}Conclus\IeC {\~a}o}{64}{section.4.11}
-\contentsline {chapter}{\numberline {5}Resultados e discuss\IeC {\~a}o}{65}{chapter.5}
-\contentsline {section}{\numberline {5.1}Contribui\IeC {\c c}\IeC {\~o}es}{65}{section.5.1}
-\contentsline {section}{\numberline {5.2}Respostas as quest\IeC {\~o}es de pesquisa}{65}{section.5.2}
-\contentsline {chapter}{\numberline {6}Amea\IeC {\c c}as \IeC {\`a} validade}{67}{chapter.6}
-\contentsline {section}{\numberline {6.1}Escala}{68}{section.6.1}
-\contentsline {section}{\numberline {6.2}Avalia\IeC {\c c}\IeC {\~a}o emp\IeC {\'\i }rica das m\IeC {\'e}tricas utilizadas}{68}{section.6.2}
-\contentsline {section}{\numberline {6.3}Coisas a serem feitas caso haja tempo dispon\IeC {\'\i }vel}{68}{section.6.3}
-\contentsline {chapter}{\numberline {7}Conclus\IeC {\~a}o}{69}{chapter.7}
-\contentsline {section}{\numberline {7.1}Trabalhos futuros}{69}{section.7.1}
-\contentsline {chapter}{Refer\^encias Bibliogr\'aficas}{71}{appendix*.36}
+\contentsline {subsection}{\numberline {4.2.1}Controle de vers\IeC {\~o}es utilizando o Git }{60}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}GitHub}{63}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}GHTorrent}{65}{subsection.4.2.3}
+\contentsline {section}{\numberline {4.3}Ferramenta de apoio: GitResearch}{66}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Arquitetura}{67}{subsection.4.3.1}
+\contentsline {section}{\numberline {4.4}Etapas do estudo de caso}{70}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Sele\IeC {\c c}\IeC {\~a}o dos projetos}{72}{subsection.4.4.1}
+\contentsline {section}{\numberline {4.5}Agrupamento dos projetos}{76}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}LDA}{76}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}A aplica\IeC {\c c}\IeC {\~a}o do LDA}{77}{subsection.4.5.2}
+\contentsline {subsection}{\numberline {4.5.3}Resultado do LDA}{78}{subsection.4.5.3}
+\contentsline {section}{\numberline {4.6}Extra\IeC {\c c}\IeC {\~a}o dos dados}{82}{section.4.6}
+\contentsline {subsection}{\numberline {4.6.1}O SonarQube}{82}{subsection.4.6.1}
+\contentsline {subsection}{\numberline {4.6.2}Medi\IeC {\c c}\IeC {\~a}o da d\IeC {\'\i }vida t\IeC {\'e}cnica}{85}{subsection.4.6.2}
+\contentsline {subsection}{\numberline {4.6.3}Limita\IeC {\c c}\IeC {\~o}es na medi\IeC {\c c}\IeC {\~a}o da d\IeC {\'\i }vida t\IeC {\'e}cnica}{88}{subsection.4.6.3}
+\contentsline {subsection}{\numberline {4.6.4}Divis\IeC {\~a}o temporal do c\IeC {\'o}digo}{89}{subsection.4.6.4}
+\contentsline {section}{\numberline {4.7}C\IeC {\'a}lculo das vari\IeC {\'a}veis de entrada do modelo}{91}{section.4.7}
+\contentsline {subsection}{\numberline {4.7.1}Qualidade de colabora\IeC {\c c}\IeC {\~a}o}{92}{subsection.4.7.1}
+\contentsline {subsection}{\numberline {4.7.2}Assiduidade}{94}{subsection.4.7.2}
+\contentsline {section}{\numberline {4.8}C\IeC {\'a}lculo das vari\IeC {\'a}veis de sa\IeC {\'\i }da do modelo}{94}{section.4.8}
+\contentsline {section}{\numberline {4.9}Dados obtidos}{94}{section.4.9}
+\contentsline {subsection}{\numberline {4.9.1}An\IeC {\'a}lise explorat\IeC {\'o}ria dos dados}{94}{subsection.4.9.1}
+\contentsline {section}{\numberline {4.10}Conclus\IeC {\~a}o}{94}{section.4.10}
+\contentsline {chapter}{\numberline {5}Resultados e discuss\IeC {\~a}o}{95}{chapter.5}
+\contentsline {section}{\numberline {5.1}Contribui\IeC {\c c}\IeC {\~o}es}{95}{section.5.1}
+\contentsline {section}{\numberline {5.2}Respostas as quest\IeC {\~o}es de pesquisa}{95}{section.5.2}
+\contentsline {chapter}{\numberline {6}Amea\IeC {\c c}as \IeC {\`a} validade}{97}{chapter.6}
+\contentsline {section}{\numberline {6.1}Escala}{98}{section.6.1}
+\contentsline {section}{\numberline {6.2}Avalia\IeC {\c c}\IeC {\~a}o emp\IeC {\'\i }rica das m\IeC {\'e}tricas utilizadas}{98}{section.6.2}
+\contentsline {section}{\numberline {6.3}Coisas a serem feitas caso haja tempo dispon\IeC {\'\i }vel}{98}{section.6.3}
+\contentsline {section}{\numberline {6.4}Imprecis\IeC {\~a}o da popularidade}{98}{section.6.4}
+\contentsline {chapter}{\numberline {7}Conclus\IeC {\~a}o}{101}{chapter.7}
+\contentsline {section}{\numberline {7.1}Trabalhos futuros}{101}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}Popularidade vs D\IeC {\'\i }vida T\IeC {\'e}cnica}{101}{subsection.7.1.1}
+\contentsline {subsection}{\numberline {7.1.2}Artigo CBI}{101}{subsection.7.1.2}
+\contentsline {chapter}{Refer\^encias Bibliogr\'aficas}{103}{appendix*.48}
 \contentsfinish 

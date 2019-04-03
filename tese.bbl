@@ -19,6 +19,11 @@ Sujoy Acharya.
 \newblock {\em Mastering Unit Testing Using Mockito and JUnit}.
 \newblock Packt Publishing Ltd, 2014.
 
+\bibitem[AMP{\etalchar{+}}07]{ayewah2007using}
+Nathaniel Ayewah, J~David Morgenthaler, John Penix, William Pugh e YuQian Zhou.
+\newblock Using findbugs on production software.
+\newblock 2007.
+
 \bibitem[AQ10]{al2010quality}
 Rafa~E Al-Qutaish.
 \newblock Quality models in software engineering literature: an analytical and
@@ -31,6 +36,11 @@ Zahra Shakeri~Hossein Abad e Guenther Ruhe.
   engineering.
 \newblock Em {\em 2015 IEEE 23rd International Requirements Engineering
   Conference (RE)}, p\'{a}ginas 230--235. IEEE, 2015.
+
+\bibitem[Ara12]{arapidis2012sonar}
+Charalampos Arapidis.
+\newblock {\em Sonar Code Quality Testing Essentials}.
+\newblock Packt Publishing Ltd, 2012.
 
 \bibitem[BCG{\etalchar{+}}10]{brown2010managing}
 Nanette Brown, Yuanfang Cai, Yuepu Guo, Rick Kazman, Miryung Kim, Philippe
@@ -69,6 +79,13 @@ Andrea Oliveira~Soares Barreto e Ana~Regina Rocha.
   (QUATIC), 2010 Seventh International Conference on the}, p\'{a}ginas
   441--446. IEEE, 2010.
 
+\bibitem[BRB{\etalchar{+}}09]{bird2009promises}
+Christian Bird, Peter~C Rigby, Earl~T Barr, David~J Hamilton, Daniel~M German e
+  Prem Devanbu.
+\newblock The promises and perils of mining git.
+\newblock Em {\em 2009 6th IEEE International Working Conference on Mining
+  Software Repositories}, p\'{a}ginas 1--10. IEEE, 2009.
+
 \bibitem[BTP{\etalchar{+}}12]{bhatt2012analysis}
 Kaushal Bhatt, Vinit Tarey, Pushpraj Patel, Kaushal~Bhatt Mits e Datana Ujjain.
 \newblock Analysis of source lines of code (sloc) metric.
@@ -81,6 +98,12 @@ Alexander Chatzigeorgiou, Apostolos Ampatzoglou, Areti Ampatzoglou e Theodoros
 \newblock Estimating the breaking point for technical debt.
 \newblock Em {\em Managing Technical Debt (MTD), 2015 IEEE 7th International
   Workshop on}, p\'{a}ginas 53--56. IEEE, 2015.
+
+\bibitem[Cam17]{campbell2017cognitive}
+G~Ann Campbell.
+\newblock Cognitive complexity-a new way of measuring understandability.
+\newblock Relat{\'o}rio t{\'e}cnico, Technical Report. SonarSource SA,
+  Switzerland., 2017.
 
 \bibitem[Chr96]{chriss1996black}
 Neil Chriss.
@@ -104,6 +127,11 @@ Bill Curtis, Jay Sappidi e Alexandra Szynkarski.
 \newblock Estimating the size, cost, and types of technical debt.
 \newblock Em {\em Proceedings of the Third International Workshop on Managing
   Technical Debt}, p\'{a}ginas 49--53. IEEE Press, 2012.
+
+\bibitem[CTGB11]{cogoluegnes2011spring}
+Arnaud Cogoluegnes, Thierry Templier, Gary Gregory e Olivier Bazoud.
+\newblock {\em Spring Batch in Action}.
+\newblock Manning Publications Co., 2011.
 
 \bibitem[CTNH12]{chen2012explaining}
 Tse-Hsun Chen, Stephen~W Thomas, Meiyappan Nagappan e Ahmed~E Hassan.
@@ -129,11 +157,25 @@ Paulo Andr{\'e}~Faria de~Freitas.
   reliability.
 \newblock 2015.
 
+\bibitem[dJdM17]{de2017technical}
+Jandisson~Soares de~Jesus e Ana Cristina~Vieira de~Melo.
+\newblock Technical debt and the software project characteristics. a
+  repository-based exploratory analysis.
+\newblock Em {\em 2017 IEEE 19th Conference on Business Informatics (CBI)},
+  volume~1, p\'{a}ginas 444--453. IEEE, 2017.
+
 \bibitem[dOBdAFT15]{de2015learning}
 M{\'a}rcio de~Oliveira~Barros, F{\'a}bio de~Almeida~Farzat e Guilherme~Horta
   Travassos.
 \newblock Learning from optimization: A case study with apache ant.
 \newblock {\em Information and Software Technology}, 57:684--704, 2015.
+
+\bibitem[DSTH12]{dabbish2012social}
+Laura Dabbish, Colleen Stuart, Jason Tsay e Jim Herbsleb.
+\newblock Social coding in github: transparency and collaboration in an open
+  software repository.
+\newblock Em {\em Proceedings of the ACM 2012 conference on computer supported
+  cooperative work}, p\'{a}ginas 1277--1286. ACM, 2012.
 
 \bibitem[EN16]{elmasri2016fundamentals}
 Ramez Elmasri e Sham Navathe.
@@ -164,6 +206,19 @@ Martin Fowler.
 \newblock {\em Refactoring: improving the design of existing code}.
 \newblock Addison-Wesley Professional, 2018.
 
+\bibitem[FRZ16a]{fontana2016technical}
+Francesca~Arcelli Fontana, Riccardo Roveda e Marco Zanoni.
+\newblock Technical debt indexes provided by tools: a preliminary discussion.
+\newblock Em {\em 2016 IEEE 8th International Workshop on Managing Technical
+  Debt (MTD)}, p\'{a}ginas 28--31. IEEE, 2016.
+
+\bibitem[FRZ16b]{fontana2016tool}
+Francesca~Arcelli Fontana, Riccardo Roveda e Marco Zanoni.
+\newblock Tool support for evaluating architectural debt of an existing system:
+  An experience report.
+\newblock Em {\em Proceedings of the 31st Annual ACM Symposium on Applied
+  Computing}, p\'{a}ginas 1347--1349. ACM, 2016.
+
 \bibitem[FSGVY15]{fernandez2015analysis}
 Carlos Fern{\'a}ndez-S{\'a}nchez, Juan Garbajosa, Carlos Vidal e Agustin Yague.
 \newblock An analysis of techniques and methods for technical debt management:
@@ -188,6 +243,12 @@ Yuepu Guo e Carolyn Seaman.
 \newblock A portfolio approach to technical debt management.
 \newblock Em {\em Proceedings of the 2nd Workshop on Managing Technical Debt},
   p\'{a}ginas 31--34. ACM, 2011.
+
+\bibitem[GS12]{gousios2012ghtorrent}
+Georgios Gousios e Diomidis Spinellis.
+\newblock Ghtorrent: Github's data from a firehose.
+\newblock Em {\em 2012 9th IEEE Working Conference on Mining Software
+  Repositories (MSR)}, p\'{a}ginas 12--21. IEEE, 2012.
 
 \bibitem[GSS16]{guo2016exploring}
 Yuepu Guo, Rodrigo~Oliveira Sp{\'\i}nola e Carolyn Seaman.
@@ -243,6 +304,11 @@ Ali Idri e Alain Abran.
 \newblock Em {\em Software Metrics Symposium, 2001. METRICS 2001. Proceedings.
   Seventh International}, p\'{a}ginas 85--96. IEEE, 2001.
 
+\bibitem[J{\etalchar{+}}11]{jivani2011comparative}
+Anjali~Ganesh Jivani et~al.
+\newblock A comparative study of stemming algorithms.
+\newblock {\em Int. J. Comp. Tech. Appl}, 2(6):1930--1938, 2011.
+
 \bibitem[JL97]{jeffery1997function}
 R~Jeffery e G~Low.
 \newblock Function points and their use.
@@ -279,6 +345,12 @@ Shinji Kawaguchi, Pankaj~K Garg, Makoto Matsushita e Katsuro Inoue.
   repositories.
 \newblock {\em Journal of Systems and Software}, 79(7):939--953, 2006.
 
+\bibitem[KKC00]{kazman2000atam}
+Rick Kazman, Mark Klein e Paul Clements.
+\newblock Atam: Method for architecture evaluation.
+\newblock Relat{\'o}rio t{\'e}cnico, Carnegie-Mellon Univ Pittsburgh PA
+  Software Engineering Inst, 2000.
+
 \bibitem[KM04]{kitchenham2004software}
 Barbara Kitchenham e Emilia Mendes.
 \newblock Software productivity measurement using multiple size measures.
@@ -313,6 +385,12 @@ Manny~M Lehman.
 \newblock Em {\em European Workshop on Software Process Technology},
   p\'{a}ginas 108--124. Springer, 1996.
 
+\bibitem[Let12]{letouzey2012sqale}
+Jean-Louis Letouzey.
+\newblock The sqale method for evaluating technical debt.
+\newblock Em {\em Proceedings of the Third International Workshop on Managing
+  Technical Debt}, p\'{a}ginas 31--36. IEEE Press, 2012.
+
 \bibitem[Lin12]{lindgren2012bridging}
 Markus Lindgren.
 \newblock Bridging the software quality gap, 2012.
@@ -342,6 +420,17 @@ Antonio Martini, Jan Bosch e Michel Chaudron.
 \newblock Em {\em Software Engineering and Advanced Applications (SEAA), 2014
   40th EUROMICRO Conference on}, p\'{a}ginas 85--92. IEEE, 2014.
 
+\bibitem[McC76]{mccabe1976complexity}
+Thomas~J McCabe.
+\newblock A complexity measure.
+\newblock {\em Software Engineering, IEEE Transactions on}, (4):308--320, 1976.
+
+\bibitem[Mei10]{mei2010research}
+LIU Yu KONG Bo~YANG Mei.
+\newblock Research on typical technologies of embedded database-berkeley db
+  java edition and apache derby.
+\newblock {\em Microcomputer Information}, 32, 2010.
+
 \bibitem[MFC00]{mackinnon2000endo}
 Tim Mackinnon, Steve Freeman e Philip Craig.
 \newblock Endo-testing: unit testing with mock objects.
@@ -359,6 +448,11 @@ Audris Mockus e James~D Herbsleb.
 \newblock Expertise browser: a quantitative approach to identifying expertise.
 \newblock Em {\em Proceedings of the 24th International Conference on Software
   Engineering. ICSE 2002}, p\'{a}ginas 503--512. IEEE, 2002.
+
+\bibitem[Min11]{minella2011pro}
+Michael Minella.
+\newblock {\em Pro Spring Batch}.
+\newblock Apress, 2011.
 
 \bibitem[MJ06]{mar2006technical}
 Kane Mar e Michael James.
@@ -389,6 +483,12 @@ Everton da~S Maldonado e Emad Shihab.
   debt.
 \newblock Em {\em Managing Technical Debt (MTD), 2015 IEEE 7th International
   Workshop on}, p\'{a}ginas 9--15. IEEE, 2015.
+
+\bibitem[MSD{\etalchar{+}}15]{martin2015batch}
+Niels Martin, Marijke Swennen, Beno{\^\i}t Depaire, Mieke Jans, An~Caris e Koen
+  Vanhoof.
+\newblock Batch processing: definition and event log identification.
+\newblock RWTH Aachen University, 2015.
 
 \bibitem[MSH08]{maskeri2008mining}
 Girish Maskeri, Santonu Sarkar e Kenneth Heafield.
@@ -488,6 +588,11 @@ Matthew Richardson e Pedro Domingos.
 \newblock Em {\em Advances in neural information processing systems},
   p\'{a}ginas 1441--1448, 2002.
 
+\bibitem[Ree00]{reese2000database}
+George Reese.
+\newblock {\em Database Programming with JDBC and JAVA}.
+\newblock " O'Reilly Media, Inc.", 2000.
+
 \bibitem[Ros97]{rosenberg1997some}
 Jarrett Rosenberg.
 \newblock Some misconceptions about lines of code.
@@ -568,10 +673,35 @@ Vallary Singh, Will Snipes e Nicholas~A Kraft.
 \newblock Em {\em Managing Technical Debt (MTD), 2014 Sixth International
   Workshop on}, p\'{a}ginas 27--30. IEEE, 2014.
 
+\bibitem[SSS14]{suryanarayana2014refactoring}
+Girish Suryanarayana, Ganesh Samarthyam e Tushar Sharma.
+\newblock {\em Refactoring for software design smells: managing technical
+  debt}.
+\newblock Morgan Kaufmann, 2014.
+
 \bibitem[Ste10]{sterling2010managing}
 Chris Sterling.
 \newblock {\em Managing software debt: building for inevitable change}.
 \newblock Addison-Wesley Professional, 2010.
+
+\bibitem[SWR12]{stochel2012value}
+Marek~G Stochel, Mariusz~R Wawrowski e Magdalena Rabiej.
+\newblock Value-based technical debt model and its application.
+\newblock Em {\em ICSEA 2012, The Seventh International Conference on Software
+  Engineering Advances}, 2012.
+
+\bibitem[TBLJ13]{thung2013network}
+Ferdian Thung, Tegawende~F Bissyande, David Lo e Lingxiao Jiang.
+\newblock Network structure of social coding in github.
+\newblock Em {\em 2013 17th European Conference on Software Maintenance and
+  Reengineering}, p\'{a}ginas 323--326. IEEE, 2013.
+
+\bibitem[TDH14]{tsay2014influence}
+Jason Tsay, Laura Dabbish e James Herbsleb.
+\newblock Influence of social and technical factors for evaluating contribution
+  in github.
+\newblock Em {\em Proceedings of the 36th international conference on Software
+  engineering}, p\'{a}ginas 356--366. ACM, 2014.
 
 \bibitem[TLB{\etalchar{+}}09]{tan2009productivity}
 Thomas Tan, Qi~Li, Barry Boehm, Ye~Yang, Mei He e Ramin Moazeni.

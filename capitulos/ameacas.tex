@@ -1,5 +1,10 @@
 \chapter{Ameaças à validade}
 
+Possíveis problemas na seleção dos projetos
+\begin{itemize}
+\item É possível que projetos de software válidos e relevantes tenham sido excluídos indevidamente. Especialmente por causa da regra que elimina projetos com poucos \textit{commits} e colaboradores.
+\end{itemize}
+
 Podemos identificar algumas dificuldades em realizar a estimação dos juros utilizando essa estratégia. A seguir destacamos algumas delas:
  
  \begin{itemize}
@@ -7,7 +12,11 @@ Podemos identificar algumas dificuldades em realizar a estimação dos juros uti
  \item Identificar qual a \textbf{produtividade ótima} para um projeto de software. Para isso, utilizaremos analogia. Ou seja, para um determinado projeto iremos identificar projetos semelhantes e com um baixo índice de dívida técnica.
  \item Identificar se um projeto é semelhante a outro. Na literatura existem algumas abordagens para realizar essa atividade. Iremos descrever essas abordagens e explicar como iremos adaptá-las nesse projeto.
  \item Isolar a interferência da dívida técnica nos projetos de software da interferência de outros fatores que estão prejudicando a produtividade. Ou seja, identificar e garantir que o que está fazendo um projeto não estar no cenário de \textbf{produtividade ótima} é exclusivamente a dívida técnica.
+ \item Pode ser que o projeto tenha sido migrado de outro repositório ou outro sistema de versionamento. Isso precisa ser contornado de alguma forma. Uma alternativa seria verificar o tamanho do commit inicial. Preciso resolver os problemas com os commits. Alguns projetos como o vaadin não tem todos os commits na tabela commits. Alguns commits que vieram de pull requests por algum motivo não estão lá.
  \end{itemize}
+ 
+ 
+ 
  
  Descreveremos cada uma dessas dificuldades e como iremos resolvê-las ou diminuir sua interferência nos resultados desta pesquisa.
  
@@ -28,3 +37,7 @@ Muitas métricas que utilizamos na pesquisa poderiam ser validas por meio de est
 \begin{itemize}
 \item Realizar um esforço maior para defender a utilização das linhas de código como uma métrica de tamanho do software. Posso buscar mais na literatura trabalhos que mostrem empiricamente o valor dessa métrica.
 \end{itemize}
+
+\section{Imprecisão da popularidade}
+
+É possível que a popularidade do projeto seja influenciada significativamente quando ele é desenvolvido por uma empresa grande. Ou seja,a causa de um projeto ter um alto número de estrelas não necessariamente é devido a relevância que a comunidade dá ao projeto. Ao invés disso, a popularidade do projeto pode ter sido obtida devido a popularidade da empresa. Um exemplo é o caso do projeto blitz4j que possui 504 estrelas. Enquanto isso, o projeto tinylog possui apenas 142. Entretanto, uma pesquisa em sites de buscas revelam que o tinylog é 4 vezes mais citado que o blitz4j. Logo, a maior quantidade de estrelas do blitz4j não reflete a sua popularidade entre os desenvolvedores.

@@ -15,6 +15,18 @@
 \contentsline {figure}{\numberline {3.1}{\ignorespaces N\IeC {\'\i }veis de abstra\IeC {\c c}\IeC {\~a}o do modelo de estima\IeC {\c c}\IeC {\~a}o dos juros da d\IeC {\'\i }vida t\IeC {\'e}cnica. \relax }}{37}{figure.caption.29}
 \contentsline {figure}{\numberline {3.2}{\ignorespaces As rela\IeC {\c c}\IeC {\~o}es de seguir e poder ser seguido no GitHub. Adaptado de \cite {mo2015geminer}.\relax }}{50}{figure.caption.31}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Exemplo da estrutura de armazenamento de vers\IeC {\~o}es do Git.\relax }}{61}{figure.caption.32}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Exemplo de merge entre duas \textit {branches}.\relax }}{62}{figure.caption.33}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Tabelas do GHTorrent.\relax }}{66}{figure.caption.35}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Arquitetura do framework Spring Batch. Adaptada de \cite {minella2011pro}.\relax }}{67}{figure.caption.36}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces C\IeC {\'o}digo respons\IeC {\'a}vel por configurar o \textit {Job} no GitResearch.\relax }}{69}{figure.caption.37}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Passos do processamento no GitResearch.\relax }}{70}{figure.caption.38}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Resumo das etapas do estudo de caso. \relax }}{71}{figure.caption.39}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Mapeamento entre as etapas do estudo de caso e as etapas de processamento no GitResearch. \relax }}{72}{figure.caption.40}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces C\IeC {\'o}digo respons\IeC {\'a}vel por criar a configura\IeC {\c c}\IeC {\~a}o para a execu\IeC {\c c}\IeC {\~a}o do \textit {scanner} do SonarQube.\relax }}{83}{figure.caption.42}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces C\IeC {\'o}digo respons\IeC {\'a}vel por contar a quantidade de \textit {commits} de cada projeto.\relax }}{90}{figure.caption.45}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces C\IeC {\'o}digo respons\IeC {\'a}vel por executar o \textit {scanner} do SonarQube em cada projeto.\relax }}{91}{figure.caption.46}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces C\IeC {\'o}digo respons\IeC {\'a}vel por calcular o pagerank.\relax }}{93}{figure.caption.47}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
