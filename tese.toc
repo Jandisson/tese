@@ -2,101 +2,125 @@
 \contentsline {chapter}{Lista de Abreviaturas}{ix}{chapter*.4}
 \contentsline {chapter}{Lista de Figuras}{xi}{chapter*.5}
 \contentsline {chapter}{Lista de Tabelas}{xiii}{chapter*.6}
-\contentsline {chapter}{\numberline {1}D\IeC {\'\i }vida T\IeC {\'e}cnica}{1}{chapter.1}
-\contentsline {section}{\numberline {1.1}Introdu\IeC {\c c}\IeC {\~a}o}{1}{section.1.1}
-\contentsline {section}{\numberline {1.2}Defini\IeC {\c c}\IeC {\~a}o da d\IeC {\'\i }vida t\IeC {\'e}cnica}{6}{section.1.2}
-\contentsline {subsubsection}{II - \textit {Increasing Complexity}}{7}{section*.10}
-\contentsline {subsubsection}{VII - \textit {Declining Quality}}{7}{section*.11}
-\contentsline {subsubsection}{Sin\IeC {\^o}nimos}{10}{section*.14}
-\contentsline {section}{\numberline {1.3}A met\IeC {\'a}fora}{10}{section.1.3}
-\contentsline {subsection}{\numberline {1.3.1}Termos da met\IeC {\'a}fora}{11}{subsection.1.3.1}
-\contentsline {subsubsection}{Principal}{11}{section*.16}
-\contentsline {subsubsection}{Juros}{12}{section*.17}
-\contentsline {subsubsection}{Probabilidade dos juros}{13}{section*.19}
-\contentsline {subsubsection}{Ponto de quebra}{13}{section*.20}
-\contentsline {section}{\numberline {1.4}Classifica\IeC {\c c}\IeC {\~o}es da d\IeC {\'\i }vida t\IeC {\'e}cnica}{14}{section.1.4}
-\contentsline {section}{\numberline {1.5}Tipos de d\IeC {\'\i }vida t\IeC {\'e}cnicas}{15}{section.1.5}
-\contentsline {subsection}{\numberline {1.5.1}C\IeC {\'o}digo}{15}{subsection.1.5.1}
-\contentsline {subsection}{\numberline {1.5.2}Design}{16}{subsection.1.5.2}
-\contentsline {subsection}{\numberline {1.5.3}Testes}{16}{subsection.1.5.3}
-\contentsline {subsection}{\numberline {1.5.4}Documenta\IeC {\c c}\IeC {\~a}o}{16}{subsection.1.5.4}
-\contentsline {subsection}{\numberline {1.5.5}Defeitos}{17}{subsection.1.5.5}
-\contentsline {subsection}{\numberline {1.5.6}Arquitetura}{17}{subsection.1.5.6}
-\contentsline {subsection}{\numberline {1.5.7}Constru\IeC {\c c}\IeC {\~a}o}{18}{subsection.1.5.7}
-\contentsline {subsection}{\numberline {1.5.8}Tecnologia}{18}{subsection.1.5.8}
-\contentsline {section}{\numberline {1.6}Gerenciamento da d\IeC {\'\i }vida t\IeC {\'e}cnica}{19}{section.1.6}
-\contentsline {subsection}{\numberline {1.6.1}Abordagens adaptadas da \IeC {\'a}rea financeira}{19}{subsection.1.6.1}
-\contentsline {subsection}{\numberline {1.6.2}Abordagens espec\IeC {\'\i }ficas}{20}{subsection.1.6.2}
-\contentsline {subsection}{\numberline {1.6.3}D\IeC {\'\i }vida t\IeC {\'e}cnica como uma ferramenta estrat\IeC {\'e}gica}{24}{subsection.1.6.3}
-\contentsline {chapter}{\numberline {2}M\IeC {\'e}todo de pesquisa}{25}{chapter.2}
-\contentsline {section}{\numberline {2.1}Introdu\IeC {\c c}\IeC {\~a}o}{25}{section.2.1}
-\contentsline {section}{\numberline {2.2}Pesquisa quantitativa}{26}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Minera\IeC {\c c}\IeC {\~a}o de reposit\IeC {\'o}rios}{28}{subsection.2.2.1}
-\contentsline {section}{\numberline {2.3}O estudo de caso}{28}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Etapas do estudo de caso}{29}{subsection.2.3.1}
-\contentsline {subsubsection}{Etapa 1 - Sele\IeC {\c c}\IeC {\~a}o dos projetos}{29}{section*.24}
-\contentsline {subsubsection}{Etapa 2 - Agrupamentos dos projetos semelhantes}{30}{section*.25}
-\contentsline {subsubsection}{Etapa 3 - Extra\IeC {\c c}\IeC {\~a}o dos dados}{31}{section*.26}
-\contentsline {subsubsection}{Etapa 4 - C\IeC {\'a}lculo das m\IeC {\'e}tricas de produtividade}{31}{section*.27}
-\contentsline {subsubsection}{Etapa 5 -An\IeC {\'a}lise dos resultados}{31}{section*.28}
-\contentsline {chapter}{\numberline {3}O modelo de estima\IeC {\c c}\IeC {\~a}o do juros da d\IeC {\'\i }vida t\IeC {\'e}cnica}{33}{chapter.3}
+\contentsline {chapter}{\numberline {1}Introdu\IeC {\c c}\IeC {\~a}o}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Objetivos}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}Quest\IeC {\~o}es de Pesquisa}{1}{section.1.2}
+\contentsline {subsubsection}{QP1: Dentre as ocorr\IeC {\^e}ncias de d\IeC {\'\i }vida t\IeC {\'e}cnica de design e c\IeC {\'o}digo que ser\IeC {\~a}o analisadas, quais produzem maior juros?}{2}{section*.7}
+\contentsline {subsubsection}{QP2: O ac\IeC {\'u}mulo de juros em rela\IeC {\c c}\IeC {\~a}o ao tempo \IeC {\'e} linear ou composto?}{2}{section*.8}
+\contentsline {section}{\numberline {1.3}Limita\IeC {\c c}\IeC {\~a}o do escopo}{2}{section.1.3}
+\contentsline {section}{\numberline {1.4}Conclus\IeC {\~o}es}{3}{section.1.4}
+\contentsline {section}{\numberline {1.5}Motiva\IeC {\c c}\IeC {\~a}o}{6}{section.1.5}
+\contentsline {section}{\numberline {1.6}Trabalhos relacionados aos juros da d\IeC {\'\i }vida t\IeC {\'e}cnica}{6}{section.1.6}
+\contentsline {section}{\numberline {1.7}Contribui\IeC {\c c}\IeC {\~o}es}{8}{section.1.7}
+\contentsline {section}{\numberline {1.8}Organiza\IeC {\c c}\IeC {\~a}o do texto}{8}{section.1.8}
+\contentsline {chapter}{\numberline {2}D\IeC {\'\i }vida T\IeC {\'e}cnica}{9}{chapter.2}
+\contentsline {section}{\numberline {2.1}Introdu\IeC {\c c}\IeC {\~a}o}{9}{section.2.1}
+\contentsline {section}{\numberline {2.2}Defini\IeC {\c c}\IeC {\~a}o da d\IeC {\'\i }vida t\IeC {\'e}cnica}{14}{section.2.2}
+\contentsline {subsubsection}{II - \textit {Increasing Complexity}}{15}{section*.14}
+\contentsline {subsubsection}{VII - \textit {Declining Quality}}{15}{section*.15}
+\contentsline {subsubsection}{Sin\IeC {\^o}nimos}{18}{section*.18}
+\contentsline {section}{\numberline {2.3}A met\IeC {\'a}fora}{18}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Termos da met\IeC {\'a}fora}{19}{subsection.2.3.1}
+\contentsline {subsubsection}{Principal}{19}{section*.20}
+\contentsline {subsubsection}{Juros}{20}{section*.21}
+\contentsline {subsubsection}{Probabilidade dos juros}{21}{section*.23}
+\contentsline {subsubsection}{Ponto de quebra}{21}{section*.24}
+\contentsline {section}{\numberline {2.4}Classifica\IeC {\c c}\IeC {\~o}es da d\IeC {\'\i }vida t\IeC {\'e}cnica}{22}{section.2.4}
+\contentsline {section}{\numberline {2.5}Tipos de d\IeC {\'\i }vida t\IeC {\'e}cnicas}{23}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}C\IeC {\'o}digo}{23}{subsection.2.5.1}
+\contentsline {subsection}{\numberline {2.5.2}Design}{24}{subsection.2.5.2}
+\contentsline {subsection}{\numberline {2.5.3}Testes}{24}{subsection.2.5.3}
+\contentsline {subsection}{\numberline {2.5.4}Documenta\IeC {\c c}\IeC {\~a}o}{24}{subsection.2.5.4}
+\contentsline {subsection}{\numberline {2.5.5}Defeitos}{25}{subsection.2.5.5}
+\contentsline {subsection}{\numberline {2.5.6}Arquitetura}{25}{subsection.2.5.6}
+\contentsline {subsection}{\numberline {2.5.7}Constru\IeC {\c c}\IeC {\~a}o}{26}{subsection.2.5.7}
+\contentsline {subsection}{\numberline {2.5.8}Tecnologia}{26}{subsection.2.5.8}
+\contentsline {section}{\numberline {2.6}Gerenciamento da d\IeC {\'\i }vida t\IeC {\'e}cnica}{27}{section.2.6}
+\contentsline {subsection}{\numberline {2.6.1}Abordagens adaptadas da \IeC {\'a}rea financeira}{27}{subsection.2.6.1}
+\contentsline {subsection}{\numberline {2.6.2}Abordagens espec\IeC {\'\i }ficas}{28}{subsection.2.6.2}
+\contentsline {subsection}{\numberline {2.6.3}D\IeC {\'\i }vida t\IeC {\'e}cnica como uma ferramenta estrat\IeC {\'e}gica}{32}{subsection.2.6.3}
+\contentsline {chapter}{\numberline {3}Trabalhos relacionados}{33}{chapter.3}
 \contentsline {section}{\numberline {3.1}Introdu\IeC {\c c}\IeC {\~a}o}{33}{section.3.1}
-\contentsline {section}{\numberline {3.2}Estima\IeC {\c c}\IeC {\~a}o da produtividade em projetos de software}{34}{section.3.2}
-\contentsline {section}{\numberline {3.3}O modelo de estima\IeC {\c c}\IeC {\~a}o}{36}{section.3.3}
-\contentsline {section}{\numberline {3.4}O modelo abstrato de estima\IeC {\c c}\IeC {\~a}o dos juros da d\IeC {\'\i }vida t\IeC {\'e}cnica}{37}{section.3.4}
-\contentsline {section}{\numberline {3.5}Os modelos concretos de estima\IeC {\c c}\IeC {\~a}o dos juros da d\IeC {\'\i }vida t\IeC {\'e}cnica}{39}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}Sele\IeC {\c c}\IeC {\~a}o das m\IeC {\'e}tricas que representam as entradas do processo}{40}{subsection.3.5.1}
-\contentsline {subsection}{\numberline {3.5.2}Sele\IeC {\c c}\IeC {\~a}o das m\IeC {\'e}tricas que representam as sa\IeC {\'\i }das do processo}{42}{subsection.3.5.2}
-\contentsline {subsection}{\numberline {3.5.3}Defini\IeC {\c c}\IeC {\~a}o do m\IeC {\'e}todo de agrupamento dos projetos semelhantes }{43}{subsection.3.5.3}
-\contentsline {subsection}{\numberline {3.5.4}Defini\IeC {\c c}\IeC {\~a}o do m\IeC {\'e}todo de particionamento dos grupos de projetos}{45}{subsection.3.5.4}
-\contentsline {section}{\numberline {3.6}O modelo de estima\IeC {\c c}\IeC {\~a}o dos juros em projetos de software livre}{46}{section.3.6}
-\contentsline {section}{\numberline {3.7}Entradas}{46}{section.3.7}
-\contentsline {subsection}{\numberline {3.7.1}Qualidade da colabora\IeC {\c c}\IeC {\~a}o}{47}{subsection.3.7.1}
-\contentsline {subsection}{\numberline {3.7.2}Assiduidade dos colaboradores}{53}{subsection.3.7.2}
-\contentsline {subsection}{\numberline {3.7.3}\IeC {\'I}ndice de colabora\IeC {\c c}\IeC {\~a}o}{53}{subsection.3.7.3}
-\contentsline {section}{\numberline {3.8}Sa\IeC {\'\i }das}{53}{section.3.8}
-\contentsline {subsection}{\numberline {3.8.1}Linhas de c\IeC {\'o}digo}{54}{subsection.3.8.1}
-\contentsline {subsection}{\numberline {3.8.2}\textit {Pull Requests}}{55}{subsection.3.8.2}
-\contentsline {subsection}{\numberline {3.8.3}Popularidade}{56}{subsection.3.8.3}
-\contentsline {section}{\numberline {3.9}M\IeC {\'e}todo de agrupamento dos projetos semelhantes}{57}{section.3.9}
-\contentsline {section}{\numberline {3.10}M\IeC {\'e}todo de particionamento dos grupos de projetos}{57}{section.3.10}
-\contentsline {chapter}{\numberline {4}Estudo de caso}{59}{chapter.4}
-\contentsline {section}{\numberline {4.1}Introdu\IeC {\c c}\IeC {\~a}o}{59}{section.4.1}
-\contentsline {section}{\numberline {4.2}O reposit\IeC {\'o}rio de software}{59}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Controle de vers\IeC {\~o}es utilizando o Git }{60}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}GitHub}{63}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}GHTorrent}{65}{subsection.4.2.3}
-\contentsline {section}{\numberline {4.3}Ferramenta de apoio: GitResearch}{66}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Arquitetura}{67}{subsection.4.3.1}
-\contentsline {section}{\numberline {4.4}Etapas do estudo de caso}{70}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Sele\IeC {\c c}\IeC {\~a}o dos projetos}{72}{subsection.4.4.1}
-\contentsline {section}{\numberline {4.5}Agrupamento dos projetos}{76}{section.4.5}
-\contentsline {subsection}{\numberline {4.5.1}LDA}{76}{subsection.4.5.1}
-\contentsline {subsection}{\numberline {4.5.2}A aplica\IeC {\c c}\IeC {\~a}o do LDA}{77}{subsection.4.5.2}
-\contentsline {subsection}{\numberline {4.5.3}Resultado do LDA}{78}{subsection.4.5.3}
-\contentsline {section}{\numberline {4.6}Extra\IeC {\c c}\IeC {\~a}o dos dados}{82}{section.4.6}
-\contentsline {subsection}{\numberline {4.6.1}O SonarQube}{82}{subsection.4.6.1}
-\contentsline {subsection}{\numberline {4.6.2}Medi\IeC {\c c}\IeC {\~a}o da d\IeC {\'\i }vida t\IeC {\'e}cnica}{85}{subsection.4.6.2}
-\contentsline {subsection}{\numberline {4.6.3}Limita\IeC {\c c}\IeC {\~o}es na medi\IeC {\c c}\IeC {\~a}o da d\IeC {\'\i }vida t\IeC {\'e}cnica}{88}{subsection.4.6.3}
-\contentsline {subsection}{\numberline {4.6.4}Divis\IeC {\~a}o temporal do c\IeC {\'o}digo}{89}{subsection.4.6.4}
-\contentsline {section}{\numberline {4.7}C\IeC {\'a}lculo das vari\IeC {\'a}veis de entrada do modelo}{91}{section.4.7}
-\contentsline {subsection}{\numberline {4.7.1}Qualidade de colabora\IeC {\c c}\IeC {\~a}o}{92}{subsection.4.7.1}
-\contentsline {subsection}{\numberline {4.7.2}Assiduidade}{94}{subsection.4.7.2}
-\contentsline {section}{\numberline {4.8}C\IeC {\'a}lculo das vari\IeC {\'a}veis de sa\IeC {\'\i }da do modelo}{94}{section.4.8}
-\contentsline {section}{\numberline {4.9}Dados obtidos}{94}{section.4.9}
-\contentsline {subsection}{\numberline {4.9.1}An\IeC {\'a}lise explorat\IeC {\'o}ria dos dados}{94}{subsection.4.9.1}
-\contentsline {section}{\numberline {4.10}Conclus\IeC {\~a}o}{94}{section.4.10}
-\contentsline {chapter}{\numberline {5}Resultados e discuss\IeC {\~a}o}{95}{chapter.5}
-\contentsline {section}{\numberline {5.1}Contribui\IeC {\c c}\IeC {\~o}es}{95}{section.5.1}
-\contentsline {section}{\numberline {5.2}Respostas as quest\IeC {\~o}es de pesquisa}{95}{section.5.2}
-\contentsline {chapter}{\numberline {6}Amea\IeC {\c c}as \IeC {\`a} validade}{97}{chapter.6}
-\contentsline {section}{\numberline {6.1}Escala}{98}{section.6.1}
-\contentsline {section}{\numberline {6.2}Avalia\IeC {\c c}\IeC {\~a}o emp\IeC {\'\i }rica das m\IeC {\'e}tricas utilizadas}{98}{section.6.2}
-\contentsline {section}{\numberline {6.3}Coisas a serem feitas caso haja tempo dispon\IeC {\'\i }vel}{98}{section.6.3}
-\contentsline {section}{\numberline {6.4}Imprecis\IeC {\~a}o da popularidade}{98}{section.6.4}
-\contentsline {chapter}{\numberline {7}Conclus\IeC {\~a}o}{101}{chapter.7}
-\contentsline {section}{\numberline {7.1}Trabalhos futuros}{101}{section.7.1}
-\contentsline {subsection}{\numberline {7.1.1}Popularidade vs D\IeC {\'\i }vida T\IeC {\'e}cnica}{101}{subsection.7.1.1}
-\contentsline {subsection}{\numberline {7.1.2}Artigo CBI}{101}{subsection.7.1.2}
-\contentsline {chapter}{Refer\^encias Bibliogr\'aficas}{103}{appendix*.48}
+\contentsline {section}{\numberline {3.2}Identifica\IeC {\c c}\IeC {\~a}o e estima\IeC {\c c}\IeC {\~a}o da d\IeC {\'\i }vida t\IeC {\'e}cnica}{33}{section.3.2}
+\contentsline {section}{\numberline {3.3}Tipos de d\IeC {\'\i }vida t\IeC {\'e}cnica}{36}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Testes e defeitos}{37}{subsection.3.3.1}
+\contentsline {section}{\numberline {3.4}Conclus\IeC {\~o}es}{38}{section.3.4}
+\contentsline {chapter}{\numberline {4}M\IeC {\'e}todo de pesquisa}{39}{chapter.4}
+\contentsline {section}{\numberline {4.1}Introdu\IeC {\c c}\IeC {\~a}o}{39}{section.4.1}
+\contentsline {section}{\numberline {4.2}Pesquisa quantitativa}{40}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Minera\IeC {\c c}\IeC {\~a}o de reposit\IeC {\'o}rios}{42}{subsection.4.2.1}
+\contentsline {section}{\numberline {4.3}O estudo de caso}{42}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Etapas do estudo de caso}{43}{subsection.4.3.1}
+\contentsline {subsubsection}{Etapa 1 - Sele\IeC {\c c}\IeC {\~a}o dos projetos}{43}{section*.29}
+\contentsline {subsubsection}{Etapa 2 - Agrupamentos dos projetos semelhantes}{44}{section*.30}
+\contentsline {subsubsection}{Etapa 3 - Extra\IeC {\c c}\IeC {\~a}o dos dados}{45}{section*.31}
+\contentsline {subsubsection}{Etapa 4 - C\IeC {\'a}lculo das m\IeC {\'e}tricas de produtividade}{45}{section*.32}
+\contentsline {subsubsection}{Etapa 5 -An\IeC {\'a}lise dos resultados}{45}{section*.33}
+\contentsline {chapter}{\numberline {5}O modelo de estima\IeC {\c c}\IeC {\~a}o do juros da d\IeC {\'\i }vida t\IeC {\'e}cnica}{47}{chapter.5}
+\contentsline {section}{\numberline {5.1}Introdu\IeC {\c c}\IeC {\~a}o}{47}{section.5.1}
+\contentsline {section}{\numberline {5.2}Estima\IeC {\c c}\IeC {\~a}o da produtividade em projetos de software}{48}{section.5.2}
+\contentsline {section}{\numberline {5.3}O modelo de estima\IeC {\c c}\IeC {\~a}o}{50}{section.5.3}
+\contentsline {section}{\numberline {5.4}O modelo abstrato de estima\IeC {\c c}\IeC {\~a}o dos juros da d\IeC {\'\i }vida t\IeC {\'e}cnica}{51}{section.5.4}
+\contentsline {section}{\numberline {5.5}Os modelos concretos de estima\IeC {\c c}\IeC {\~a}o dos juros da d\IeC {\'\i }vida t\IeC {\'e}cnica}{53}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}Sele\IeC {\c c}\IeC {\~a}o das m\IeC {\'e}tricas que representam as entradas do processo}{54}{subsection.5.5.1}
+\contentsline {subsection}{\numberline {5.5.2}Sele\IeC {\c c}\IeC {\~a}o das m\IeC {\'e}tricas que representam as sa\IeC {\'\i }das do processo}{56}{subsection.5.5.2}
+\contentsline {subsection}{\numberline {5.5.3}Defini\IeC {\c c}\IeC {\~a}o do m\IeC {\'e}todo de agrupamento dos projetos semelhantes }{57}{subsection.5.5.3}
+\contentsline {subsection}{\numberline {5.5.4}Defini\IeC {\c c}\IeC {\~a}o do m\IeC {\'e}todo de particionamento dos grupos de projetos}{59}{subsection.5.5.4}
+\contentsline {section}{\numberline {5.6}O modelo de estima\IeC {\c c}\IeC {\~a}o dos juros em projetos de software livre}{60}{section.5.6}
+\contentsline {section}{\numberline {5.7}Entradas}{60}{section.5.7}
+\contentsline {subsection}{\numberline {5.7.1}Qualidade da colabora\IeC {\c c}\IeC {\~a}o}{61}{subsection.5.7.1}
+\contentsline {subsection}{\numberline {5.7.2}Assiduidade dos colaboradores}{67}{subsection.5.7.2}
+\contentsline {subsection}{\numberline {5.7.3}\IeC {\'I}ndice de colabora\IeC {\c c}\IeC {\~a}o}{67}{subsection.5.7.3}
+\contentsline {section}{\numberline {5.8}Sa\IeC {\'\i }das}{67}{section.5.8}
+\contentsline {subsection}{\numberline {5.8.1}Linhas de c\IeC {\'o}digo}{68}{subsection.5.8.1}
+\contentsline {subsection}{\numberline {5.8.2}\textit {Pull Requests}}{69}{subsection.5.8.2}
+\contentsline {subsection}{\numberline {5.8.3}Popularidade}{70}{subsection.5.8.3}
+\contentsline {section}{\numberline {5.9}M\IeC {\'e}todo de agrupamento dos projetos semelhantes}{71}{section.5.9}
+\contentsline {section}{\numberline {5.10}M\IeC {\'e}todo de particionamento dos grupos de projetos}{71}{section.5.10}
+\contentsline {chapter}{\numberline {6}Estudo de caso}{73}{chapter.6}
+\contentsline {section}{\numberline {6.1}Introdu\IeC {\c c}\IeC {\~a}o}{73}{section.6.1}
+\contentsline {section}{\numberline {6.2}O reposit\IeC {\'o}rio de software}{73}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Controle de vers\IeC {\~o}es utilizando o Git }{74}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}GitHub}{77}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}GHTorrent}{79}{subsection.6.2.3}
+\contentsline {section}{\numberline {6.3}Ferramenta de apoio: GitResearch}{80}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Arquitetura}{81}{subsection.6.3.1}
+\contentsline {section}{\numberline {6.4}Etapas do estudo de caso}{84}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}Sele\IeC {\c c}\IeC {\~a}o dos projetos}{86}{subsection.6.4.1}
+\contentsline {section}{\numberline {6.5}Agrupamento dos projetos}{90}{section.6.5}
+\contentsline {subsection}{\numberline {6.5.1}LDA}{90}{subsection.6.5.1}
+\contentsline {subsection}{\numberline {6.5.2}A aplica\IeC {\c c}\IeC {\~a}o do LDA}{91}{subsection.6.5.2}
+\contentsline {subsection}{\numberline {6.5.3}Resultado do LDA}{92}{subsection.6.5.3}
+\contentsline {section}{\numberline {6.6}Extra\IeC {\c c}\IeC {\~a}o dos dados}{96}{section.6.6}
+\contentsline {subsection}{\numberline {6.6.1}O SonarQube}{96}{subsection.6.6.1}
+\contentsline {subsection}{\numberline {6.6.2}Medi\IeC {\c c}\IeC {\~a}o da d\IeC {\'\i }vida t\IeC {\'e}cnica}{99}{subsection.6.6.2}
+\contentsline {subsection}{\numberline {6.6.3}Limita\IeC {\c c}\IeC {\~o}es na medi\IeC {\c c}\IeC {\~a}o da d\IeC {\'\i }vida t\IeC {\'e}cnica}{102}{subsection.6.6.3}
+\contentsline {subsection}{\numberline {6.6.4}Divis\IeC {\~a}o temporal do c\IeC {\'o}digo}{103}{subsection.6.6.4}
+\contentsline {section}{\numberline {6.7}C\IeC {\'a}lculo das vari\IeC {\'a}veis de entrada do modelo}{105}{section.6.7}
+\contentsline {subsection}{\numberline {6.7.1}Qualidade de colabora\IeC {\c c}\IeC {\~a}o}{106}{subsection.6.7.1}
+\contentsline {subsection}{\numberline {6.7.2}Assiduidade}{108}{subsection.6.7.2}
+\contentsline {section}{\numberline {6.8}C\IeC {\'a}lculo das vari\IeC {\'a}veis de sa\IeC {\'\i }da do modelo}{108}{section.6.8}
+\contentsline {section}{\numberline {6.9}C\IeC {\'a}lculo da produtividade dos projetos}{108}{section.6.9}
+\contentsline {section}{\numberline {6.10}Estima\IeC {\c c}\IeC {\~a}o dos Juros}{108}{section.6.10}
+\contentsline {section}{\numberline {6.11}Dados obtidos}{108}{section.6.11}
+\contentsline {subsection}{\numberline {6.11.1}M\IeC {\'e}tricas}{109}{subsection.6.11.1}
+\contentsline {subsection}{\numberline {6.11.2}Distrui\IeC {\c c}\IeC {\~a}o dos projetos por t\IeC {\'o}picos}{110}{subsection.6.11.2}
+\contentsline {subsection}{\numberline {6.11.3}D\IeC {\'\i }vida t\IeC {\'e}cnica}{114}{subsection.6.11.3}
+\contentsline {subsection}{\numberline {6.11.4}Tamanho}{118}{subsection.6.11.4}
+\contentsline {subsection}{\numberline {6.11.5}Colabora\IeC {\c c}\IeC {\~a}o}{122}{subsection.6.11.5}
+\contentsline {subsection}{\numberline {6.11.6}Produtividade}{123}{subsection.6.11.6}
+\contentsline {subsection}{\numberline {6.11.7}Estima\IeC {\c c}\IeC {\~a}o dos juros}{123}{subsection.6.11.7}
+\contentsline {chapter}{\numberline {7}Resultados e discuss\IeC {\~a}o}{125}{chapter.7}
+\contentsline {section}{\numberline {7.1}Contribui\IeC {\c c}\IeC {\~o}es}{125}{section.7.1}
+\contentsline {section}{\numberline {7.2}Respostas as quest\IeC {\~o}es de pesquisa}{125}{section.7.2}
+\contentsline {chapter}{\numberline {8}Amea\IeC {\c c}as \IeC {\`a} validade}{127}{chapter.8}
+\contentsline {section}{\numberline {8.1}Escala}{128}{section.8.1}
+\contentsline {section}{\numberline {8.2}Avalia\IeC {\c c}\IeC {\~a}o emp\IeC {\'\i }rica das m\IeC {\'e}tricas utilizadas}{128}{section.8.2}
+\contentsline {section}{\numberline {8.3}Coisas a serem feitas caso haja tempo dispon\IeC {\'\i }vel}{128}{section.8.3}
+\contentsline {section}{\numberline {8.4}Imprecis\IeC {\~a}o da popularidade}{128}{section.8.4}
+\contentsline {chapter}{\numberline {9}Conclus\IeC {\~a}o}{131}{chapter.9}
+\contentsline {section}{\numberline {9.1}Trabalhos futuros}{131}{section.9.1}
+\contentsline {subsection}{\numberline {9.1.1}Popularidade vs D\IeC {\'\i }vida T\IeC {\'e}cnica}{131}{subsection.9.1.1}
+\contentsline {subsection}{\numberline {9.1.2}Artigo CBI}{131}{subsection.9.1.2}
+\contentsline {chapter}{Refer\^encias Bibliogr\'aficas}{133}{appendix*.66}
 \contentsfinish 

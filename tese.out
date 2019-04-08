@@ -1,88 +1,110 @@
 \BOOKMARK [0][]{chapter*.4}{Lista de Abreviaturas}{}% 1
 \BOOKMARK [0][]{chapter*.5}{Lista de Figuras}{}% 2
 \BOOKMARK [0][]{chapter*.6}{Lista de Tabelas}{}% 3
-\BOOKMARK [0][]{chapter.1}{D\355vida T\351cnica}{}% 4
-\BOOKMARK [1][]{section.1.1}{Introdu\347\343o}{chapter.1}% 5
-\BOOKMARK [1][]{section.1.2}{Defini\347\343o da d\355vida t\351cnica}{chapter.1}% 6
-\BOOKMARK [1][]{section.1.3}{A met\341fora}{chapter.1}% 7
-\BOOKMARK [2][]{subsection.1.3.1}{Termos da met\341fora}{section.1.3}% 8
-\BOOKMARK [1][]{section.1.4}{Classifica\347\365es da d\355vida t\351cnica}{chapter.1}% 9
-\BOOKMARK [1][]{section.1.5}{Tipos de d\355vida t\351cnicas}{chapter.1}% 10
-\BOOKMARK [2][]{subsection.1.5.1}{C\363digo}{section.1.5}% 11
-\BOOKMARK [2][]{subsection.1.5.2}{Design}{section.1.5}% 12
-\BOOKMARK [2][]{subsection.1.5.3}{Testes}{section.1.5}% 13
-\BOOKMARK [2][]{subsection.1.5.4}{Documenta\347\343o}{section.1.5}% 14
-\BOOKMARK [2][]{subsection.1.5.5}{Defeitos}{section.1.5}% 15
-\BOOKMARK [2][]{subsection.1.5.6}{Arquitetura}{section.1.5}% 16
-\BOOKMARK [2][]{subsection.1.5.7}{Constru\347\343o}{section.1.5}% 17
-\BOOKMARK [2][]{subsection.1.5.8}{Tecnologia}{section.1.5}% 18
-\BOOKMARK [1][]{section.1.6}{Gerenciamento da d\355vida t\351cnica}{chapter.1}% 19
-\BOOKMARK [2][]{subsection.1.6.1}{Abordagens adaptadas da \341rea financeira}{section.1.6}% 20
-\BOOKMARK [2][]{subsection.1.6.2}{Abordagens espec\355ficas}{section.1.6}% 21
-\BOOKMARK [2][]{subsection.1.6.3}{D\355vida t\351cnica como uma ferramenta estrat\351gica}{section.1.6}% 22
-\BOOKMARK [0][]{chapter.2}{M\351todo de pesquisa}{}% 23
-\BOOKMARK [1][]{section.2.1}{Introdu\347\343o}{chapter.2}% 24
-\BOOKMARK [1][]{section.2.2}{Pesquisa quantitativa}{chapter.2}% 25
-\BOOKMARK [2][]{subsection.2.2.1}{Minera\347\343o de reposit\363rios}{section.2.2}% 26
-\BOOKMARK [1][]{section.2.3}{O estudo de caso}{chapter.2}% 27
-\BOOKMARK [2][]{subsection.2.3.1}{Etapas do estudo de caso}{section.2.3}% 28
-\BOOKMARK [0][]{chapter.3}{O modelo de estima\347\343o do juros da d\355vida t\351cnica}{}% 29
-\BOOKMARK [1][]{section.3.1}{Introdu\347\343o}{chapter.3}% 30
-\BOOKMARK [1][]{section.3.2}{Estima\347\343o da produtividade em projetos de software}{chapter.3}% 31
-\BOOKMARK [1][]{section.3.3}{O modelo de estima\347\343o}{chapter.3}% 32
-\BOOKMARK [1][]{section.3.4}{O modelo abstrato de estima\347\343o dos juros da d\355vida t\351cnica}{chapter.3}% 33
-\BOOKMARK [1][]{section.3.5}{Os modelos concretos de estima\347\343o dos juros da d\355vida t\351cnica}{chapter.3}% 34
-\BOOKMARK [2][]{subsection.3.5.1}{Sele\347\343o das m\351tricas que representam as entradas do processo}{section.3.5}% 35
-\BOOKMARK [2][]{subsection.3.5.2}{Sele\347\343o das m\351tricas que representam as sa\355das do processo}{section.3.5}% 36
-\BOOKMARK [2][]{subsection.3.5.3}{Defini\347\343o do m\351todo de agrupamento dos projetos semelhantes }{section.3.5}% 37
-\BOOKMARK [2][]{subsection.3.5.4}{Defini\347\343o do m\351todo de particionamento dos grupos de projetos}{section.3.5}% 38
-\BOOKMARK [1][]{section.3.6}{O modelo de estima\347\343o dos juros em projetos de software livre}{chapter.3}% 39
-\BOOKMARK [1][]{section.3.7}{Entradas}{chapter.3}% 40
-\BOOKMARK [2][]{subsection.3.7.1}{Qualidade da colabora\347\343o}{section.3.7}% 41
-\BOOKMARK [2][]{subsection.3.7.2}{Assiduidade dos colaboradores}{section.3.7}% 42
-\BOOKMARK [2][]{subsection.3.7.3}{\315ndice de colabora\347\343o}{section.3.7}% 43
-\BOOKMARK [1][]{section.3.8}{Sa\355das}{chapter.3}% 44
-\BOOKMARK [2][]{subsection.3.8.1}{Linhas de c\363digo}{section.3.8}% 45
-\BOOKMARK [2][]{subsection.3.8.2}{Pull Requests}{section.3.8}% 46
-\BOOKMARK [2][]{subsection.3.8.3}{Popularidade}{section.3.8}% 47
-\BOOKMARK [1][]{section.3.9}{M\351todo de agrupamento dos projetos semelhantes}{chapter.3}% 48
-\BOOKMARK [1][]{section.3.10}{M\351todo de particionamento dos grupos de projetos}{chapter.3}% 49
-\BOOKMARK [0][]{chapter.4}{Estudo de caso}{}% 50
-\BOOKMARK [1][]{section.4.1}{Introdu\347\343o}{chapter.4}% 51
-\BOOKMARK [1][]{section.4.2}{O reposit\363rio de software}{chapter.4}% 52
-\BOOKMARK [2][]{subsection.4.2.1}{Controle de vers\365es utilizando o Git }{section.4.2}% 53
-\BOOKMARK [2][]{subsection.4.2.2}{GitHub}{section.4.2}% 54
-\BOOKMARK [2][]{subsection.4.2.3}{GHTorrent}{section.4.2}% 55
-\BOOKMARK [1][]{section.4.3}{Ferramenta de apoio: GitResearch}{chapter.4}% 56
-\BOOKMARK [2][]{subsection.4.3.1}{Arquitetura}{section.4.3}% 57
-\BOOKMARK [1][]{section.4.4}{Etapas do estudo de caso}{chapter.4}% 58
-\BOOKMARK [2][]{subsection.4.4.1}{Sele\347\343o dos projetos}{section.4.4}% 59
-\BOOKMARK [1][]{section.4.5}{Agrupamento dos projetos}{chapter.4}% 60
-\BOOKMARK [2][]{subsection.4.5.1}{LDA}{section.4.5}% 61
-\BOOKMARK [2][]{subsection.4.5.2}{A aplica\347\343o do LDA}{section.4.5}% 62
-\BOOKMARK [2][]{subsection.4.5.3}{Resultado do LDA}{section.4.5}% 63
-\BOOKMARK [1][]{section.4.6}{Extra\347\343o dos dados}{chapter.4}% 64
-\BOOKMARK [2][]{subsection.4.6.1}{O SonarQube}{section.4.6}% 65
-\BOOKMARK [2][]{subsection.4.6.2}{Medi\347\343o da d\355vida t\351cnica}{section.4.6}% 66
-\BOOKMARK [2][]{subsection.4.6.3}{Limita\347\365es na medi\347\343o da d\355vida t\351cnica}{section.4.6}% 67
-\BOOKMARK [2][]{subsection.4.6.4}{Divis\343o temporal do c\363digo}{section.4.6}% 68
-\BOOKMARK [1][]{section.4.7}{C\341lculo das vari\341veis de entrada do modelo}{chapter.4}% 69
-\BOOKMARK [2][]{subsection.4.7.1}{Qualidade de colabora\347\343o}{section.4.7}% 70
-\BOOKMARK [2][]{subsection.4.7.2}{Assiduidade}{section.4.7}% 71
-\BOOKMARK [1][]{section.4.8}{C\341lculo das vari\341veis de sa\355da do modelo}{chapter.4}% 72
-\BOOKMARK [1][]{section.4.9}{Dados obtidos}{chapter.4}% 73
-\BOOKMARK [2][]{subsection.4.9.1}{An\341lise explorat\363ria dos dados}{section.4.9}% 74
-\BOOKMARK [1][]{section.4.10}{Conclus\343o}{chapter.4}% 75
-\BOOKMARK [0][]{chapter.5}{Resultados e discuss\343o}{}% 76
-\BOOKMARK [1][]{section.5.1}{Contribui\347\365es}{chapter.5}% 77
-\BOOKMARK [1][]{section.5.2}{Respostas as quest\365es de pesquisa}{chapter.5}% 78
-\BOOKMARK [0][]{chapter.6}{Amea\347as \340 validade}{}% 79
-\BOOKMARK [1][]{section.6.1}{Escala}{chapter.6}% 80
-\BOOKMARK [1][]{section.6.2}{Avalia\347\343o emp\355rica das m\351tricas utilizadas}{chapter.6}% 81
-\BOOKMARK [1][]{section.6.3}{Coisas a serem feitas caso haja tempo dispon\355vel}{chapter.6}% 82
-\BOOKMARK [1][]{section.6.4}{Imprecis\343o da popularidade}{chapter.6}% 83
-\BOOKMARK [0][]{chapter.7}{Conclus\343o}{}% 84
-\BOOKMARK [1][]{section.7.1}{Trabalhos futuros}{chapter.7}% 85
-\BOOKMARK [2][]{subsection.7.1.1}{Popularidade vs D\355vida T\351cnica}{section.7.1}% 86
-\BOOKMARK [2][]{subsection.7.1.2}{Artigo CBI}{section.7.1}% 87
-\BOOKMARK [0][]{appendix*.48}{Refer\352ncias Bibliogr\341ficas}{}% 88
+\BOOKMARK [0][]{chapter.1}{Introdu\347\343o}{}% 4
+\BOOKMARK [1][]{section.1.1}{Objetivos}{chapter.1}% 5
+\BOOKMARK [1][]{section.1.2}{Quest\365es de Pesquisa}{chapter.1}% 6
+\BOOKMARK [1][]{section.1.3}{Limita\347\343o do escopo}{chapter.1}% 7
+\BOOKMARK [1][]{section.1.4}{Conclus\365es}{chapter.1}% 8
+\BOOKMARK [1][]{section.1.5}{Motiva\347\343o}{chapter.1}% 9
+\BOOKMARK [1][]{section.1.6}{Trabalhos relacionados aos juros da d\355vida t\351cnica}{chapter.1}% 10
+\BOOKMARK [1][]{section.1.7}{Contribui\347\365es}{chapter.1}% 11
+\BOOKMARK [1][]{section.1.8}{Organiza\347\343o do texto}{chapter.1}% 12
+\BOOKMARK [0][]{chapter.2}{D\355vida T\351cnica}{}% 13
+\BOOKMARK [1][]{section.2.1}{Introdu\347\343o}{chapter.2}% 14
+\BOOKMARK [1][]{section.2.2}{Defini\347\343o da d\355vida t\351cnica}{chapter.2}% 15
+\BOOKMARK [1][]{section.2.3}{A met\341fora}{chapter.2}% 16
+\BOOKMARK [2][]{subsection.2.3.1}{Termos da met\341fora}{section.2.3}% 17
+\BOOKMARK [1][]{section.2.4}{Classifica\347\365es da d\355vida t\351cnica}{chapter.2}% 18
+\BOOKMARK [1][]{section.2.5}{Tipos de d\355vida t\351cnicas}{chapter.2}% 19
+\BOOKMARK [2][]{subsection.2.5.1}{C\363digo}{section.2.5}% 20
+\BOOKMARK [2][]{subsection.2.5.2}{Design}{section.2.5}% 21
+\BOOKMARK [2][]{subsection.2.5.3}{Testes}{section.2.5}% 22
+\BOOKMARK [2][]{subsection.2.5.4}{Documenta\347\343o}{section.2.5}% 23
+\BOOKMARK [2][]{subsection.2.5.5}{Defeitos}{section.2.5}% 24
+\BOOKMARK [2][]{subsection.2.5.6}{Arquitetura}{section.2.5}% 25
+\BOOKMARK [2][]{subsection.2.5.7}{Constru\347\343o}{section.2.5}% 26
+\BOOKMARK [2][]{subsection.2.5.8}{Tecnologia}{section.2.5}% 27
+\BOOKMARK [1][]{section.2.6}{Gerenciamento da d\355vida t\351cnica}{chapter.2}% 28
+\BOOKMARK [2][]{subsection.2.6.1}{Abordagens adaptadas da \341rea financeira}{section.2.6}% 29
+\BOOKMARK [2][]{subsection.2.6.2}{Abordagens espec\355ficas}{section.2.6}% 30
+\BOOKMARK [2][]{subsection.2.6.3}{D\355vida t\351cnica como uma ferramenta estrat\351gica}{section.2.6}% 31
+\BOOKMARK [0][]{chapter.3}{Trabalhos relacionados}{}% 32
+\BOOKMARK [1][]{section.3.1}{Introdu\347\343o}{chapter.3}% 33
+\BOOKMARK [1][]{section.3.2}{Identifica\347\343o e estima\347\343o da d\355vida t\351cnica}{chapter.3}% 34
+\BOOKMARK [1][]{section.3.3}{Tipos de d\355vida t\351cnica}{chapter.3}% 35
+\BOOKMARK [2][]{subsection.3.3.1}{Testes e defeitos}{section.3.3}% 36
+\BOOKMARK [1][]{section.3.4}{Conclus\365es}{chapter.3}% 37
+\BOOKMARK [0][]{chapter.4}{M\351todo de pesquisa}{}% 38
+\BOOKMARK [1][]{section.4.1}{Introdu\347\343o}{chapter.4}% 39
+\BOOKMARK [1][]{section.4.2}{Pesquisa quantitativa}{chapter.4}% 40
+\BOOKMARK [2][]{subsection.4.2.1}{Minera\347\343o de reposit\363rios}{section.4.2}% 41
+\BOOKMARK [1][]{section.4.3}{O estudo de caso}{chapter.4}% 42
+\BOOKMARK [2][]{subsection.4.3.1}{Etapas do estudo de caso}{section.4.3}% 43
+\BOOKMARK [0][]{chapter.5}{O modelo de estima\347\343o do juros da d\355vida t\351cnica}{}% 44
+\BOOKMARK [1][]{section.5.1}{Introdu\347\343o}{chapter.5}% 45
+\BOOKMARK [1][]{section.5.2}{Estima\347\343o da produtividade em projetos de software}{chapter.5}% 46
+\BOOKMARK [1][]{section.5.3}{O modelo de estima\347\343o}{chapter.5}% 47
+\BOOKMARK [1][]{section.5.4}{O modelo abstrato de estima\347\343o dos juros da d\355vida t\351cnica}{chapter.5}% 48
+\BOOKMARK [1][]{section.5.5}{Os modelos concretos de estima\347\343o dos juros da d\355vida t\351cnica}{chapter.5}% 49
+\BOOKMARK [2][]{subsection.5.5.1}{Sele\347\343o das m\351tricas que representam as entradas do processo}{section.5.5}% 50
+\BOOKMARK [2][]{subsection.5.5.2}{Sele\347\343o das m\351tricas que representam as sa\355das do processo}{section.5.5}% 51
+\BOOKMARK [2][]{subsection.5.5.3}{Defini\347\343o do m\351todo de agrupamento dos projetos semelhantes }{section.5.5}% 52
+\BOOKMARK [2][]{subsection.5.5.4}{Defini\347\343o do m\351todo de particionamento dos grupos de projetos}{section.5.5}% 53
+\BOOKMARK [1][]{section.5.6}{O modelo de estima\347\343o dos juros em projetos de software livre}{chapter.5}% 54
+\BOOKMARK [1][]{section.5.7}{Entradas}{chapter.5}% 55
+\BOOKMARK [2][]{subsection.5.7.1}{Qualidade da colabora\347\343o}{section.5.7}% 56
+\BOOKMARK [2][]{subsection.5.7.2}{Assiduidade dos colaboradores}{section.5.7}% 57
+\BOOKMARK [2][]{subsection.5.7.3}{\315ndice de colabora\347\343o}{section.5.7}% 58
+\BOOKMARK [1][]{section.5.8}{Sa\355das}{chapter.5}% 59
+\BOOKMARK [2][]{subsection.5.8.1}{Linhas de c\363digo}{section.5.8}% 60
+\BOOKMARK [2][]{subsection.5.8.2}{Pull Requests}{section.5.8}% 61
+\BOOKMARK [2][]{subsection.5.8.3}{Popularidade}{section.5.8}% 62
+\BOOKMARK [1][]{section.5.9}{M\351todo de agrupamento dos projetos semelhantes}{chapter.5}% 63
+\BOOKMARK [1][]{section.5.10}{M\351todo de particionamento dos grupos de projetos}{chapter.5}% 64
+\BOOKMARK [0][]{chapter.6}{Estudo de caso}{}% 65
+\BOOKMARK [1][]{section.6.1}{Introdu\347\343o}{chapter.6}% 66
+\BOOKMARK [1][]{section.6.2}{O reposit\363rio de software}{chapter.6}% 67
+\BOOKMARK [2][]{subsection.6.2.1}{Controle de vers\365es utilizando o Git }{section.6.2}% 68
+\BOOKMARK [2][]{subsection.6.2.2}{GitHub}{section.6.2}% 69
+\BOOKMARK [2][]{subsection.6.2.3}{GHTorrent}{section.6.2}% 70
+\BOOKMARK [1][]{section.6.3}{Ferramenta de apoio: GitResearch}{chapter.6}% 71
+\BOOKMARK [2][]{subsection.6.3.1}{Arquitetura}{section.6.3}% 72
+\BOOKMARK [1][]{section.6.4}{Etapas do estudo de caso}{chapter.6}% 73
+\BOOKMARK [2][]{subsection.6.4.1}{Sele\347\343o dos projetos}{section.6.4}% 74
+\BOOKMARK [1][]{section.6.5}{Agrupamento dos projetos}{chapter.6}% 75
+\BOOKMARK [2][]{subsection.6.5.1}{LDA}{section.6.5}% 76
+\BOOKMARK [2][]{subsection.6.5.2}{A aplica\347\343o do LDA}{section.6.5}% 77
+\BOOKMARK [2][]{subsection.6.5.3}{Resultado do LDA}{section.6.5}% 78
+\BOOKMARK [1][]{section.6.6}{Extra\347\343o dos dados}{chapter.6}% 79
+\BOOKMARK [2][]{subsection.6.6.1}{O SonarQube}{section.6.6}% 80
+\BOOKMARK [2][]{subsection.6.6.2}{Medi\347\343o da d\355vida t\351cnica}{section.6.6}% 81
+\BOOKMARK [2][]{subsection.6.6.3}{Limita\347\365es na medi\347\343o da d\355vida t\351cnica}{section.6.6}% 82
+\BOOKMARK [2][]{subsection.6.6.4}{Divis\343o temporal do c\363digo}{section.6.6}% 83
+\BOOKMARK [1][]{section.6.7}{C\341lculo das vari\341veis de entrada do modelo}{chapter.6}% 84
+\BOOKMARK [2][]{subsection.6.7.1}{Qualidade de colabora\347\343o}{section.6.7}% 85
+\BOOKMARK [2][]{subsection.6.7.2}{Assiduidade}{section.6.7}% 86
+\BOOKMARK [1][]{section.6.8}{C\341lculo das vari\341veis de sa\355da do modelo}{chapter.6}% 87
+\BOOKMARK [1][]{section.6.9}{C\341lculo da produtividade dos projetos}{chapter.6}% 88
+\BOOKMARK [1][]{section.6.10}{Estima\347\343o dos Juros}{chapter.6}% 89
+\BOOKMARK [1][]{section.6.11}{Dados obtidos}{chapter.6}% 90
+\BOOKMARK [2][]{subsection.6.11.1}{M\351tricas}{section.6.11}% 91
+\BOOKMARK [2][]{subsection.6.11.2}{Distrui\347\343o dos projetos por t\363picos}{section.6.11}% 92
+\BOOKMARK [2][]{subsection.6.11.3}{D\355vida t\351cnica}{section.6.11}% 93
+\BOOKMARK [2][]{subsection.6.11.4}{Tamanho}{section.6.11}% 94
+\BOOKMARK [2][]{subsection.6.11.5}{Colabora\347\343o}{section.6.11}% 95
+\BOOKMARK [2][]{subsection.6.11.6}{Produtividade}{section.6.11}% 96
+\BOOKMARK [2][]{subsection.6.11.7}{Estima\347\343o dos juros}{section.6.11}% 97
+\BOOKMARK [0][]{chapter.7}{Resultados e discuss\343o}{}% 98
+\BOOKMARK [1][]{section.7.1}{Contribui\347\365es}{chapter.7}% 99
+\BOOKMARK [1][]{section.7.2}{Respostas as quest\365es de pesquisa}{chapter.7}% 100
+\BOOKMARK [0][]{chapter.8}{Amea\347as \340 validade}{}% 101
+\BOOKMARK [1][]{section.8.1}{Escala}{chapter.8}% 102
+\BOOKMARK [1][]{section.8.2}{Avalia\347\343o emp\355rica das m\351tricas utilizadas}{chapter.8}% 103
+\BOOKMARK [1][]{section.8.3}{Coisas a serem feitas caso haja tempo dispon\355vel}{chapter.8}% 104
+\BOOKMARK [1][]{section.8.4}{Imprecis\343o da popularidade}{chapter.8}% 105
+\BOOKMARK [0][]{chapter.9}{Conclus\343o}{}% 106
+\BOOKMARK [1][]{section.9.1}{Trabalhos futuros}{chapter.9}% 107
+\BOOKMARK [2][]{subsection.9.1.1}{Popularidade vs D\355vida T\351cnica}{section.9.1}% 108
+\BOOKMARK [2][]{subsection.9.1.2}{Artigo CBI}{section.9.1}% 109
+\BOOKMARK [0][]{appendix*.66}{Refer\352ncias Bibliogr\341ficas}{}% 110
