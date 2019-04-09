@@ -509,16 +509,14 @@ Para avaliarmos os dados obtidos durante o estudo de caso realizaremos uma anál
 
 \subsection{Métricas}
 
-A tabela \ref{tabela_sumario_metricas} apresenta um resumo com as principais medidas descritivas das métricas extraídas dos projetos. 
-
-Existem alguns aspectos interessantes na Tabela \ref{tabela_sumario_metricas}. Um deles é a existência de métricas no qual o valor mínimo encontrado foi zero. Ao analisarmos esses projetos com valor zero nessas métricas, pudemos observar que isso ocorreu devido ao fato desses projetos terem sido descontinuados recentemente. Com isso, o código fonte na última leitura que realizamos, foi apagado ou drasticamente diminuído.  
+A tabela \ref{tabela_sumario_metricas} apresenta um resumo com as principais medidas descritivas das métricas extraídas dos projetos. Existem alguns aspectos interessantes na Tabela \ref{tabela_sumario_metricas}. Um deles é a existência de métricas no qual o valor mínimo encontrado foi zero. Ao analisarmos esses projetos com valor zero nessas métricas, pudemos observar que isso ocorreu devido ao fato desses projetos terem sido descontinuados recentemente. Com isso, o código fonte na última leitura que realizamos, foi apagado ou drasticamente diminuído.  
 
 Outra aspecto relevante da Tabela Tabela \ref{tabela_sumario_metricas} é o comportamento da métrica \textbf{sqale debt ratio}. Conforme a Tabela \ref{table:metricas_sonar}, essa métrica armazena a proporção entre o tamanho do software e a sua dívida técnica. Como podemos ver, essa métrica tem um desvio padrão próximo a 1. Isso indica que não há uma grande variação da proporção da dívida técnica entre os projetos.  Entretanto, o valor máximo é de 12,4. Isso é um indício da existência de \textit{outliers}. De acordo com Hawkins et al. \cite{hawkins1980identification}, um \textit{outlier} é um valor que se afasta demasiadamente dos demais de uma série ou é um valor medido incorretamente. Para verificarmos se não houve alguma falha na medição, realizamos uma análise dos 30 projetos com os maiores valores nessa métrica. Em todos os casos os valor medido anteriormente foi confirmado. Analisando o código-fonte desses projetos, chegamos as seguintes razões para o elevado nível de dívida técnica:
 
 \begin{itemize}
 \item A existência de códigos de teste com um nível de qualidade muito inferior ao restante do software.
 \item A existência de arquivos e códigos descontinuados(\textit{deprecated}).
-\item  Uma acentuada despreocupação dos colaboradores com as boas práticas do desenvolvimento de software.
+\item  Uma acentuada despreocupação dos colaboradores em seguir as boas práticas do desenvolvimento de software.
 \end{itemize}
 
 
@@ -556,7 +554,7 @@ Outra aspecto relevante da Tabela Tabela \ref{tabela_sumario_metricas} é o comp
 \subsection{Distruição dos projetos por tópicos}
 
 
-Os projetos foram distribuidos em 30 grupos após a aplicação do LDA. A Figura \ref{fig:projetos_por_topicos} apresenta a quantidade de projetos em cada um dos tópicos. Podemos observar que não houve uma distruição uniforme dos projetos em cada tópico. Alguns tópicos como o 13 tiveram uma quantidade maior de projetos. Enquanto isso, alguns tópicos como o 28 e 10 tiveram uma quantidade significativamente menor de projetos. Existem algumas razões para essa variação:
+Os projetos foram distribuidos em 30 tópicos após a aplicação do LDA. A Tabela \ref{table:tabela_quantidade_projetos_topicos} e a Figura \ref{fig:projetos_por_topicos} apresentam a quantidade de projetos em cada um dos tópicos. Podemos observar que não houve uma distruição uniforme dos projetos em cada tópico. Alguns tópicos como o 13 tiveram uma quantidade maior de projetos. Enquanto isso, alguns tópicos como o 28 e 10 tiveram uma quantidade significativamente menor de projetos. Existem algumas razões para essa variação:
 
 \begin{itemize}
 \item A existência de alguns assuntos que genuinamente possuem mais projetos relacionados no GitHub. Esse é o caso, por exemplo, do tópico 9 que é o segundo maior tópico obtido. Na Tabela \ref{table:topicos_lda} podemos ver as palavras presentes nesse tópico e com isso, inferir que os projetos presentes nele são relacionados a aplicações para a internet. Isso explica a quantidade maior de projetos já que esse é um domínio popular. 
@@ -564,10 +562,82 @@ Os projetos foram distribuidos em 30 grupos após a aplicação do LDA. A Figura
 \end{itemize} 
 
 
-Para facilitar a visualização do comportamento dos dados  realizamos um agrupamento dos tópicos por domínio conforme mostrado na Tabela \ref{table_cap_estudo_topicos_dominios}. Esse agrupamento foi feito observando as palavras de cada um dos tópicos e analisando alguns dos projetos de cada tópico. Foram identificados 7 domínios: Aplicação, Gerenciamento de Dados, Ferramenta, Arcabouço, Mddleware, Biblioteca e Outro. Todos os projetos que não puderam ser classificados foram colocados no domínio Outro.
+\begingroup
+\begin{longtable}{|l|r|}
 
-A Figura \ref{fig:projetos_por_topicos} apresenta a distrubuição dos projetos dentro dos 7 domínios 
+\hline
+Tópico & Quantidade de projetos\\
+\hline
+Tópico 1 & 38\\
+\hline
+Tópico 10 & 10\\
+\hline
+Tópico 11 & 35\\
+\hline
+Tópico 12 & 35\\
+\hline
+Tópico 13 & 259\\
+\hline
+Tópico 14 & 35\\
+\hline
+Tópico 15 & 32\\
+\hline
+Tópico 16 & 64\\
+\hline
+Tópico 17 & 18\\
+\hline
+Tópico 18 & 22\\
+\hline
+Tópico 19 & 20\\
+\hline
+Tópico 2 & 32\\
+\hline
+Tópico 20 & 64\\
+\hline
+Tópico 21 & 109\\
+\hline
+Tópico 22 & 80\\
+\hline
+Tópico 23 & 194\\
+\hline
+Tópico 24 & 65\\
+\hline
+Tópico 25 & 42\\
+\hline
+Tópico 26 & 25\\
+\hline
+Tópico 27 & 63\\
+\hline
+Tópico 28 & 10\\
+\hline
+Tópico 29 & 48\\
+\hline
+Tópico 3 & 114\\
+\hline
+Tópico 30 & 20\\
+\hline
+Tópico 4 & 26\\
+\hline
+Tópico 5 & 19\\
+\hline
+Tópico 6 & 66\\
+\hline
+Tópico 7 & 42\\
+\hline
+Tópico 8 & 11\\
+\hline
+Tópico 9 & 216\\
+\hline
+\caption{Quantidade de projetos por tópico.}
+\end{longtable}
+\label{table:tabela_quantidade_projetos_topicos}
+\endgroup
 
+
+
+
+
+Para facilitar a visualização do comportamento dos dados  realizamos um agrupamento dos tópicos por domínio conforme mostrado na Tabela \ref{table_cap_estudo_topicos_dominios}. Esse agrupamento foi feito observando as palavras de cada um dos tópicos e analisando alguns dos projetos de cada tópico. Foram identificados 7 domínios: Aplicação, Gerenciamento de Dados, Ferramenta, Arcabouço, Mddleware, Biblioteca e Outro. Todos os projetos que não puderam ser classificados foram colocados no domínio Outro. A Figura \ref{fig:projetos_por_dominio} apresenta a distrubuição dos projetos dentro dos 7 domínios. É possível nota que houve uma distribuição mais uniforme dos projetos quando é realizado o agrupamento dos tópicos em domínios. 
 
 
 
@@ -603,76 +673,121 @@ Outro                  & \pbox{1cm}{11, 13, 29}          & \pbox{5cm}{Não puder
   \centering
   \frame{\includegraphics[trim={0cm 0cm 0cm 0cm},clip]{capitulo_estudo_caso/analise_exploratoria/projetos_por_dominio.pdf}} 
   \caption{Quantidade de projetos por domínio.}
-  \label{fig:codigo_calcula_pagerank} 
+  \label{fig:projetos_por_dominio} 
 \end{figure}
 
 
 \subsection{Dívida técnica}
 
+A Figura \ref{fig:boxplot_divida_tecnica} apresenta um \textit{boxplot} a respeito da distribuição da dívida técnica em todos os projetos do estudo de caso. Conforme pode ser visto, a mediana se aproxima de 1,5. Isso vai de encontro a resultados de pesquisas anteriores onde o valor da mediana era próximo de três\cite{de2017technical}. As Figura \ref{fig:divida_por_topico} e \ref{fig:divida_por_dominio} apresentam \textit{boxplots} com a distribuição do valor da dívida técnica dos projetos agrupados por tópicos e domínios, respectivamente. 
+
+
+ \begin{figure}[H]
+  \centering
+  \frame{\includegraphics[trim={0cm 2cm 0cm 0cm},clip]{capitulo_estudo_caso/analise_exploratoria/divida_tecnica_sozinha.pdf}} 
+  \caption{Dívida técnica.}
+  \label{fig:boxplot_divida_tecnica} 
+\end{figure}
+
  \begin{figure}[H]
   \centering
   \frame{\includegraphics[trim={0cm 0cm 0cm 0cm},clip]{capitulo_estudo_caso/analise_exploratoria/divida_tecnica_por_topico.pdf}} 
   \caption{Dívida técnica por tópico.}
-  \label{fig:codigo_calcula_pagerank} 
+  \label{fig:divida_por_topico} 
 \end{figure}
 
  \begin{figure}[H]
   \centering
   \frame{\includegraphics[trim={0cm 0cm 0cm 0cm},clip]{capitulo_estudo_caso/analise_exploratoria/divida_tecnica_por_dominio.pdf}} 
   \caption{Dívida técnica por domínio.}
-  \label{fig:codigo_calcula_pagerank} 
+  \label{fig:divida_por_dominio} 
 \end{figure}
 
- \begin{figure}[H]
-  \centering
-  \frame{\includegraphics[trim={0cm 0cm 0cm 0cm},clip]{capitulo_estudo_caso/analise_exploratoria/evolucao_divida_dominio.pdf}} 
-  \caption{Dívida técnica por domínio.}
-  \label{fig:codigo_calcula_pagerank} 
-\end{figure}
+
+Na Figura \ref{fig:histograma_leitura_divida} é apresentado um histograma, com a quantidade de projetos por intervalo de dívida técnica, para cada leitura realizada. 
 
  \begin{figure}[H]
   \centering
   \frame{\includegraphics[trim={0cm 0cm 0cm 0cm},clip]{capitulo_estudo_caso/analise_exploratoria/histograma_divida_leitura.pdf}} 
   \caption{Dívida técnica por domínio.}
-  \label{fig:codigo_calcula_pagerank} 
+  \label{fig:histograma_leitura_divida} 
 \end{figure}
 
-\subsection{Tamanho}
+
+Por termos feitos cinco leituras em períodos diferentes da evolução dos projetos, podemos analisar a evolução da dívida técnica nos mesmos. A Figura \ref{fig:evolucao_por_dominio} apresenta a evolução da dívida técnica nos projetos agrupados por domínio. É possível notar que há predominantemente uma tendência de queda. Ou seja, a medida que os projetos evoluem, o nível da dívida técnica cai. Entretanto, essa variação temporal é pequena.  Um exemplo são os projetos do domínio \textbf{aplicação}. Inicialmente a média da dívida técnica desses projetos foi de aproximadamente 1,9. Entretanto, com o passar do tempo, essa média caiu para 1,65. 
+
+
+
  \begin{figure}[H]
   \centering
-  \frame{\includegraphics[trim={0cm 0cm 0cm 0cm},clip]{capitulo_estudo_caso/analise_exploratoria/linhas_de_codigo_por_dominio.pdf}} 
-  \caption{Dívida técnica por domínio.}
-  \label{fig:codigo_calcula_pagerank} 
+  \frame{\includegraphics[trim={0cm 0cm 0cm 0cm},clip]{capitulo_estudo_caso/analise_exploratoria/evolucao_divida_dominio.pdf}} 
+  \caption{Evolução da dívida técnica por domínio.}
+  \label{fig:evolucao_por_dominio} 
 \end{figure}
+
+
+
+\subsection{Tamanho}
+
+A Figura \ref{fig:histograma_nloc} apresenta um histograma com o número de projetos por faixa de tamanho. É possível verificar que grande parte dos projetos tem menos do que quinhentas mil linhas de código-fonte. Porém, existem alguns projetos acentuadamente maiores e que ultrapassam as cem mil linhas. As Figuras \ref{fig:histograma_nloc} e \ref{fig:linhas_codigo_dominio} apresentam \textit{boxplots} com a distribuição da quantidade de linhas de código agrupadas por tópicos e domínios respectivamente. Já a Figura \ref{fig:evolucao_linhas_codigo_dominio} apresenta a evolução da quantidade de linhas de código entre as leituras realizadas. Como esperado, há uma tendência de crescimento já que a medida que o software evoluiu, mais linhas de código são inseridas. 
+
+
+ \begin{figure}[H]
+  \centering
+  \frame{\includegraphics[trim={0cm 0cm 0cm 0cm},clip]{capitulo_estudo_caso/analise_exploratoria/histograma_nloc.pdf}} 
+  \caption{Frequência de projetos por intervalo de número de linhas de código.}
+  \label{fig:histograma_nloc} 
+\end{figure}
+
 
 
  \begin{figure}[H]
   \centering
   \frame{\includegraphics[trim={0cm 0cm 0cm 0cm},clip]{capitulo_estudo_caso/analise_exploratoria/linhas_de_codigo_por_topico.pdf}} 
   \caption{Dívida técnica por domínio.}
-  \label{fig:codigo_calcula_pagerank} 
+  \label{fig:linhas_codigo_topico} 
 \end{figure}
+
+ \begin{figure}[H]
+  \centering
+  \frame{\includegraphics[trim={0cm 0cm 0cm 0cm},clip]{capitulo_estudo_caso/analise_exploratoria/linhas_de_codigo_por_dominio.pdf}} 
+  \caption{Dívida técnica por domínio.}
+  \label{fig:linhas_codigo_dominio} 
+\end{figure}
+
 
  \begin{figure}[H]
   \centering
   \frame{\includegraphics[trim={0cm 0cm 0cm 0cm},clip]{capitulo_estudo_caso/analise_exploratoria/evolucao_linhas_de_codigo_dominio.pdf}} 
   \caption{Dívida técnica por domínio.}
-  \label{fig:codigo_calcula_pagerank} 
+  \label{fig:evolucao_linhas_codigo_dominio} 
 \end{figure}
 
+
+\subsection{Correlações entre a dívida técnica e as métricas de tamanho}
+
+Nas Figuras \ref{fig:correlacao_divida_linhas_codigo},  \ref{fig:correlacao_divida_watchers} e \ref{fig:correlacao_divida_pull_request} foram exibidas as correlações entre a dívida técnica e as variáveis linhas de código, \textit{watchers} e \textit{pull requests}, respectivamente. Conforme pode ser notado, apenas há indício de correlação com a variável linhas de código. Ainda assim, essa correlação, medida de forma geral, sem separação por domínios, é de apenas 0,1164773  com \textit{p-value} de 0,0000006545. 
 
  \begin{figure}[H]
   \centering
   \frame{\includegraphics[trim={0cm 0cm 0cm 0cm},clip]{capitulo_estudo_caso/analise_exploratoria/correlacao_divida_nloc.pdf}} 
-  \caption{Dívida técnica por domínio.}
-  \label{fig:codigo_calcula_pagerank} 
+  \caption{Correlação entre a dívida técnica e a quantidade de linhas de código.}
+  \label{fig:correlacao_divida_linhas_codigo} 
 \end{figure}
 
  \begin{figure}[H]
   \centering
+  \frame{\includegraphics[trim={0cm 0cm 0cm 0cm},clip]{capitulo_estudo_caso/analise_exploratoria/correlacao_divida_watchers.pdf}} 
+  \caption{Correlação entre a dívida técnica e a quantidade de \textit{watchers}.}
+  \label{fig:correlacao_divida_watchers} 
+\end{figure}
+
+
+ \begin{figure}[H]
+  \centering
   \frame{\includegraphics[trim={0cm 0cm 0cm 0cm},clip]{capitulo_estudo_caso/analise_exploratoria/correlacao_divida_pull_request.pdf}} 
-  \caption{Dívida técnica por domínio.}
-  \label{fig:codigo_calcula_pagerank} 
+  \caption{Correlação entre a dívida técnica e a quantidade de \textit{Pull requests}.}
+  \label{fig:correlacao_divida_pull_request} 
 \end{figure}
 
 

@@ -23,8 +23,14 @@ par(mar=c(6, 3 ,2 ,1))
 barplot(sort(table(DADOS_BRUTOS_PROJETOS$DOMAIN),decreasing = TRUE), las=2,cex.axis=0.75,cex.names=0.75)
 dev.off()
 
+#Cria boxplot da dívida técnica
+pdf("C:/Users/jandi/Dropbox/DOUTORADO/TESE/figuras/capitulo_estudo_caso/analise_exploratoria/divida_tecnica_sozinha.pdf",width = 4, height = 4 )
+par(mar=c(6, 3 ,2 ,2))
+boxplot(DADOS_BRUTOS_PROJETOS$SQALE_DEBT_RATIO_5,outline=FALSE,las=2,cex.axis=0.75,cex.names=0.75)
+dev.off()
+
 #Cria boxplot da dívida técnica por topico
-pdf("C:/Users/jandi/Dropbox/DOUTORADO/TESE/figuras/capitulo_estudo_caso/analise_exploratoria/divida_tecnica_por_topico.pdf",width = 6.7, height = 8 )
+pdf("C:/Users/jandi/Dropbox/DOUTORADO/TESE/figuras/capitulo_estudo_caso/analise_exploratoria/divida_tecnica_por_topico.pdf",width = 6.7, height = 4 )
 par(mar=c(6, 3 ,2 ,2))
 boxplot(SQALE_DEBT_RATIO_5~TOPIC,data=DADOS_BRUTOS_PROJETOS,outline=FALSE,las=2,cex.axis=0.75,cex.names=0.75)
 dev.off()
@@ -36,19 +42,19 @@ boxplot(SQALE_DEBT_RATIO_5~DOMAIN,data=DADOS_BRUTOS_PROJETOS,outline=FALSE,las=2
 dev.off()
 
 #Cria boxplot da quantidade de linhas de código por dominio
-pdf("C:/Users/jandi/Dropbox/DOUTORADO/TESE/figuras/capitulo_estudo_caso/analise_exploratoria/linhas_de_codigo_por_dominio.pdf",width = 6.7, height = 5 )
+pdf("C:/Users/jandi/Dropbox/DOUTORADO/TESE/figuras/capitulo_estudo_caso/analise_exploratoria/linhas_de_codigo_por_dominio.pdf",width = 6.7, height = 4 )
 par(mar=c(6, 4 ,2 ,2))
 boxplot(NCLOC_5~DOMAIN,data=DADOS_BRUTOS_PROJETOS,outline=FALSE,las=2,cex.axis=0.75,cex.names=0.75)
 dev.off()
 
 #Cria boxplot da quantidade de linhas de código por topico
-pdf("C:/Users/jandi/Dropbox/DOUTORADO/TESE/figuras/capitulo_estudo_caso/analise_exploratoria/linhas_de_codigo_por_topico.pdf",width = 6.7, height = 5 )
+pdf("C:/Users/jandi/Dropbox/DOUTORADO/TESE/figuras/capitulo_estudo_caso/analise_exploratoria/linhas_de_codigo_por_topico.pdf",width = 6.7, height = 4 )
 par(mar=c(6, 4 ,2 ,2))
 boxplot(NCLOC_5~TOPIC,data=DADOS_BRUTOS_PROJETOS,outline=FALSE,las=2,cex.axis=0.75,cex.names=0.75)
 dev.off()
 
 #cria um quadro com a evolução das linhas de código por dominio 
-pdf("C:/Users/jandi/Dropbox/DOUTORADO/TESE/figuras/capitulo_estudo_caso/analise_exploratoria/evolucao_linhas_de_codigo_dominio.pdf",width = 6.7, height = 5 )
+pdf("C:/Users/jandi/Dropbox/DOUTORADO/TESE/figuras/capitulo_estudo_caso/analise_exploratoria/evolucao_linhas_de_codigo_dominio.pdf",width = 6.7, height = 8 )
 points = 1:5
 par(mar=c(2, 2 ,2 ,2))
 par(mfrow=c(4,2))
@@ -62,7 +68,7 @@ dev.off()
 
 
 #cria um quadro com a evolução da dívida técnica por dominio 
-pdf("C:/Users/jandi/Dropbox/DOUTORADO/TESE/figuras/capitulo_estudo_caso/analise_exploratoria/evolucao_divida_dominio.pdf",width = 6.7, height = 5 )
+pdf("C:/Users/jandi/Dropbox/DOUTORADO/TESE/figuras/capitulo_estudo_caso/analise_exploratoria/evolucao_divida_dominio.pdf",width = 6.7, height = 8 )
 leituras = 1:5
 par(mar=c(2, 2 ,2 ,2))
 par(mfrow=c(4,2))
@@ -75,19 +81,25 @@ par(mfrow=c(1,1))
 dev.off()
 
 #cria um quadro com o histograma da dívida técnica por leitura
-pdf("C:/Users/jandi/Dropbox/DOUTORADO/TESE/figuras/capitulo_estudo_caso/analise_exploratoria/histograma_divida_leitura.pdf",width = 6.7, height = 5 )
+pdf("C:/Users/jandi/Dropbox/DOUTORADO/TESE/figuras/capitulo_estudo_caso/analise_exploratoria/histograma_divida_leitura.pdf",width = 6.7, height = 8 )
 par(mar=c(2, 2 ,2 ,2))
 par(mfrow=c(3,2))
 
-hist(DADOS_BRUTOS_PROJETOS$SQALE_DEBT_RATIO_1, main="Leitura 1" , ylab =  "Frequência", xlab = "SQALE_DEBT_RATIO")
-hist(DADOS_BRUTOS_PROJETOS$SQALE_DEBT_RATIO_2, main="Leitura 2" , ylab =  "Frequência", xlab = "SQALE_DEBT_RATIO")
-hist(DADOS_BRUTOS_PROJETOS$SQALE_DEBT_RATIO_3, main="Leitura 3" , ylab =  "Frequência", xlab = "SQALE_DEBT_RATIO")
-hist(DADOS_BRUTOS_PROJETOS$SQALE_DEBT_RATIO_4, main="Leitura 4" , ylab =  "Frequência", xlab = "SQALE_DEBT_RATIO")
-hist(DADOS_BRUTOS_PROJETOS$SQALE_DEBT_RATIO_5, main="Leitura 5" , ylab =  "Frequência", xlab = "SQALE_DEBT_RATIO")
+hist(DADOS_BRUTOS_PROJETOS$SQALE_DEBT_RATIO_1, main="Leitura 1" , ylab =  "Frequência", xlab = "SQALE_DEBT_RATIO",breaks= seq(0,30,0.5))
+hist(DADOS_BRUTOS_PROJETOS$SQALE_DEBT_RATIO_2, main="Leitura 2" , ylab =  "Frequência", xlab = "SQALE_DEBT_RATIO",breaks= seq(0,30,0.5))
+hist(DADOS_BRUTOS_PROJETOS$SQALE_DEBT_RATIO_3, main="Leitura 3" , ylab =  "Frequência", xlab = "SQALE_DEBT_RATIO",breaks= seq(0,30,0.5))
+hist(DADOS_BRUTOS_PROJETOS$SQALE_DEBT_RATIO_4, main="Leitura 4" , ylab =  "Frequência", xlab = "SQALE_DEBT_RATIO",breaks= seq(0,30,0.5))
+hist(DADOS_BRUTOS_PROJETOS$SQALE_DEBT_RATIO_5, main="Leitura 5" , ylab =  "Frequência", xlab = "SQALE_DEBT_RATIO",breaks= seq(0,30,0.5))
 
 par(mfrow=c(1,1))
 dev.off()
 
+
+#Cria um histograma de NLOC_5
+pdf("C:/Users/jandi/Dropbox/DOUTORADO/TESE/figuras/capitulo_estudo_caso/analise_exploratoria/histograma_nloc.pdf",width = 5, height = 4 )
+par(mar=c(4, 3 ,2 ,2))
+hist(DADOS_BRUTOS_PROJETOS$NCLOC_5, main="" , ylab =  "Frequência", xlab = "", breaks= seq(0,2000000,1000), las=2,cex.axis=0.75 )
+dev.off()
 
 #cria um quadro com a correlação entre a dívida técnica e o tamanho do software 
 pdf("C:/Users/jandi/Dropbox/DOUTORADO/TESE/figuras/capitulo_estudo_caso/analise_exploratoria/correlacao_divida_nloc.pdf",width = 6.7, height = 8 )
@@ -133,19 +145,10 @@ par(mfrow=c(1,1))
 dev.off()
 
 
-#cria um quadro com a correlação entre a complexidade e a quantidade de pull_requests
-pdf("C:/Users/jandi/Dropbox/DOUTORADO/TESE/figuras/capitulo_estudo_caso/analise_exploratoria/correlacao_complexidade_pullrequest.pdf",width = 6.7, height = 8 )
 
-par(mar=c(2, 2 ,2 ,2))
-par(mfrow=c(4,2))
-for (dominio in unique(DADOS_BRUTOS_PROJETOS$DOMAIN)){
-  dominio = DADOS_BRUTOS_PROJETOS[which(DADOS_BRUTOS_PROJETOS$DOMAIN== dominio),]
-  plot(dominio$PULL_REQUESTS~dominio$COMPLEXITY_5,main=unique(dominio$DOMAIN) )
-  abline(lm(PULL_REQUESTS ~ COMPLEXITY_5, data = dominio), col = "blue")
-  
-}
-par(mfrow=c(1,1))
-dev.off()
+
+
+
 
 #Calcula o sumário das principais variaveis
 summary(DADOS_BRUTOS_PROJETOS[c("WATCHERS","COMMITS","PULL_REQUESTS","NCLOC_5","SQALE_DEBT_RATIO_5")])

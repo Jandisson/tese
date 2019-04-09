@@ -105,22 +105,23 @@
 \contentsline {section}{\numberline {6.11}Dados obtidos}{108}{section.6.11}
 \contentsline {subsection}{\numberline {6.11.1}M\IeC {\'e}tricas}{109}{subsection.6.11.1}
 \contentsline {subsection}{\numberline {6.11.2}Distrui\IeC {\c c}\IeC {\~a}o dos projetos por t\IeC {\'o}picos}{110}{subsection.6.11.2}
-\contentsline {subsection}{\numberline {6.11.3}D\IeC {\'\i }vida t\IeC {\'e}cnica}{114}{subsection.6.11.3}
-\contentsline {subsection}{\numberline {6.11.4}Tamanho}{118}{subsection.6.11.4}
-\contentsline {subsection}{\numberline {6.11.5}Colabora\IeC {\c c}\IeC {\~a}o}{122}{subsection.6.11.5}
-\contentsline {subsection}{\numberline {6.11.6}Produtividade}{123}{subsection.6.11.6}
-\contentsline {subsection}{\numberline {6.11.7}Estima\IeC {\c c}\IeC {\~a}o dos juros}{123}{subsection.6.11.7}
-\contentsline {chapter}{\numberline {7}Resultados e discuss\IeC {\~a}o}{125}{chapter.7}
-\contentsline {section}{\numberline {7.1}Contribui\IeC {\c c}\IeC {\~o}es}{125}{section.7.1}
-\contentsline {section}{\numberline {7.2}Respostas as quest\IeC {\~o}es de pesquisa}{125}{section.7.2}
-\contentsline {chapter}{\numberline {8}Amea\IeC {\c c}as \IeC {\`a} validade}{127}{chapter.8}
-\contentsline {section}{\numberline {8.1}Escala}{128}{section.8.1}
-\contentsline {section}{\numberline {8.2}Avalia\IeC {\c c}\IeC {\~a}o emp\IeC {\'\i }rica das m\IeC {\'e}tricas utilizadas}{128}{section.8.2}
-\contentsline {section}{\numberline {8.3}Coisas a serem feitas caso haja tempo dispon\IeC {\'\i }vel}{128}{section.8.3}
-\contentsline {section}{\numberline {8.4}Imprecis\IeC {\~a}o da popularidade}{128}{section.8.4}
-\contentsline {chapter}{\numberline {9}Conclus\IeC {\~a}o}{131}{chapter.9}
-\contentsline {section}{\numberline {9.1}Trabalhos futuros}{131}{section.9.1}
-\contentsline {subsection}{\numberline {9.1.1}Popularidade vs D\IeC {\'\i }vida T\IeC {\'e}cnica}{131}{subsection.9.1.1}
-\contentsline {subsection}{\numberline {9.1.2}Artigo CBI}{131}{subsection.9.1.2}
-\contentsline {chapter}{Refer\^encias Bibliogr\'aficas}{133}{appendix*.66}
+\contentsline {subsection}{\numberline {6.11.3}D\IeC {\'\i }vida t\IeC {\'e}cnica}{115}{subsection.6.11.3}
+\contentsline {subsection}{\numberline {6.11.4}Tamanho}{120}{subsection.6.11.4}
+\contentsline {subsection}{\numberline {6.11.5}Correla\IeC {\c c}\IeC {\~o}es entre a d\IeC {\'\i }vida t\IeC {\'e}cnica e as m\IeC {\'e}tricas de tamanho}{122}{subsection.6.11.5}
+\contentsline {subsection}{\numberline {6.11.6}Colabora\IeC {\c c}\IeC {\~a}o}{125}{subsection.6.11.6}
+\contentsline {subsection}{\numberline {6.11.7}Produtividade}{126}{subsection.6.11.7}
+\contentsline {subsection}{\numberline {6.11.8}Estima\IeC {\c c}\IeC {\~a}o dos juros}{126}{subsection.6.11.8}
+\contentsline {chapter}{\numberline {7}Resultados e discuss\IeC {\~a}o}{127}{chapter.7}
+\contentsline {section}{\numberline {7.1}Contribui\IeC {\c c}\IeC {\~o}es}{127}{section.7.1}
+\contentsline {section}{\numberline {7.2}Respostas as quest\IeC {\~o}es de pesquisa}{127}{section.7.2}
+\contentsline {chapter}{\numberline {8}Amea\IeC {\c c}as \IeC {\`a} validade}{129}{chapter.8}
+\contentsline {section}{\numberline {8.1}Escala}{130}{section.8.1}
+\contentsline {section}{\numberline {8.2}Avalia\IeC {\c c}\IeC {\~a}o emp\IeC {\'\i }rica das m\IeC {\'e}tricas utilizadas}{130}{section.8.2}
+\contentsline {section}{\numberline {8.3}Coisas a serem feitas caso haja tempo dispon\IeC {\'\i }vel}{130}{section.8.3}
+\contentsline {section}{\numberline {8.4}Imprecis\IeC {\~a}o da popularidade}{130}{section.8.4}
+\contentsline {chapter}{\numberline {9}Conclus\IeC {\~a}o}{133}{chapter.9}
+\contentsline {section}{\numberline {9.1}Trabalhos futuros}{133}{section.9.1}
+\contentsline {subsection}{\numberline {9.1.1}Popularidade vs D\IeC {\'\i }vida T\IeC {\'e}cnica}{133}{subsection.9.1.1}
+\contentsline {subsection}{\numberline {9.1.2}Artigo CBI}{133}{subsection.9.1.2}
+\contentsline {chapter}{Refer\^encias Bibliogr\'aficas}{135}{appendix*.69}
 \contentsfinish 
