@@ -1,0 +1,5 @@
+modelo_colaboracao = lm(IC~ NCLOC_5 + WATCHERS + PULL_REQUESTS ,data = DADOS_BRUTOS_PROJETOS)
+
+modelo_authors = lm(AUTHORS~ NCLOC_5 + WATCHERS + PULL_REQUESTS ,data = DADOS_BRUTOS_PROJETOS)
+
+modelo_authors_days = lm(AUTHOR_DAYS~ NCLOC_5 + WATCHERS + PULL_REQUESTS ,data = DADOS_BRUTOS_PROJETOS)

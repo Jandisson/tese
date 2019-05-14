@@ -1,12 +1,33 @@
 #install.packages("knitr")
 #install.packages("kableExtra")
+#install.packages("corrplot")
+#install.packages("RMariaDB")
+#install.packages("outliers")
+
 library(knitr)
 library(kableExtra)
+library(corrplot)
+library(RMariaDB)
+library(outliers)
 
 diretorio_trabalho = "C:/Users/jandi/Dropbox/DOUTORADO/TESE/figuras/capitulo_estudo_caso/analise_exploratoria/"
 
 #Obtem os dados
 DADOS_BRUTOS_PROJETOS <- read.delim2("C:/Users/jandi/Dropbox/DOUTORADO/DADOS_EXPERIMENTO/DADOS_BRUTOS_PROJETOS.txt", stringsAsFactors = F, sep="\t", dec=",")
+
+# Numero de pesquisas divida tecnica
+numero_pesquisas <- read.delim2("C:/Users/jandi/Dropbox/DOUTORADO/DADOS_EXPERIMENTO/pesquisa_divida.txt", stringsAsFactors = F, sep="\t")
+pdf("C:/Users/jandi/Dropbox/DOUTORADO/TESE/figuras/capitulo_introducao/numero_citacoes.pdf",width = 6.7, height = 5 )
+par(mar=c(6, 3 ,1,1))
+numero_citacoes = barplot(numero_pesquisas$citacoes,names = numero_pesquisas$ano, las=2,cex.axis=0.75,cex.names=0.75)
+
+dev.off()
+
+barplot(table(numero_pesquisas$ano), las=2,xlim=c(0,35),ylim=c(0,1200),cex.axis=0.75,cex.names=0.75)
+
+
+#Separa os dados numericos
+dados_numericos = DADOS_BRUTOS_PROJETOS[c("SUM_PAGERANK_USERS","COMMITS","AUTHORS","WATCHERS","COMMITS","PULL_REQUESTS","IC","CLASSES_5","CODE_SMELLS_5","COGNITIVE_COMPLEXITY_5","COMMENT_LINES_DENSITY_5","COMPLEXITY_5","DIRECTORIES_5","DUPLICATED_BLOCKS_5","DUPLICATED_FILES_5","DUPLICATED_LINES_5","FILES_5","FUNCTIONS_5","NCLOC_5","SQALE_DEBT_RATIO_5","VIOLATIONS_5")]
 
 #Evita notação científica
 options(scipen=999)
@@ -14,13 +35,15 @@ options(scipen=999)
 #Cria gráfico de barras para a quantidade de projetos em cada tópico
 pdf(paste(diretorio_trabalho,"projetos_por_topicos.pdf", sep=""),width = 6.7, height = 5 )
 par(mar=c(5, 3 ,2 ,1))
-barplot(sort(table(DADOS_BRUTOS_PROJETOS$TOPIC),decreasing = TRUE), las=2,xlim=c(0,35),ylim=c(0,300),cex.axis=0.75,cex.names=0.75)
+bar_topic = barplot(sort(table(DADOS_BRUTOS_PROJETOS$TOPIC),decreasing = TRUE), las=2,xlim=c(0,35),ylim=c(0,300),cex.axis=0.75,cex.names=0.75)
+text(x = bar_topic, y = sort(table(DADOS_BRUTOS_PROJETOS$TOPIC),decreasing = TRUE), label = sort(table(DADOS_BRUTOS_PROJETOS$TOPIC),decreasing = TRUE), pos = 3, cex = 0.5, col = "black")
 dev.off()
 
 #Cria gráfico de barras para a quantidade de projetos em cada dominio
 pdf("C:/Users/jandi/Dropbox/DOUTORADO/TESE/figuras/capitulo_estudo_caso/analise_exploratoria/projetos_por_dominio.pdf",width = 6.7, height = 5 )
-par(mar=c(6, 3 ,2 ,1))
-barplot(sort(table(DADOS_BRUTOS_PROJETOS$DOMAIN),decreasing = TRUE), las=2,cex.axis=0.75,cex.names=0.75)
+par(mar=c(6, 3 ,1,1))
+bar_domain = barplot(sort(table(DADOS_BRUTOS_PROJETOS$DOMAIN),decreasing = TRUE), las=2,cex.axis=0.75,cex.names=0.75)
+text(x = bar_domain, y = sort(table(DADOS_BRUTOS_PROJETOS$DOMAIN),decreasing = TRUE), label = sort(table(DADOS_BRUTOS_PROJETOS$DOMAIN),decreasing = TRUE), pos = 1, cex = 0.8, col = "black")
 dev.off()
 
 #Cria boxplot da dívida técnica
@@ -145,6 +168,11 @@ par(mfrow=c(1,1))
 dev.off()
 
 
+#Cria boxplot da produtividade por dominio
+#pdf("C:/Users/jandi/Dropbox/DOUTORADO/TESE/figuras/capitulo_estudo_caso/analise_exploratoria/produtividade_por_topico.pdf",width = 6.7, height = 4 )
+#par(mar=c(6, 4 ,2 ,2))
+#boxplot(Productiviy~TOPIC,data=DADOS_BRUTOS_PROJETOS,outline=FALSE,las=2,cex.axis=0.75,cex.names=0.75)
+#dev.off()
 
 
 
@@ -152,8 +180,4 @@ dev.off()
 
 #Calcula o sumário das principais variaveis
 summary(DADOS_BRUTOS_PROJETOS[c("WATCHERS","COMMITS","PULL_REQUESTS","NCLOC_5","SQALE_DEBT_RATIO_5")])
-
- 
-
-
 

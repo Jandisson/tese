@@ -1,50 +1,52 @@
 \select@language {brazil}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces N\IeC {\'u}mero anual de cita\IeC {\c c}\IeC {\~o}es ao termo d\IeC {\'\i }vida t\IeC {\'e}cnica. \relax }}{3}{figure.caption.6}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Quantidade de projetos por t\IeC {\'o}pico do LDA.\relax }}{6}{figure.caption.7}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces N\IeC {\'u}mero anual de cita\IeC {\c c}\IeC {\~o}es ao termo d\IeC {\'\i }vida t\IeC {\'e}cnica. \relax }}{4}{figure.caption.10}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Exemplo de d\IeC {\'\i }vida t\IeC {\'e}cnica em c\IeC {\'o}digo fonte. \relax }}{13}{figure.caption.8}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Exemplo de d\IeC {\'\i }vida t\IeC {\'e}cnica em banco de dados. \relax }}{15}{figure.caption.9}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Exemplo de refatora\IeC {\c c}\IeC {\~a}o para viabilizar a cria\IeC {\c c}\IeC {\~a}o de um teste unit\IeC {\'a}rio. \relax }}{16}{figure.caption.10}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Panorama da d\IeC {\'\i }vida t\IeC {\'e}cnica. Adaptado de \cite {kruchten2013technical}. \relax }}{18}{figure.caption.13}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Localiza\IeC {\c c}\IeC {\~a}o da d\IeC {\'\i }vida t\IeC {\'e}cnica na hierarquia dos problemas de qualidade de software. \relax }}{19}{figure.caption.14}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Representa\IeC {\c c}\IeC {\~a}o dos juros como o esfor\IeC {\c c}o adicional causado pela d\IeC {\'\i }vida t\IeC {\'e}cnica. \relax }}{23}{figure.caption.19}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Framework para gerenciamento da d\IeC {\'\i }vida t\IeC {\'e}cnica. Adaptado de \cite {seaman2011measuring}. \relax }}{34}{figure.caption.22}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Exemplo de d\IeC {\'\i }vida t\IeC {\'e}cnica em c\IeC {\'o}digo fonte. \relax }}{11}{figure.caption.11}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Exemplo de d\IeC {\'\i }vida t\IeC {\'e}cnica em banco de dados. \relax }}{13}{figure.caption.12}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Exemplo de refatora\IeC {\c c}\IeC {\~a}o para viabilizar a cria\IeC {\c c}\IeC {\~a}o de um teste unit\IeC {\'a}rio. \relax }}{14}{figure.caption.13}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Panorama da d\IeC {\'\i }vida t\IeC {\'e}cnica. Adaptado de \cite {kruchten2013technical}. \relax }}{16}{figure.caption.16}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Localiza\IeC {\c c}\IeC {\~a}o da d\IeC {\'\i }vida t\IeC {\'e}cnica na hierarquia dos problemas de qualidade de software. \relax }}{17}{figure.caption.17}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Representa\IeC {\c c}\IeC {\~a}o dos juros como o esfor\IeC {\c c}o adicional causado pela d\IeC {\'\i }vida t\IeC {\'e}cnica. \relax }}{21}{figure.caption.22}
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Framework para gerenciamento da d\IeC {\'\i }vida t\IeC {\'e}cnica. Adaptado de \cite {seaman2011measuring}. \relax }}{30}{figure.caption.25}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces N\IeC {\'\i }veis de abstra\IeC {\c c}\IeC {\~a}o do modelo de estima\IeC {\c c}\IeC {\~a}o dos juros da d\IeC {\'\i }vida t\IeC {\'e}cnica. \relax }}{44}{figure.caption.24}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces As rela\IeC {\c c}\IeC {\~o}es de seguir e poder ser seguido no GitHub. Adaptado de \cite {mo2015geminer}.\relax }}{56}{figure.caption.27}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Resumo das etapas do estudo de caso. \relax }}{68}{figure.caption.30}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Arquitetura do framework Spring Batch. Adaptada de \cite {minella2011pro}.\relax }}{70}{figure.caption.31}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces C\IeC {\'o}digo respons\IeC {\'a}vel por configurar o \textit {Job} no GitResearch.\relax }}{72}{figure.caption.32}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Passos do processamento no GitResearch.\relax }}{73}{figure.caption.33}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Mapeamento entre as etapas do estudo de caso e as etapas de processamento no GitResearch. \relax }}{74}{figure.caption.34}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Tabelas do GHTorrent.\relax }}{77}{figure.caption.35}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces C\IeC {\'o}digo respons\IeC {\'a}vel por criar a configura\IeC {\c c}\IeC {\~a}o para a execu\IeC {\c c}\IeC {\~a}o do \textit {scanner} do SonarQube no GitResearch.\relax }}{79}{figure.caption.36}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces N\IeC {\'\i }veis de abstra\IeC {\c c}\IeC {\~a}o do modelo de estima\IeC {\c c}\IeC {\~a}o dos juros da d\IeC {\'\i }vida t\IeC {\'e}cnica. \relax }}{40}{figure.caption.27}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Resumo das etapas do estudo de caso. \relax }}{43}{figure.caption.28}
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces N\IeC {\'\i }veis de abstra\IeC {\c c}\IeC {\~a}o do modelo de estima\IeC {\c c}\IeC {\~a}o dos juros da d\IeC {\'\i }vida t\IeC {\'e}cnica. \relax }}{51}{figure.caption.34}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces As rela\IeC {\c c}\IeC {\~o}es de seguir e poder ser seguido no GitHub. Adaptado de \cite {mo2015geminer}.\relax }}{64}{figure.caption.36}
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Exemplo da estrutura de armazenamento de vers\IeC {\~o}es do Git.\relax }}{75}{figure.caption.37}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Exemplo de merge entre duas \textit {branches}.\relax }}{76}{figure.caption.38}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Tabelas do GHTorrent.\relax }}{80}{figure.caption.40}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Arquitetura do framework Spring Batch. Adaptada de \cite {minella2011pro}.\relax }}{81}{figure.caption.41}
-\contentsline {figure}{\numberline {6.5}{\ignorespaces C\IeC {\'o}digo respons\IeC {\'a}vel por configurar o \textit {Job} no GitResearch.\relax }}{83}{figure.caption.42}
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Passos do processamento no GitResearch.\relax }}{84}{figure.caption.43}
-\contentsline {figure}{\numberline {6.7}{\ignorespaces Resumo das etapas do estudo de caso. \relax }}{85}{figure.caption.44}
-\contentsline {figure}{\numberline {6.8}{\ignorespaces Mapeamento entre as etapas do estudo de caso e as etapas de processamento no GitResearch. \relax }}{86}{figure.caption.45}
-\contentsline {figure}{\numberline {6.9}{\ignorespaces C\IeC {\'o}digo respons\IeC {\'a}vel por criar a configura\IeC {\c c}\IeC {\~a}o para a execu\IeC {\c c}\IeC {\~a}o do \textit {scanner} do SonarQube.\relax }}{97}{figure.caption.47}
-\contentsline {figure}{\numberline {6.10}{\ignorespaces C\IeC {\'o}digo respons\IeC {\'a}vel por contar a quantidade de \textit {commits} de cada projeto.\relax }}{104}{figure.caption.50}
-\contentsline {figure}{\numberline {6.11}{\ignorespaces C\IeC {\'o}digo respons\IeC {\'a}vel por executar o \textit {scanner} do SonarQube em cada projeto.\relax }}{105}{figure.caption.51}
-\contentsline {figure}{\numberline {6.12}{\ignorespaces C\IeC {\'o}digo respons\IeC {\'a}vel por calcular o pagerank.\relax }}{107}{figure.caption.52}
-\contentsline {figure}{\numberline {6.13}{\ignorespaces Quantidade de projetos por t\IeC {\'o}pico do LDA.\relax }}{113}{figure.caption.54}
-\contentsline {figure}{\numberline {6.14}{\ignorespaces Quantidade de projetos por dom\IeC {\'\i }nio.\relax }}{115}{figure.caption.56}
-\contentsline {figure}{\numberline {6.15}{\ignorespaces D\IeC {\'\i }vida t\IeC {\'e}cnica.\relax }}{116}{figure.caption.57}
-\contentsline {figure}{\numberline {6.16}{\ignorespaces D\IeC {\'\i }vida t\IeC {\'e}cnica por t\IeC {\'o}pico.\relax }}{116}{figure.caption.58}
-\contentsline {figure}{\numberline {6.17}{\ignorespaces D\IeC {\'\i }vida t\IeC {\'e}cnica por dom\IeC {\'\i }nio.\relax }}{117}{figure.caption.59}
-\contentsline {figure}{\numberline {6.18}{\ignorespaces D\IeC {\'\i }vida t\IeC {\'e}cnica por dom\IeC {\'\i }nio.\relax }}{118}{figure.caption.60}
-\contentsline {figure}{\numberline {6.19}{\ignorespaces Evolu\IeC {\c c}\IeC {\~a}o da d\IeC {\'\i }vida t\IeC {\'e}cnica por dom\IeC {\'\i }nio.\relax }}{119}{figure.caption.61}
-\contentsline {figure}{\numberline {6.20}{\ignorespaces Frequ\IeC {\^e}ncia de projetos por intervalo de n\IeC {\'u}mero de linhas de c\IeC {\'o}digo.\relax }}{120}{figure.caption.62}
-\contentsline {figure}{\numberline {6.21}{\ignorespaces D\IeC {\'\i }vida t\IeC {\'e}cnica por dom\IeC {\'\i }nio.\relax }}{121}{figure.caption.63}
-\contentsline {figure}{\numberline {6.22}{\ignorespaces D\IeC {\'\i }vida t\IeC {\'e}cnica por dom\IeC {\'\i }nio.\relax }}{121}{figure.caption.64}
-\contentsline {figure}{\numberline {6.23}{\ignorespaces D\IeC {\'\i }vida t\IeC {\'e}cnica por dom\IeC {\'\i }nio.\relax }}{122}{figure.caption.65}
-\contentsline {figure}{\numberline {6.24}{\ignorespaces Correla\IeC {\c c}\IeC {\~a}o entre a d\IeC {\'\i }vida t\IeC {\'e}cnica e a quantidade de linhas de c\IeC {\'o}digo.\relax }}{123}{figure.caption.66}
-\contentsline {figure}{\numberline {6.25}{\ignorespaces Correla\IeC {\c c}\IeC {\~a}o entre a d\IeC {\'\i }vida t\IeC {\'e}cnica e a quantidade de \textit {watchers}.\relax }}{124}{figure.caption.67}
-\contentsline {figure}{\numberline {6.26}{\ignorespaces Correla\IeC {\c c}\IeC {\~a}o entre a d\IeC {\'\i }vida t\IeC {\'e}cnica e a quantidade de \textit {Pull requests}.\relax }}{125}{figure.caption.68}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Resumo das etapas do estudo de caso. \relax }}{88}{figure.caption.39}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Resumo das etapas do estudo de caso. \relax }}{94}{figure.caption.40}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Resumo das etapas do estudo de caso. \relax }}{101}{figure.caption.43}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces C\IeC {\'o}digo do GitResearch respons\IeC {\'a}vel por contar a quantidade de \textit {commits} de cada projeto.\relax }}{102}{figure.caption.44}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces C\IeC {\'o}digo respons\IeC {\'a}vel por executar o \textit {scanner} do SonarQube em cada projeto.\relax }}{103}{figure.caption.45}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Resumo das etapas do estudo de caso. \relax }}{104}{figure.caption.46}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces C\IeC {\'o}digo respons\IeC {\'a}vel por calcular o pagerank.\relax }}{106}{figure.caption.51}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Resumo das etapas do estudo de caso. \relax }}{108}{figure.caption.53}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Quantidade de projetos por t\IeC {\'o}pico do LDA.\relax }}{111}{figure.caption.55}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Quantidade de projetos por dom\IeC {\'\i }nio.\relax }}{113}{figure.caption.57}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces D\IeC {\'\i }vida t\IeC {\'e}cnica.\relax }}{114}{figure.caption.58}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces D\IeC {\'\i }vida t\IeC {\'e}cnica por t\IeC {\'o}pico.\relax }}{114}{figure.caption.59}
+\contentsline {figure}{\numberline {5.13}{\ignorespaces D\IeC {\'\i }vida t\IeC {\'e}cnica por dom\IeC {\'\i }nio.\relax }}{115}{figure.caption.60}
+\contentsline {figure}{\numberline {5.14}{\ignorespaces D\IeC {\'\i }vida t\IeC {\'e}cnica por dom\IeC {\'\i }nio.\relax }}{116}{figure.caption.61}
+\contentsline {figure}{\numberline {5.15}{\ignorespaces Evolu\IeC {\c c}\IeC {\~a}o da d\IeC {\'\i }vida t\IeC {\'e}cnica por dom\IeC {\'\i }nio.\relax }}{117}{figure.caption.62}
+\contentsline {figure}{\numberline {5.16}{\ignorespaces Frequ\IeC {\^e}ncia de projetos por intervalo de n\IeC {\'u}mero de linhas de c\IeC {\'o}digo.\relax }}{118}{figure.caption.63}
+\contentsline {figure}{\numberline {5.17}{\ignorespaces D\IeC {\'\i }vida t\IeC {\'e}cnica por dom\IeC {\'\i }nio.\relax }}{119}{figure.caption.64}
+\contentsline {figure}{\numberline {5.18}{\ignorespaces D\IeC {\'\i }vida t\IeC {\'e}cnica por dom\IeC {\'\i }nio.\relax }}{119}{figure.caption.65}
+\contentsline {figure}{\numberline {5.19}{\ignorespaces D\IeC {\'\i }vida t\IeC {\'e}cnica por dom\IeC {\'\i }nio.\relax }}{120}{figure.caption.66}
+\contentsline {figure}{\numberline {5.20}{\ignorespaces Correla\IeC {\c c}\IeC {\~a}o entre a d\IeC {\'\i }vida t\IeC {\'e}cnica e a quantidade de linhas de c\IeC {\'o}digo.\relax }}{121}{figure.caption.67}
+\contentsline {figure}{\numberline {5.21}{\ignorespaces Correla\IeC {\c c}\IeC {\~a}o entre a d\IeC {\'\i }vida t\IeC {\'e}cnica e a quantidade de \textit {watchers}.\relax }}{122}{figure.caption.68}
+\contentsline {figure}{\numberline {5.22}{\ignorespaces Correla\IeC {\c c}\IeC {\~a}o entre a d\IeC {\'\i }vida t\IeC {\'e}cnica e a quantidade de \textit {Pull requests}.\relax }}{123}{figure.caption.69}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Exemplo da estrutura de armazenamento de vers\IeC {\~o}es do Git.\relax }}{141}{figure.caption.83}
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Exemplo de merge entre duas \textit {branches}.\relax }}{141}{figure.caption.84}
 \addvspace {10\p@ }
 \contentsfinish 

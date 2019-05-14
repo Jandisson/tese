@@ -13,6 +13,10 @@
 % Pacotes 
 %\usepackage[T1]{fontenc}
 \usepackage{longtable}
+\usepackage{comment}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{bigstrut}
 \usepackage{dirtytalk}
 \usepackage[brazil]{babel}
 \usepackage[utf8]{inputenc}
@@ -26,6 +30,7 @@
 \usepackage{listings}                   % para formatar código-fonte (ex. em Java)
 \usepackage{float}
 \usepackage{titletoc}
+
 %\usepackage[bf,small,compact]{titlesec} % cabeçalhos dos títulos: menores e compactos
 \usepackage[fixlanguage]{babelbib}
 \usepackage[font=small,format=plain,labelfont=bf,up,textfont=it,up]{caption}
@@ -37,6 +42,7 @@
 \usepackage[square,sort,nonamebreak,comma]{natbib}  % citação bibliográfica alpha (alpha-ime.bst)
 \fontsize{60}{62}\usefont{OT1}{cmr}{m}{n}{\selectfont}
 \usepackage{pbox}
+\usepackage{tcolorbox}
 
 % ---------------------------------------------------------------------------- %
 % Cabeçalhos similares ao TAOCP de Donald E. Knuth
@@ -108,7 +114,7 @@ framexrightmargin=10pt
 \thispagestyle{empty}
 \begin{center}
     \vspace*{2.3cm}
-    \textbf{\Large{Um modelo baseado em dados históricos para a estimação da dívida técnica}}\\
+    \textbf{\Large{Um modelo baseado em dados históricos para a estimação dos juros da dívida técnica}}\\
     
     \vspace*{1.2cm}
     \Large{Jandisson Soares de Jesus}
@@ -264,11 +270,11 @@ One of the management activities is the estimation of the additional effort  to 
 \tableofcontents    % imprime o sumário
 
 % ---------------------------------------------------------------------------- %
-\chapter{Lista de Abreviaturas}
-\begin{tabular}{ll}
-         TD         & Dívida Técnica (\emph{Technical Debt})\\
+%\chapter{Lista de Abreviaturas}
+%\begin{tabular}{ll}
+ %        TD         & Dívida Técnica (\emph{Technical Debt})\\
          
-\end{tabular}
+%\end{tabular}
 
 % ---------------------------------------------------------------------------- %
 %\chapter{Lista de Símbolos}
@@ -294,21 +300,13 @@ One of the management activities is the estimation of the additional effort  to 
 
 \input capitulos/introducao        
 \input capitulos/divida_tecnica    
-\input capitulos/trabalhos_relacionados  
-\input capitulos/metodologia
 \input capitulos/estimacao_juros
-\input capitulos/experimento
-\input capitulos/resultados
-\input capitulos/ameacas
+\input capitulos/estudo_caso_planejamento
+\input capitulos/estudo_caso_execucao
+%\input capitulos/trabalhos_relacionados  
 \input capitulos/conclusao
 
 
-
-
-
-
-
-     
 
 
 % cabeçalho para os apêndices
@@ -316,7 +314,8 @@ One of the management activities is the estimation of the additional effort  to 
 \fancyhead[RE,LO]{}
 \appendix
 
-%\include{ape-conjuntos}      % associado ao arquivo: 'ape-conjuntos.tex'
+\include{apendices/git} 
+\include{apendices/banco_de_dados}      % associado ao arquivo: 'ape-conjuntos.tex'
 
 % ---------------------------------------------------------------------------- %
 % Bibliografia

@@ -1,26 +1,97 @@
 \chapter{Conclusão}
 
+Neste capítulo forneceremos um resumo a respeito do trabalho realizado. Discutiremos as principais contribuições e os resultados obtidos. Adicionalmente, indicaremos as ameaças à validade dos resultados e como essas ameaças foram tratadas. Por fim, daremos algumas indicações de quais são as pesquisas futuras que podem ser realizadas de forma a complementar este trabalho. 
+
+\section{Resumo}
+
+Os juros da dívida técnica são a contraparte negativa de se realizar atividades de desenvolvimento de software de forma irregular. A importância desse conceito, dentro do estudo da dívida técnica, é imensa já que os juros são o que realmente afetam o projeto do software no futuro. Logo, seu gerenciamento é uma atividade crítica para evitar que a dívida técnica deixe de ser um artifício estratégico e torne-se uma causa para o fracasso de um projeto. 
+
+Para que os juros sejam gerenciados é imprescindível que eles sejam, de alguma forma, medidos. Entretanto, existem poucas propostas na literatura de como realizar isso. Neste contexto, propomos, nesta pesquisa, um modelo quantitativo para estimar os juros da dívida técnica de um projeto.  Nesse modelo, o juros são estimados pela comparação da produtividade do projeto com a produtividade de outro projeto semelhante, porém, com um nível muito baixo de dívida técnica. 
+
+Para avaliar o modelo proposto, foi realizado um estudo de caso múltiplo envolvendo 1814 projetos de software livre. Esse estudo de caso foi realizado em cinco etapas: seleção dos projetos, agrupamento dos projetos por domínio de aplicação, extração dos dados, cálculo de métricas e análise dos resultados. Todas essas etapas foram extensivamente documentadas com o objetivo de facilitar a reprodução dos resultados obtidos. Além disso, foi construída uma ferramenta que realiza automaticamente grande parte das atividades necessárias.
+
+De acordo com os resultado obtidos, o nível da produtividade média dos projetos com baixo nível de dívida técnica pode ser até 59\% maior do que os outros projetos. Apesar desse resultado positivo, pudemos encontrar algumas incoerências nos dados obtidos. Uma delas é fato de que em alguns domínios de aplicação os projetos com mais dívida técnica foram mais produtivos. Outro problema ocorreu com o modelo de produtividade baseado em popularidade dos colaboradores. Ele se mostrou ineficaz para estimar a produtividade dos projetos.
 
 
-\section{Trabalhos futuros}
+
+\section{Resultados}
+
+Os principais resultados desta pesquisa foram:
 
 \begin{itemize}
-\item Necessidade de complementação da pesquisa por meio de estudos qualitativos. Os resultados obtidos precisam ser explicados.
-\item Falar sobre as possibilidades de utilizar o modelo para prever a produtividade futura dos software baseado na estimativa de crescimento da dívida técnica.
+
+\item \textbf{ Em média, um projeto com pouca dívida técnica pode ser até 59\% mais produtivo.}  Entretanto, houve casos em que a produtividade dos projetos com mais dívida técnica foi maior. Isso ocorreu nos domínios Biblioteca e Middleware por exemplo. Nesses domínios, mesmo aplicando o melhor modelo de produtividade, ela foi 3\% maior nos projetos com mais dívida técnica. Apesar disso, essa incoerência nos resultados, ocorreu em um número pequenos de casos. Com isso, esse resultado traz uma evidência para a hipótese de que a dívida técnica pode afetar negativamente a produtividade de um projeto. 
+
+
+\item \textbf{A popularidade dos colaboradores parece ter pouco efeito em sua produtividade.} O modelo de avaliação da produtividade, em que utilizamos a popularidade dos colaboradores como um dos meio de quantificar o nível de colaboração de um projeto, mostrou-se extremamente incosistente. Houve situações onde um grupo de projetos, classificados com baixo índice de dívida técnica, foi, em média, mais de duas mil vezes menos produtivo. 
+
+Uma das razões para essa inconsistência pode ser a incompatibilidade entre as medidas utilizadas como entrada e saída. Enquanto analisamos o nível colaboração de um projeto usando uma medida de qualidade, como é o caso da popularidade dos colaboradores, ainda medimos a saída como a quantidade de linhas de código. Era esperado que projetos com colaboradores mais habilidosos fizessem com que a produtividade do projeto fosse maior. Entretanto, quando medidos a evolução do projeto usando as linhas de código, não estamos capiturando a qualidade da contribuição desses colaboradores. É provável que fosse necessário utilizar uma métrica mais qualitativa de evolução.
+\item \textbf{Projetos mais produtivos tem menos colaboradores}. Pudemos observar que os projetos mais produtivos são aqueles que tem poucos colaborares e atraem pouca atenção da comunidade. Um exemplo é o projeto opendata (https://github.com/peter-mount/opendata). Esse projeto fornece à seus usuários dados em tempo real sobre a rede de trens da capital inglesa. Mesmo não tendo apenas dois colaboradores e apenas nove estrelas, esse projeto conseguiu ser aproximadamente 12 vezes mais produtivo do que o esperado, tendo como base os dados dos outros 1813 projetos envolvidos no estudo de caso.
+\item \textbf{Baixa corelação entre a produtividade e o nível de dívida técnica do projeto}. Nesta pesquisa argumentamos que avaliar a variação de produtividade dos projetos seria uma boa abordagem para estimar os juros da dívida técnica. Na literatura pudemos encontrar outras estratégias que utilizam outras métricas como manutenibilidade e número de defeitos. Algumas dessas pesquisas tiveram resultados menos inconsistentes para o modelo de estimação proposto por ela. Ou seja, os valores calculados fizeram sentido em uma quantidade maior de casos. Entretanto, nenhuma delas utiliza, em sua avaliação, um conjunto substancial de projetos.  Os estudos de casos e experimentos realizados nessas pesquisas utilizam, no máximo, quatro projetos. Por isso, é possível que os resultados obtidos por essa pesquisa não possam ser reproduzidos quando as propostas forem avaliadas utilizando um número maior de projetos.
+
 \end{itemize}
 
 
-\subsection{Popularidade vs Dívida Técnica}
 
-Poderia ter um capítulo falando sobre as relações entre a atratividade de um projeto (quantas pessoas procuram colaborar com ele) e a dívida técnica.
-A existência de muita dívida técnica afasta novos colaboradores?
 
-Nos dados obtidos dos projetos do piloto é possível notar que os projetos com mais pull requests possuem menos dívida técnica.
 
-Um assunto a ser abordado poderia ser a relação entre a quantidade de forks e a quantidade de pull requests. É possível nota no pilo que alguns projetos tem uma quantidade de forks muito maior do que a quantidade de pull requests. Ou seja, muitas pessoas fizeram uma cópia do projeto com a interação de realizar alterações mas, muitas delas não o fizeram.
+\section{Principais contribuições}
 
-\subsection{Artigo CBI}
+Podemos resumir as contribuições desta pesquisa da seguinte forma:
 
-Pode ser que a relação entre dívida técnica e linhas de código seja inversamente proporcional. Ou seja, quanto mais dívida técnica um projeto tem, mais linhas de código ele tem também. Falar sobre isso seria uma boa oportunidade para inserir o artigo apresentado na CBI e o Jornal.
+\begin{itemize}
+\item \textbf{Modelo de estimação dos juros.} O modelo, em sua versão de mais alto nível, descreve como estimar os juros por meio da diminuição de produtividade em decorrência da existência da dívida técnica. Adicionalmente, descrevemos uma instância desse modelo para ser utilizada em projetos de software livre. São descritas as entradas e saídas do modelos de produtividade bem como as outras informações necessárias para a aplicação do modelo abstrato. Esta é a principal contribuição desta pesquisa. Acreditamos que com por meio dela, contribuimos para a melhoria das estratégias de gerenciamento da dívida técnica. 
+\item \textbf{Validação com o estudo de caso.} A utilização de uma grande quantidade de dados para analisar um modelo de estimação dos juros da dívida técnica é, até o nosso conhecimento, inédita. Todos os trabalhos semelhantes utilizam uma quantidade pequenos de projetos. 
+
+Nesta pesquisa documentamos extensivamente a realização desse estudo de caso envolvendo 1814 projetos de software livre. Esse tipo de software foi escolhido, entre outras razões, por poderemos ser acessados livremente. Isso facilitará a reprodução dos resultados. Além disso, a utilização de dados ,livremente disponíveis, permitirá que futuras pesquisas possam ser realizadas para aprofundar os resultados obtidos nesta pesquisa. Seja por meio de métodos qualitativos ou seja pelo aprimoramento do modelo de estimação sugerido. 
+\item \textbf{Banco de dados de projetos e produtividade}. Durante a realização do estudo de caso múltiplo, foram produzidas diversas informações a respeito dos projetos envolvidos. No Apêndice \ref{apendice_banco_dados} descrevemos os dados produzidos e usados por esta pesquisa. Adicionalmente, informamos como esses dados podem ser livremente acessados tanto para verificação dos resultados desta pesquisa quanto para serem utilizados em novas pesquisas.
+\item \textbf{Ferramenta.} Grande parte das atividades realizadas no estudo de caso foram automatizadas por uma ferramenta que criamos chamada GitResearch. Essa ferramenta foi desenvolvida particularmente para ser usada nesta pesquisa. Entretanto, ela foi planejada de uma maneira que facilitasse a sua adaptação  de forma a ser usada em outras pesquisas. A ferramenta GitResearch pode ser encontrada no seguinte endereço: https://github.com/Jandisson/git-research.
+\end{itemize}
+
+\begin{comment}
+\section{Ameaças à validade}
+
+
+Na proposta original do GEMiner os autores utilizam a quantidade de linhas de código adicionadas pelo colaborador como uma espécie de medida de assiduidade. Não pudemos seguir essa mesma estratégia devido a quantidade de projetos analisados nesta pesquisa.
+
+É possível que projetos de software válidos e relevantes tenham sido excluídos indevidamente. Especialmente por causa da regra que elimina projetos com poucos \textit{commits} e colaboradores.
+
+
+Podemos identificar algumas dificuldades em realizar a estimação dos juros utilizando essa estratégia. A seguir destacamos algumas delas:
+ 
+ \begin{itemize}
+ \item A dificuldade em si de medir a produtividade no desenvolvimento de software.
+ \item Identificar qual a \textbf{produtividade ótima} para um projeto de software. Para isso, utilizaremos analogia. Ou seja, para um determinado projeto iremos identificar projetos semelhantes e com um baixo índice de dívida técnica.
+ \item Identificar se um projeto é semelhante a outro. Na literatura existem algumas abordagens para realizar essa atividade. Iremos descrever essas abordagens e explicar como iremos adaptá-las nesse projeto.
+ \item Isolar a interferência da dívida técnica nos projetos de software da interferência de outros fatores que estão prejudicando a produtividade. Ou seja, identificar e garantir que o que está fazendo um projeto não estar no cenário de \textbf{produtividade ótima} é exclusivamente a dívida técnica.
+ \item Pode ser que o projeto tenha sido migrado de outro repositório ou outro sistema de versionamento. Isso precisa ser contornado de alguma forma. Uma alternativa seria verificar o tamanho do commit inicial. Preciso resolver os problemas com os commits. Alguns projetos como o vaadin não tem todos os commits na tabela commits. Alguns commits que vieram de pull requests por algum motivo não estão lá.
+ \end{itemize}
+ 
+ 
+ Preciso falar sobre o problema de empresas famosas como NetFlix possuirem um alto número de estrelas. Isso também acontece com profissionais que trabalham nessas empresas. Normalmente, eles também terão um grande número de seguidores. Isso obviamente nem sempre está relacionado à expertise dessas pessoas. Ao invés disso, eles podem ter um número alto de seguidores pois as pessoas normalmente se interessam pelas novidades dos projetos criados por essas empresas. 
+ 
+
+A literatura sugere que projetos maiores vão ter um prejuizo de produtividade devido à complexidade adicional trazida pelo seu tamanho. Realizar alterações em um projeto menor normalmente é mais fácil do que realizar alterações em projetos menores. Isso deveria ser considerado em um modelo como o nosso que tem como base uma estimação de produtividade.
+
+Existem muitos problemas com os dados do GHTOrrent. O melhor teria sido obter apenas algumas informação de lá e o restante diretamente da API do GitHub.
+
+
+
+É possível que a popularidade do projeto seja influenciada significativamente quando ele é desenvolvido por uma empresa grande. Ou seja,a causa de um projeto ter um alto número de estrelas não necessariamente é devido a relevância que a comunidade dá ao projeto. Ao invés disso, a popularidade do projeto pode ter sido obtida devido a popularidade da empresa. Um exemplo é o caso do projeto blitz4j que possui 504 estrelas. Enquanto isso, o projeto tinylog possui apenas 142. Entretanto, uma pesquisa em sites de buscas revelam que o tinylog é 4 vezes mais citado que o blitz4j. Logo, a maior quantidade de estrelas do blitz4j não reflete a sua popularidade entre os desenvolvedores.
+
+\end{comment}
+
+\section{Trabalhos futuros}
+
+Um dos principais pontos onde enxergamos a necessidade de melhorias nesta pesquisa é a imprecisão dos modelos de estimação da produtividade utilizados. Apesar dos resultados obtidos, não encontramos um modelo de regressão linear que apresentação um coeficiente de determinação considerado alto. Ou seja, a relação entre as variáveis de entrada (colaboração) e saída (tamanho), não pôde ser estimada, com um nível de precisão alto, pelos modelos utilizados. Uma possível solução óbvia para este problema seria a busca por modelos mais precisos. Entretanto, é possível que isso não possa ser alcançado utilizando os dados que tivemos disponíveis nesta pesquisa. De qualquer forma, a busca por modelos mais precisos é certamente um tópico a ser pesquisado em futuros trabalhos relacionados.
+
+Outra possível extensão desta pesquisa é a inclusão de métodos qualitativos para verificar os resultados obtidos, formando assim, uma triangulação\cite{fielding2012triangulation}. Isso seria particularmente útil para investigar os projetos que se destacam em alguma das análise que realizamos. Um exemplo seria a investigação dos projetos que, mesmo com altos índices de dívida técnica, continuam sendo produtivos. Essa investigação poderia ser utilizada para aprimorar o modelo de estimação sugerido. 
+
+A respeito do estudo de caso realizado, acreditamos que ele possa ser reproduzido utilizando outros tipos de projeto de software. Uma alternativa é a utilização de projetos corporativos como os presentes nos bancos de dados Tukutuku\cite{mendes2008cross} e ISBSG\cite{fernandez2014potential}. Apesar de serem substancialmente menores, esses bancos de dados contém dados de projetos  corporativos relevantes. A utilização de um banco de dados padronizado também permitirá comparar mais facilmente os resultados obtidos.
+
+ Por fim, foi possível identificar alguns padrões interessantes nos dados obtidos no estudo de caso. Um exemplo é a relação entre os \textit{pull requests} e a dívida técnica. É possível notar que alguns projetos tem uma quantidade de \textit{forks} muito maior do que a quantidade de \textit{pull requests}. Ou seja, muitas pessoas fizeram uma cópia do projeto com a interação de realizar alterações mas, não o fizeram. É possível que haja uma ligação entre essa desistência desses usuários em contribuir e o nível de dívida técnica dos projetos.
+
+
+
 
 
