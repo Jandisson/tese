@@ -117,5 +117,7 @@
 \contentsline {chapter}{\numberline {A}Controle de vers\IeC {\~o}es utilizando o Git}{139}{appendix.A}
 \contentsline {section}{\numberline {A.1}Comandos Git}{141}{section.A.1}
 \contentsline {chapter}{\numberline {B}Banco de dados}{143}{appendix.B}
+\contentsline {section}{\numberline {B.1}Acesso aos dados}{143}{section.B.1}
+\contentsline {section}{\numberline {B.2}Descri\IeC {\c c}\IeC {\~a}o dos dados}{143}{section.B.2}
 \contentsline {chapter}{Refer\^encias Bibliogr\'aficas}{145}{appendix*.86}
 \contentsfinish 

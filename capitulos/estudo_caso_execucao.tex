@@ -779,7 +779,9 @@ Existem alguns aspectos a respeito do cálculo de produtividade que chamam a ate
 
  
 
-As tabelas \ref{tab:estimacao_juros_dominio_analise} e \ref{tab:estimacao_juros_topico_analise} apresentam os resultados da estimação dos juros da dívida técnica agrupados por domínio e por tópico, respectivamente. É possível notar que, quando agrupados por domínio, os projetos sem dívida técnica apresentam até 38\% de produtividade média maior do que os projetos com dívida técnica. Já quando o agrupamento é feito pelos tópicos do LDA, esse número chega a 59\%.
+As tabelas \ref{tab:estimacao_juros_dominio_analise} e \ref{tab:estimacao_juros_topico_analise} apresentam os resultados da estimação dos juros da dívida técnica agrupados por domínio e por tópico, respectivamente. Nessa tabela são apresentadas as produtividades médias dos projetos em cada cenário. Essa produtividade é medida utilizando os três modelos de colaboração usados neste estudo de caso. Por exemplo, observando a Tabela \ref{tab:estimacao_juros_dominio_analise}, os projetos que possuem, proporcionalmente, pouca dívida técnica, no domínio Ferramenta,  possuem uma produtividade média de 1,84. Já os projetos com um nível normal ou alto de dívida técnica, possuem uma produtividade média de 1,55 quando utilizado o modelo de produtividade 1 (Quantidade de colaboradores). Ou seja, os projetos com pouca dívida técnica têm, em média, uma produtividade 16\% maior do que os projetos com dívida técnical normal ou alta, quando essa produtividade é medida usando o modelo baseado na quantidade de colaboradores.
+
+É possível notar, na Tabela \ref{tab:estimacao_juros_dominio_analise}, que os projetos sem dívida técnica apresentam até 38\% de produtividade média maior do que os projetos com dívida técnica. Já quando o agrupamento é feito pelos tópicos do LDA, esse número chega a 59\%.
 
 Um resultado importante da aplicação do modelo de estimação dos juros é o fato de que em alguns casos a produtividade dos projetos com dívida técnica é maior do que a dos projetos sem dívida técnica. Isso, acontece menos nos modelos de colaboração baseados em quantidade e e colaboradores/dia. Porém, acontece, na maioria dos casos, quando o modelo de assiduidade e colaboração é utilizado. Isso é um indício forte de que esse modelo se mostra inadequado para avaliar a produtividade dos projetos. 
 
@@ -830,8 +832,7 @@ Um resultado importante da aplicação do modelo de estimação dos juros é o f
 \multirow{2}{*}{Middleware}    & \multirow{2}{*}{Tópico 14} & Sem dívida              & 1,81            & \multirow{2}{*}{3\%}    & 1,93            & \multirow{2}{*}{-234\%}  & 1,23            & \multirow{2}{*}{-157\%} \\ \cline{3-4} \cline{6-6} \cline{8-8}
                                &                            & Com dívida           & 1,75            &                         & 6,45            &                          & 3,16            &                         \\ \hline
                                
-\newpage
-\hline
+
 \multirow{2}{*}{Biblioteca}    & \multirow{2}{*}{Tópico 15} & Sem dívida              & 2,91            & 44\%                    & 18,83           & \multirow{2}{*}{75\%}    & 4,02            & \multirow{2}{*}{22\%}   \\ \cline{3-6} \cline{8-8}
                                &                            & Com dívida           & 1,62            &                         & 4,76            &                          & 3,16            &                         \\ \hline
 \multirow{2}{*}{Biblioteca}    & \multirow{2}{*}{Tópico 16} & Sem dívida              & 1,50            & \multirow{2}{*}{0\%}    & 9,09            & \multirow{2}{*}{27\%}    & 2,28            & \multirow{2}{*}{-10\%}  \\ \cline{3-4} \cline{6-6} \cline{8-8}
@@ -858,7 +859,11 @@ Um resultado importante da aplicação do modelo de estimação dos juros é o f
 \multirow{2}{*}{Ger. de Dados} & \multirow{2}{*}{Tópico 25} & Sem dívida              & 2,42            & \multirow{2}{*}{49\%}   & 0,69            & \multirow{2}{*}{-649\%}  & 3,80            & \multirow{2}{*}{31\%}   \\ \cline{3-4} \cline{6-6} \cline{8-8}
                                &                            & Com dívida           & 1,24            &                         & 5,14            &                          & 2,63            &                         \\ \hline
 \multirow{2}{*}{Biblioteca}    & \multirow{2}{*}{Tópico 26} & Sem dívida              & 1,51            & \multirow{2}{*}{-11\%}  & 1,77            & \multirow{2}{*}{-270\%}  & 2,54            & \multirow{2}{*}{7\%}    \\ \cline{3-4} \cline{6-6} \cline{8-8}
+
                                &                            & Com dívida           & 1,68            &                         & 6,57            &                          & 2,37            &                         \\ \hline
+                               
+\newpage
+\hline
 \multirow{2}{*}{Arcabouço}     & \multirow{2}{*}{Tópico 27} & Sem dívida              & 1,77            & \multirow{2}{*}{37\%}   & 1,41            & \multirow{2}{*}{-89\%}   & 2,15            & \multirow{2}{*}{15\%}   \\ \cline{3-4} \cline{6-6} \cline{8-8}
                                &                            & Com dívida           & 1,12            &                         & 2,67            &                          & 1,83            &                         \\ \hline
 \multirow{2}{*}{Aplicação}     & \multirow{2}{*}{Tópico 28} & Sem dívida              & 1,38            & \multirow{2}{*}{-82\%}  & 2,06            & \multirow{2}{*}{-388\%}  & 1,96            & \multirow{2}{*}{-76\%}  \\ \cline{3-4} \cline{6-6} \cline{8-8}
@@ -871,8 +876,7 @@ Um resultado importante da aplicação do modelo de estimação dos juros é o f
 \multirow{2}{*}{Ferramenta}    & \multirow{2}{*}{Tópico 3}  & Sem dívida              & 1,83            & \multirow{2}{*}{13\%}   & 4,37            & \multirow{2}{*}{-116\%}  & 2,84            & \multirow{2}{*}{-23\%}  \\ \cline{3-4} \cline{6-6} \cline{8-8} 
                                &                            & Com dívida           & 1,58            &                         & 9,44            &                          & 3,49            &                         \\ \hline
                                
-\newpage
-\hline
+
 \multirow{2}{*}{Ferramenta}    & \multirow{2}{*}{Tópico 30} & Sem dívida              & 1,99            & \multirow{2}{*}{9\%}    & 0,28            & \multirow{2}{*}{-2454\%} & 2,84            & \multirow{2}{*}{-30\%}  \\ \cline{3-4} \cline{6-6} \cline{8-8}
                                &                            & Com dívida           & 1,81            &                         & 7,18            &                          & 3,70            &                         \\ \hline
 \multirow{2}{*}{Aplicação}     & \multirow{2}{*}{Tópico 4}  & Sem dívida              & 0,66            & \multirow{2}{*}{-119\%} & 3,57            & \multirow{2}{*}{-24\%}   & 0,69            & \multirow{2}{*}{-317\%} \\ \cline{3-4} \cline{6-6} \cline{8-8}
