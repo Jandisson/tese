@@ -12,6 +12,10 @@
 % ---------------------------------------------------------------------------- %
 % Pacotes 
 %\usepackage[T1]{fontenc}
+\usepackage[a4paper,top=2.54cm,bottom=2.0cm,left=2.0cm,right=2.54cm]{geometry} % margens
+\usepackage[usenames,svgnames,dvipsnames]{xcolor}
+\usepackage[pdftex]{graphicx} 
+\usepackage{todonotes}
 \usepackage{longtable}
 \usepackage{comment}
 \usepackage{multirow}
@@ -20,8 +24,10 @@
 \usepackage{dirtytalk}
 \usepackage[brazil]{babel}
 \usepackage[utf8]{inputenc}
-\usepackage[pdftex]{graphicx}           % usamos arquivos pdf/png como figuras
 \usepackage{setspace}                   % espaçamento flexível
+          % usamos arquivos pdf/png como figuras
+
+
 \usepackage{indentfirst}                % indentação do primeiro parágrafo
 \usepackage{makeidx}                    % índice remissivo
 \usepackage[nottoc]{tocbibind}          % acrescentamos a bibliografia/indice/conteudo no Table of Contents
@@ -34,8 +40,8 @@
 %\usepackage[bf,small,compact]{titlesec} % cabeçalhos dos títulos: menores e compactos
 \usepackage[fixlanguage]{babelbib}
 \usepackage[font=small,format=plain,labelfont=bf,up,textfont=it,up]{caption}
-\usepackage[usenames,svgnames,dvipsnames]{xcolor}
-\usepackage[a4paper,top=2.54cm,bottom=2.0cm,left=2.0cm,right=2.54cm]{geometry} % margens
+
+
 %\usepackage[pdftex,plainpages=false,pdfpagelabels,pagebackref,colorlinks=true,citecolor=black,linkcolor=black,urlcolor=black,filecolor=black,bookmarksopen=true]{hyperref} % links em preto
 \usepackage[pdftex,plainpages=false,pdfpagelabels,pagebackref,colorlinks=true,citecolor=DarkGreen,linkcolor=NavyBlue,urlcolor=DarkRed,filecolor=green,bookmarksopen=true]{hyperref} % links coloridos
 \usepackage[all]{hypcap}                % soluciona o problema com o hyperref e capitulos
@@ -43,6 +49,7 @@
 \fontsize{60}{62}\usefont{OT1}{cmr}{m}{n}{\selectfont}
 \usepackage{pbox}
 \usepackage{tcolorbox}
+
 
 % ---------------------------------------------------------------------------- %
 % Cabeçalhos similares ao TAOCP de Donald E. Knuth
@@ -242,9 +249,9 @@ framexrightmargin=10pt
 Tese (Doutorado) - Instituto de Matemática e Estatística,
 Universidade de São Paulo, São Paulo, 2016.
 \\
-
 Negligenciar o gerenciamento da dívida técnica traz consequências negativas para os projetos de desenvolvimento de software. Caso a dívida técnica atinja patamares muito altos, é possível que a continuidade do projeto se torne inviável.
-Uma das atividades do gerenciamento é estimar o esforço adicional, causado pela existência da dívida técnica, para realizar as futuras atividades de desenvolvimento. Esse esforço adicional é chamado de juros da dívida técnica. Apesar de sua importância, pouco se sabe a respeito dele. Essa falta de informação dificulta o gerenciamento, pois a estimativa dos juros é essencial para a priorização do pagamento da dívida técnica. Caso uma dívida apresente  juros muito baixos, não faz sentido que seu pagamento seja priorizado. Semelhantemente, caso uma dívida tenha os juros muito alto, o pagamento dela deve ser priorizado. Além disso, saber quais tipos de dívida apresentam maiores juros permitiria a definição de estratégias para evitar a criação desses tipos de dívida técnica. Neste projeto iremos propor um modelo para estimar o comportamento dos juros da dívida técnica. Esse modelo irá utilizar dados de projetos presentes em repositórios de software para analisar o impacto da dívida técnica no desenvolvimento e evolução dos projetos. Iremos estimar, para um determinado tipo de dívida técnica, o quanto de esforço extra será necessário para realizar as atividades de desenvolvimento e evolução do software em decorrência da existência dessa dívida.
+Uma das atividades desse gerenciamento é estimar o esforço adicional, causado pela existência da dívida técnica, para realizar as futuras atividades de desenvolvimento. Esse esforço adicional é chamado de juros. Apesar de sua importância, não existe nenhum modelo amplamente aceito de como calculá-lo. A falta de ao menos uma estimativa dificulta o gerenciamento da dívida técnica, pois essa informação é essencial para a priorização do pagamento da dívida técnica.
+Neste projeto propomos um modelo para estimar os juros da dívida técnica. Nesse modelo, estimamos os juros por meio da comparação da produtividade entre projetos com pouca dívida técnica e projetos com muita dívida técnica. Esse modelo foi avaliado por meio de um estudo de caso envolvendo 1814 projetos de software livre hospedados na plataforma GitHub. Um dos resultados obtidos é o de que projetos podem ser até 59\% menos produtivos devido à existência da dívida técnica. 
 \\
 
 \noindent \textbf{Palavras-chave:} dívida técnica, repositório de software, estimativa de software.
@@ -253,14 +260,13 @@ Uma das atividades do gerenciamento é estimar o esforço adicional, causado pel
 % Abstract
 \chapter*{Abstract}
 \noindent Jesus, J. S. \textbf{A repository-based model to estimate technical debt.}. 
-2016. 120 f.
+2019. 120 f.
 Tese (Doutorado) - Instituto de Matemática e Estatística,
-Universidade de São Paulo, São Paulo, 2016.
+Universidade de São Paulo, São Paulo, 2019.
 \\
-
-
 An insuficient technical debt management can bring bad consequences to software development projects. If the technical debt reaches a too high level, it is possible that the continuity of the project becomes unfeasible.
-One of the management activities is the estimation of the additional effort  to make future development activities. We call this additional effort as the  interest of the technical debt. Despite its importance, little is known about him. This lack of information difficults its management because the estimation of the interest is essential for the prioritization of the technical debt payment. If a technical debt presents a very low interest, is payment do not neeed to be prioritized. Similarly, if a debt has very high interest, the payment it should be prioritized. Also, finding which debt types have higher interest rates would allow the development of strategies to prevent the creation of these kinds of technical debt. In this project we propose a model to estimate the behavior of technical debt interest. This model will use data of  projects in software repositories to analyze the impact of technical debt in the development and evolution of projects. We estimate, for a given type of technical debt, how much extra effort will be needed to carry out development activities and progress of the software due to the existence of that debt.
+One of the management activities is the estimation of the additional effort  to make future development activities. We call this additional effort as the  interest of the technical debt. Despite its importance, there is no widely accepted model of how to calculate it. The lack of at least a estimate of the interest makes technical debt management difficult, since this information is essential for prioritizing the payment of technical debt.
+ In this project we propose a model to estimate the technical debt interest. In this model, we estimate interest rates by comparing productivity between projects with little technical debt and projects with a lot of technical debt. This model was evaluated through a case study with 1814 open source software projects hosted on the GitHub platform. One of the results obtained is that projects can be up to 59 \% less productive due to the existence of technical debt.
 \\
 
 \noindent \textbf{Keywords:} techncial debt, software repository, software estimation.
@@ -298,13 +304,17 @@ One of the management activities is the estimation of the additional effort  to 
 
 \doublespacing
 
-\input capitulos/introducao        
-\input capitulos/divida_tecnica    
-\input capitulos/estimacao_juros
-\input capitulos/estudo_caso_planejamento
-\input capitulos/estudo_caso_execucao
-%\input capitulos/trabalhos_relacionados  
-\input capitulos/conclusao
+\part{Visão geral do trabalho e revisão da literatura}
+	\input capitulos/introducao        
+	\input capitulos/divida_tecnica   
+\part{Modelo de estimação dos juros da dívida técnica}
+	\input capitulos/modelo_abstrato
+	\input capitulos/instancia_modelo
+\part{O estudo de caso}
+	\input capitulos/estudo_caso_planejamento
+	\input capitulos/estudo_caso_execucao
+\part{Conclusão}
+	\input capitulos/conclusao
 
 
 
@@ -315,7 +325,7 @@ One of the management activities is the estimation of the additional effort  to 
 \appendix
 
 \include{apendices/git} 
-\include{apendices/banco_de_dados}      % associado ao arquivo: 'ape-conjuntos.tex'
+%\include{apendices/banco_de_dados}      % associado ao arquivo: 'ape-conjuntos.tex'
 
 % ---------------------------------------------------------------------------- %
 % Bibliografia

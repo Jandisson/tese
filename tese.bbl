@@ -700,7 +700,13 @@ Per Runeson.
 \newblock A survey of unit testing practices.
 \newblock {\em IEEE software}, 23(4):22--29, 2006.
 
-\bibitem[Sch13]{schmid2013limits}
+\bibitem[Sch13a]{schmid2013formal}
+Klaus Schmid.
+\newblock A formal approach to technical debt decision making.
+\newblock Em {\em Proceedings of the 9th international ACM Sigsoft conference
+  on Quality of software architectures}, p\'{a}ginas 153--162. ACM, 2013.
+
+\bibitem[Sch13b]{schmid2013limits}
 Klaus Schmid.
 \newblock On the limits of the technical debt metaphor: Some guidance on going
   beyond.
@@ -771,6 +777,14 @@ Girish Suryanarayana, Ganesh Samarthyam e Tushar Sharma.
 Chris Sterling.
 \newblock {\em Managing software debt: building for inevitable change}.
 \newblock Addison-Wesley Professional, 2010.
+
+\bibitem[SVZ{\etalchar{+}}13]{spinola2013investigating}
+Rodrigo~O Sp{\'\i}nola, Antonio Vetr{\`o}, Nico Zazworka, Carolyn Seaman e
+  Forrest Shull.
+\newblock Investigating technical debt folklore: Shedding some light on
+  technical debt opinion.
+\newblock Em {\em 2013 4th International Workshop on Managing Technical Debt
+  (MTD)}, p\'{a}ginas 1--7. IEEE, 2013.
 
 \bibitem[SWR12]{stochel2012value}
 Marek~G Stochel, Mariusz~R Wawrowski e Magdalena Rabiej.
@@ -863,6 +877,12 @@ Jifeng Xuan, Yan Hu e He~Jiang.
 \newblock Debt-prone bugs: technical debt in software maintenance.
 \newblock {\em International Journal of Advancements in Computing Technology
   2012a}, 4(19):453--461, 2012.
+
+\bibitem[YHMS16]{yli2016software}
+Jesse Yli-Huumo, Andrey Maglyas e Kari Smolander.
+\newblock How do software development teams manage technical debt?--an
+  empirical study.
+\newblock {\em Journal of Systems and Software}, 120:195--218, 2016.
 
 \bibitem[Yin11]{yin2011applications}
 Robert~K Yin.

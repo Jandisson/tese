@@ -253,9 +253,6 @@ Os métodos de identificação da dívida técnica apresentam a limitação de n
 O gerenciamento da dívida técnica se assemelha ao gerenciamento de projetos. Existe uma série de atividades que precisam ser desempenhadas como identificação, análise, priorização e monitoramento. Apesar dessas atividades serem comuns ao gerenciamento da dívida técnica, existem uma série de formas de desempenhá-las. Assim como no gerenciamento de projetos existem diversas técnicas diferentes que podem ser usadas em inúmeras atividades.
 
 Caso o principal da dívida técnica não seja pago, os juros podem crescer a ponto de tornar a evolução do software insustentável. Logo, é importante que a dívida técnica seja devidamente gerenciada a fim de evitar que isso ocorra\cite{power2013understanding}. O gerenciamento da dívida técnica é um conjunto de atividades realizadas com o intuito de controlá-la de forma que ela não comprometa o desenvolvimento e evolução do software. De acordo com Zengyang Li. et. al.\cite{li2015systematic}, ele pode ser dividido em três atividades principais: a prevenção, identificação e o balanceamento entre aquisição e o pagamento da dívida.  A decisão de realizar uma atividade de forma a gerar uma dívida técnica normalmente é feita devido à limitação de recursos disponíveis para a realização da atividade.  Os responsáveis pelo gerenciamento do desenvolvimento e evolução do software precisam avaliar se o impacto causado pela aquisição da dívida será menor do que o benefício causado pela realização da atividade.  
-
-
-
  
 As abordagens de gerenciamento da dívida técnica podem ser divididas em dois grupos. As abordagens que adaptam métodos financeiros e as abordagens específicas, especialmente criadas para o gerenciamento da dívida técnica. A seguir, descreveremos algumas das abordagens encontradas na literatura.
 
@@ -321,6 +318,59 @@ Como fonte de dados para  a obtenção dos resultados desta pesquisa, foram cons
 
 
 Os estudos sobre gerenciamento da dívida técnica normalmente não consideram os aspectos estratégicos do projeto. Grande parte dos trabalhos encontrados na literatura consideram que a dívida já existe e precisa ser gerenciada. Existe uma ausência de trabalhos que abordem a possibilidade de a dívida técnica ser utilizada como uma ferramenta  estratégica no gerenciamento de projetos de software. Como exemplo, muitas vezes uma dívida técnica é criada devido a uma necessidade  de disponibilizar rapidamente uma funcionalidade indispensável.  Pode ser feita uma relação entre essa situação e a utilização de técnicas de prototipagem evolutiva e desenvolvimento incremental que também permitem a disponibilização do software de forma incompleta ou não aderente aos padrões de qualidades exigidos para o produto final. Ainda assim,   são alternativas válidas para o projeto de desenvolvimento de software.  Logo, o gerenciamento da dívida técnica deveria ser feito de forma que haja um balanceamento entre essas possíveis  necessidades estratégicas e as necessidades técnicas do projeto. Entretanto, as abordagens encontradas não consideram esses aspectos estratégicos. Inclusive, não consideram a etapa de decisão a respeito da aquisição ou não da dívida técnica. Nas abordagens encontradas na literatura\cite{seaman2011measuring,guo2011portfolio,fernandez2015analysis}, o gerenciamento da dívida técnica se inicia nas atividades de identificação. Ou seja, após as dívidas já terem sido criadas. 
+
+
+\section{Propostas para a estimação dos juros da dívida técnica}
+\label{mapeamento_sistematico}
+
+Realizamos um limitado mapeamento sistemático para encontrar os trabalhos na literatura nos quais foram propostas estratégias para estimar os juros da dívida técnica. Esse mapeamento foi realizado observando algumas das recomendações feitas por Kichenham. \cite{kitchenham2004procedures}.
+
+ De acordo com Petersen et al. \cite{petersen2008systematic}, um mapeamento sistemático difere de uma revisão sistemática, pois seu objetivo principal é fornecer um panorama a respeito dos  trabalhos existentes a respeito de um determinado assunto. Já na revisão sistemática, há uma preocupação em extrair informações das pesquisa primárias com o objetivo de responder questões de pesquisa específicas que não poderiam ser respondidas avaliando individualmente esse trabalhos. 
+
+
+O mapeamento sistemático foi realizado seguindo os seguintes passos:
+
+\begin{enumerate}
+\item Foram pesquisados em banco de dados de artigos científicos trabalhos que tivessem os termos juros e dívida técnica. Não foram incluídos teses ou dissertações.
+\item Inicialmente foram encontrados 5 trabalhos. Então foi realizada a aplicação de uma técnica chamada \textit{snowballing}\cite{kruchten2013technical}. Essa técnica consiste em avaliar a bibliografia dos trabalhos inicialmente encontrados e identificar outros trabalhos que possam estar relacionado ao objeto da pesquisa. Esse procedimento é feito recursivamente até que não seja encontrados novos itens. Após a aplicação dessa técnica foram encontrados mais 2 trabalhos.
+\item Cada uma dos artigos foi lido e analisado por um pesquisador. Nessa análise foram extraídas as seguintes informações: Um resumo da abordagem,o método utilizado para validá-la e o ano em que foi publicada.
+\end{enumerate}
+
+\subsection{Resultados}
+
+\begin{longtable}{|m{6cm}|m{5cm}|m{2cm}|m{1cm}|}
+\hline
+\textbf{Título}                                                                                                              & \textbf{Resumo}             & \textbf{Método}         & \textbf{Ano}   \\  \hline
+An empirical model of technical debt and interest \cite{nugroho2011empirical}                                                                  & Descrição de um framework em que os juros são calculados como a diferença entre o esforço de manutenção atual e o esforço caso o projeto estivesse com o nível máximo de qualidade. & Estudo de caso & 2011 \\ \hline
+A Framework for Estimating Interest on Technical Debt by Monitoring Developer Activity Related to Code Comprehension\cite{singh2014framework} & Proposta de uma ferramenta que mede a quantidade de tempo que um desenvolvedor gasta visualizando uma classe. Essa ferramenta permite analisa a relação entre esse tempo e o nível de dívida técnica da classe.    & Experimento    & 2014 \\ \hline
+Towards an open-source tool for measuring and visualizing the interest of technical debt\cite{falessi2015towards}                             & Descrição de uma ferramenta que calcula os juros utilizando a densidade dos defeitos encontrados no software.           & Estudo de caso & 2015 \\ \hline
+A Financial Approach for Managing Interest in Technical Debt\cite{ampatzoglou2015financial}                                                         &   Um framework para a  estimação do ponto onde os juros pagos tornam-se maiores do que o gasto que seria necessário para eliminar a dívida técnica que os gerou.      & Exemplo        & 2016 \\ \hline
+The magnificent seven: towards a systematic estimation of technical debt interest\cite{martini2017magnificent}                                    & Descrição de uma estratégia de cálculo dos juros e uma ferramenta que a implementa. A estratégia é baseada na probabilidade dos juros acontecerem e da sua severidade. A severidade é estimada por meio da avaliação de sete fatores.              & Estudo de caso & 2017 \\ \hline
+Technical debt interest assessment: from issues to project \cite{martini2017technical}                                                        & Avaliação da eficácia em calcular os juros da dívida técnica como a soma dos juros dos elementos individuais do projeto. Os autores chegam a conclusão de que essa soma não é igual ao juros total do projeto.             & Estudo de caso & 2018 \\ \hline
+A framework for managing interest in technical debt: an industrial validation\cite{ampatzoglou2018framework}                                        &       Versão estendida do trabalho de Ampatzoglou et al.\cite{ampatzoglou2015financial}.       & Estudo de caso & 2018 \\ \hline
+\caption{Resumo dos trabalhos encontrados no mapeamento sistemático.}
+\end{longtable}
+\label{tab:resumo_trabalhos}
+
+Conforme resumido na Tabela \ref{tab:resumo_trabalhos}, foram encontrados sete ótimos trabalhos focados em propor soluções para o problema de estimação dos juros da dívida técnica. 
+
+Organizando os trabalhos encontrados em ordem cronológica, é possível traçar uma linha de mudanças na forma em que o problema foi sendo tratado conforme pode ser visto na Figura \ref{fig:historico_pesquisas}. Inicialmente, foram propostas soluções baseadas na ideia de que a dívida técnica era apenas um sinônimo para problema de qualidade. Conforme evidenciado por Kruchten et al. \cite{kruchten2013technical}, essa ideia foi sendo abandonada a medida que a comunidade percebeu que a dívida técnica representa uma aspecto mais amplo. Já em 2014 surgiram abordagens nas quais a estimação dos juros eram realizadas por meio de ferramentas. Umas das explicações para a criação dessas ferramentas foi a vontade dos pesquisadores em tornar a metáfora dívida técnica algo mais aplicável para os desenvolvedores conforme pode ser observado no relatório a respeito da conferência realizada naquele ano\cite{falessi2014technical}.  O próximo estágio identificado foi o foco em definir teorias mais rigorosas para descrever a metáfora. Uma das formas encontradas foi recorer a métodos encontrados na literatura financeira. 
+
+Por fim, podemos identificar que os trabalhos mais recentes estão voltados para analisar os juros da dívida técnica de uma forma mais contextual. Ou seja, observando mais aspectos do projeto de software que sofrem influência da dívida técnica. A abordagem apresentada nesta pesquisa faz parte desse último grupo de pesquisas, já que iremos analisar o impacto da dívida técnica na produtividade do projeto.
+
+
+
+ \begin{figure}[H]
+  \centering
+  \includegraphics[trim={0cm 0cm 0cm 0cm},clip]{trabalhos_relacionados/historico_pesquisas.pdf}
+  \caption{Cronologia das propostas de estimação dos juros da dívida técnica.}
+  \label{fig:historico_pesquisas} 
+\end{figure}
+
+
+\section{Conclusões}
+
+Neste capítulo realizamos uma definição do conceito de dívida técnica. Explicamos a origem dessa metáfora, seus tipos, sinônimos, principais elementos e formas de classificação. Além disso, fornecemos um panorâma a respeito das principais abordagens para sua identificação e  gerenciamento.  Por fim, apresentamos um breve mapeamento sistemático com os trabalhos relacionados à estimação dos juros da dívida técnica. Nesse mapeamento, extraimos  principais características dos trabalhos encontrados e pudemos, com isso, traçar uma linha cronológica a respeito da evolução de como esse problema foi sendo tratado nos últimos anos.
 
 
 

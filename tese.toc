@@ -1,13 +1,15 @@
 \select@language {brazil}
 \contentsline {chapter}{Lista de Figuras}{ix}{chapter*.4}
 \contentsline {chapter}{Lista de Tabelas}{xi}{chapter*.5}
-\contentsline {chapter}{\numberline {1}Introdu\IeC {\c c}\IeC {\~a}o}{1}{chapter.1}
-\contentsline {section}{\numberline {1.1}Motiva\IeC {\c c}\IeC {\~a}o}{3}{section.1.1}
-\contentsline {section}{\numberline {1.2}Objetivos}{4}{section.1.2}
-\contentsline {section}{\numberline {1.3}Trabalhos relacionados aos juros da d\IeC {\'\i }vida t\IeC {\'e}cnica}{5}{section.1.3}
-\contentsline {subsection}{\numberline {1.3.1}Mapeamento dos trabalhos relacionados}{6}{subsection.1.3.1}
-\contentsline {subsection}{\numberline {1.3.2}Diferen\IeC {\c c}as e semelhan\IeC {\c c}as dos trabalhos relacionados e esta pesquisa}{8}{subsection.1.3.2}
-\contentsline {section}{\numberline {1.4}Organiza\IeC {\c c}\IeC {\~a}o do texto}{10}{section.1.4}
+\contentsline {part}{I\hspace {1em}Vis\IeC {\~a}o geral do trabalho e revis\IeC {\~a}o da literatura}{1}{part.1}
+\contentsline {chapter}{\numberline {1}Introdu\IeC {\c c}\IeC {\~a}o}{3}{chapter.1}
+\contentsline {section}{\numberline {1.1}Motiva\IeC {\c c}\IeC {\~a}o}{4}{section.1.1}
+\contentsline {section}{\numberline {1.2}Dificuldades na estima\IeC {\c c}\IeC {\~a}o dos juros da d\IeC {\'\i }vida t\IeC {\'e}cnica}{5}{section.1.2}
+\contentsline {section}{\numberline {1.3}Propostas atuais}{6}{section.1.3}
+\contentsline {section}{\numberline {1.4}O modelo de estima\IeC {\c c}\IeC {\~a}o}{7}{section.1.4}
+\contentsline {section}{\numberline {1.5}Objetivos}{7}{section.1.5}
+\contentsline {section}{\numberline {1.6}Resumo deste trabalho}{8}{section.1.6}
+\contentsline {section}{\numberline {1.7}Organiza\IeC {\c c}\IeC {\~a}o do texto}{10}{section.1.7}
 \contentsline {chapter}{\numberline {2}D\IeC {\'\i }vida T\IeC {\'e}cnica}{11}{chapter.2}
 \contentsline {section}{\numberline {2.1}Introdu\IeC {\c c}\IeC {\~a}o}{11}{section.2.1}
 \contentsline {section}{\numberline {2.2}Defini\IeC {\c c}\IeC {\~a}o da d\IeC {\'\i }vida t\IeC {\'e}cnica}{16}{section.2.2}
@@ -35,89 +37,96 @@
 \contentsline {subsection}{\numberline {2.7.1}Abordagens adaptadas da \IeC {\'a}rea financeira}{31}{subsection.2.7.1}
 \contentsline {subsection}{\numberline {2.7.2}Abordagens espec\IeC {\'\i }ficas}{32}{subsection.2.7.2}
 \contentsline {subsection}{\numberline {2.7.3}D\IeC {\'\i }vida t\IeC {\'e}cnica como uma ferramenta estrat\IeC {\'e}gica}{36}{subsection.2.7.3}
-\contentsline {chapter}{\numberline {3}O modelo de estima\IeC {\c c}\IeC {\~a}o do juros da d\IeC {\'\i }vida t\IeC {\'e}cnica}{37}{chapter.3}
-\contentsline {section}{\numberline {3.1}Introdu\IeC {\c c}\IeC {\~a}o}{37}{section.3.1}
-\contentsline {section}{\numberline {3.2}Avalia\IeC {\c c}\IeC {\~a}o da produtividade dos projetos de software}{38}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Modelos baseados em expectativa de produ\IeC {\c c}\IeC {\~a}o}{39}{subsection.3.2.1}
-\contentsline {section}{\numberline {3.3}O modelo de estima\IeC {\c c}\IeC {\~a}o dos juros da d\IeC {\'\i }vida t\IeC {\'e}cnica}{40}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Estima\IeC {\c c}\IeC {\~a}o dos juros por aproxima\IeC {\c c}\IeC {\~a}o}{42}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Abstra\IeC {\c c}\IeC {\~a}o do modelo}{43}{subsection.3.3.2}
-\contentsline {section}{\numberline {3.4}Cria\IeC {\c c}\IeC {\~a}o das inst\IeC {\^a}ncias do modelo de estima\IeC {\c c}\IeC {\~a}o dos juros da d\IeC {\'\i }vida t\IeC {\'e}cnica}{44}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Sele\IeC {\c c}\IeC {\~a}o das m\IeC {\'e}tricas que representam as entradas do processo}{45}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}Sele\IeC {\c c}\IeC {\~a}o das m\IeC {\'e}tricas que representam as sa\IeC {\'\i }das do processo}{47}{subsection.3.4.2}
-\contentsline {subsection}{\numberline {3.4.3}Defini\IeC {\c c}\IeC {\~a}o do m\IeC {\'e}todo de agrupamento dos projetos semelhantes }{48}{subsection.3.4.3}
-\contentsline {subsection}{\numberline {3.4.4}Defini\IeC {\c c}\IeC {\~a}o do m\IeC {\'e}todo de particionamento dos grupos de projetos}{50}{subsection.3.4.4}
-\contentsline {section}{\numberline {3.5}O modelo de estima\IeC {\c c}\IeC {\~a}o dos juros em projetos de software livre}{50}{section.3.5}
-\contentsline {section}{\numberline {3.6}Entradas}{50}{section.3.6}
-\contentsline {subsection}{\numberline {3.6.1}O modelo de assiduidade e qualidade da colabora\IeC {\c c}\IeC {\~a}o}{52}{subsection.3.6.1}
-\contentsline {subsubsection}{Qualidade da colabora\IeC {\c c}\IeC {\~a}o}{52}{section*.26}
-\contentsline {subsubsection}{Assiduidade dos colaboradores}{58}{section*.28}
-\contentsline {subsubsection}{\IeC {\'I}ndice de colabora\IeC {\c c}\IeC {\~a}o}{58}{section*.29}
-\contentsline {section}{\numberline {3.7}Sa\IeC {\'\i }das}{59}{section.3.7}
-\contentsline {subsection}{\numberline {3.7.1}Linhas de c\IeC {\'o}digo}{59}{subsection.3.7.1}
-\contentsline {subsection}{\numberline {3.7.2}\textit {Pull Requests}}{61}{subsection.3.7.2}
-\contentsline {subsection}{\numberline {3.7.3}Popularidade}{61}{subsection.3.7.3}
-\contentsline {section}{\numberline {3.8}M\IeC {\'e}todo de agrupamento dos projetos semelhantes}{62}{section.3.8}
-\contentsline {section}{\numberline {3.9}M\IeC {\'e}todo de particionamento dos grupos de projetos}{62}{section.3.9}
-\contentsline {section}{\numberline {3.10}Conclus\IeC {\~o}es}{63}{section.3.10}
-\contentsline {chapter}{\numberline {4}Planejamento do estudo de caso}{65}{chapter.4}
-\contentsline {section}{\numberline {4.1}Introdu\IeC {\c c}\IeC {\~a}o}{65}{section.4.1}
-\contentsline {section}{\numberline {4.2}Dados do estudo de caso}{66}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Minera\IeC {\c c}\IeC {\~a}o de reposit\IeC {\'o}rios}{67}{subsection.4.2.1}
-\contentsline {section}{\numberline {4.3}Etapas do estudo de caso}{67}{section.4.3}
-\contentsline {section}{\numberline {4.4}Ferramenta de automatiza\IeC {\c c}\IeC {\~a}o do estudo de caso: GitResearch}{69}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Arquitetura}{70}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}Passos do processamento}{72}{subsection.4.4.2}
-\contentsline {section}{\numberline {4.5}Outras ferramentas utilizadas}{74}{section.4.5}
-\contentsline {subsection}{\numberline {4.5.1}GitHub}{75}{subsection.4.5.1}
-\contentsline {subsection}{\numberline {4.5.2}GHTorrent}{75}{subsection.4.5.2}
-\contentsline {subsection}{\numberline {4.5.3}O SonarQube}{78}{subsection.4.5.3}
-\contentsline {subsection}{\numberline {4.5.4}Medi\IeC {\c c}\IeC {\~a}o da d\IeC {\'\i }vida t\IeC {\'e}cnica}{81}{subsection.4.5.4}
-\contentsline {subsection}{\numberline {4.5.5}Limita\IeC {\c c}\IeC {\~o}es na medi\IeC {\c c}\IeC {\~a}o da d\IeC {\'\i }vida t\IeC {\'e}cnica}{84}{subsection.4.5.5}
-\contentsline {section}{\numberline {4.6}Conclus\IeC {\~o}es}{85}{section.4.6}
-\contentsline {chapter}{\numberline {5}Execu\IeC {\c c}\IeC {\~a}o do estudo de caso}{87}{chapter.5}
-\contentsline {section}{\numberline {5.1}Introdu\IeC {\c c}\IeC {\~a}o}{87}{section.5.1}
-\contentsline {section}{\numberline {5.2}Sele\IeC {\c c}\IeC {\~a}o}{88}{section.5.2}
-\contentsline {section}{\numberline {5.3}Sele\IeC {\c c}\IeC {\~a}o dos projetos candidatos}{88}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Exclus\IeC {\~a}o dos projetos incompat\IeC {\'\i }veis}{88}{subsection.5.3.1}
-\contentsline {section}{\numberline {5.4}Agrupamento dos projetos}{94}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}Extra\IeC {\c c}\IeC {\~a}o das descri\IeC {\c c}\IeC {\~o}es dos projetos}{95}{subsection.5.4.1}
-\contentsline {subsection}{\numberline {5.4.2}Pr\IeC {\'e}-processamento}{95}{subsection.5.4.2}
-\contentsline {subsection}{\numberline {5.4.3}Execu\IeC {\c c}\IeC {\~a}o do LDA}{96}{subsection.5.4.3}
-\contentsline {subsubsection}{Resultado do LDA}{97}{section*.42}
-\contentsline {section}{\numberline {5.5}Extra\IeC {\c c}\IeC {\~a}o dos dados}{101}{section.5.5}
-\contentsline {section}{\numberline {5.6}Execu\IeC {\c c}\IeC {\~a}o do SonarQube nos projetos}{101}{section.5.6}
-\contentsline {section}{\numberline {5.7}Extra\IeC {\c c}\IeC {\~a}o dos resultado do SonarQube}{103}{section.5.7}
-\contentsline {section}{\numberline {5.8}C\IeC {\'a}lculo das m\IeC {\'e}tricas}{104}{section.5.8}
-\contentsline {subsection}{\numberline {5.8.1}C\IeC {\'a}lculo da colabora\IeC {\c c}\IeC {\~a}o}{104}{subsection.5.8.1}
-\contentsline {subsubsection}{Colaboradores/Dia}{104}{section*.47}
-\contentsline {subsubsection}{Quantidade de colaboradores}{105}{section*.48}
-\contentsline {subsubsection}{Assiduidade e qualidade da colabora\IeC {\c c}\IeC {\~a}o}{105}{section*.49}
-\contentsline {paragraph}{Qualidade de colabora\IeC {\c c}\IeC {\~a}o}{105}{section*.50}
-\contentsline {paragraph}{Assiduidade}{107}{section*.52}
-\contentsline {subsection}{\numberline {5.8.2}C\IeC {\'a}lculo da produtividade}{107}{subsection.5.8.2}
-\contentsline {section}{\numberline {5.9}C\IeC {\'a}lculo dos juros}{108}{section.5.9}
-\contentsline {section}{\numberline {5.10}An\IeC {\'a}lise}{108}{section.5.10}
-\contentsline {subsection}{\numberline {5.10.1}An\IeC {\'a}lise dos resultados}{109}{subsection.5.10.1}
-\contentsline {subsection}{\numberline {5.10.2}Distrui\IeC {\c c}\IeC {\~a}o dos projetos por t\IeC {\'o}picos}{110}{subsection.5.10.2}
-\contentsline {subsection}{\numberline {5.10.3}D\IeC {\'\i }vida t\IeC {\'e}cnica}{113}{subsection.5.10.3}
-\contentsline {subsection}{\numberline {5.10.4}Tamanho dos projetos}{118}{subsection.5.10.4}
-\contentsline {subsection}{\numberline {5.10.5}Correla\IeC {\c c}\IeC {\~o}es entre a d\IeC {\'\i }vida t\IeC {\'e}cnica e as m\IeC {\'e}tricas de tamanho}{120}{subsection.5.10.5}
-\contentsline {subsection}{\numberline {5.10.6}Colabora\IeC {\c c}\IeC {\~a}o}{123}{subsection.5.10.6}
-\contentsline {subsubsection}{Colaboradores/Dia}{124}{section*.71}
-\contentsline {subsubsection}{Quantidade de colaboradores}{125}{section*.73}
-\contentsline {subsubsection}{Assiduidade e qualidade da colabora\IeC {\c c}\IeC {\~a}o}{125}{section*.75}
-\contentsline {subsection}{\numberline {5.10.7}Produtividade}{126}{subsection.5.10.7}
-\contentsline {section}{\numberline {5.11}An\IeC {\'a}lise dos juros}{128}{section.5.11}
-\contentsline {chapter}{\numberline {6}Conclus\IeC {\~a}o}{133}{chapter.6}
-\contentsline {section}{\numberline {6.1}Resumo}{133}{section.6.1}
-\contentsline {section}{\numberline {6.2}Resultados}{134}{section.6.2}
-\contentsline {section}{\numberline {6.3}Principais contribui\IeC {\c c}\IeC {\~o}es}{135}{section.6.3}
-\contentsline {section}{\numberline {6.4}Trabalhos futuros}{136}{section.6.4}
-\contentsline {chapter}{\numberline {A}Controle de vers\IeC {\~o}es utilizando o Git}{139}{appendix.A}
-\contentsline {section}{\numberline {A.1}Comandos Git}{141}{section.A.1}
-\contentsline {chapter}{\numberline {B}Banco de dados}{143}{appendix.B}
-\contentsline {section}{\numberline {B.1}Acesso aos dados}{143}{section.B.1}
-\contentsline {section}{\numberline {B.2}Descri\IeC {\c c}\IeC {\~a}o dos dados}{143}{section.B.2}
-\contentsline {chapter}{Refer\^encias Bibliogr\'aficas}{145}{appendix*.86}
+\contentsline {section}{\numberline {2.8}Propostas para a estima\IeC {\c c}\IeC {\~a}o dos juros da d\IeC {\'\i }vida t\IeC {\'e}cnica}{36}{section.2.8}
+\contentsline {subsection}{\numberline {2.8.1}Resultados}{37}{subsection.2.8.1}
+\contentsline {section}{\numberline {2.9}Conclus\IeC {\~o}es}{39}{section.2.9}
+\contentsline {part}{II\hspace {1em}Modelo de estima\IeC {\c c}\IeC {\~a}o dos juros da d\IeC {\'\i }vida t\IeC {\'e}cnica}{41}{part.2}
+\contentsline {chapter}{\numberline {3}O modelo abstrato de estima\IeC {\c c}\IeC {\~a}o do juros da d\IeC {\'\i }vida t\IeC {\'e}cnica}{43}{chapter.3}
+\contentsline {section}{\numberline {3.1}Introdu\IeC {\c c}\IeC {\~a}o}{43}{section.3.1}
+\contentsline {section}{\numberline {3.2}Avalia\IeC {\c c}\IeC {\~a}o da produtividade dos projetos de software}{44}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Modelos baseados em expectativa de produ\IeC {\c c}\IeC {\~a}o}{45}{subsection.3.2.1}
+\contentsline {section}{\numberline {3.3}O modelo de estima\IeC {\c c}\IeC {\~a}o dos juros da d\IeC {\'\i }vida t\IeC {\'e}cnica}{46}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Estima\IeC {\c c}\IeC {\~a}o dos juros por aproxima\IeC {\c c}\IeC {\~a}o}{48}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Abstra\IeC {\c c}\IeC {\~a}o do modelo}{49}{subsection.3.3.2}
+\contentsline {section}{\numberline {3.4}Cria\IeC {\c c}\IeC {\~a}o das inst\IeC {\^a}ncias do modelo de estima\IeC {\c c}\IeC {\~a}o dos juros da d\IeC {\'\i }vida t\IeC {\'e}cnica}{50}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Sele\IeC {\c c}\IeC {\~a}o das m\IeC {\'e}tricas que representam as entradas do processo}{51}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Sele\IeC {\c c}\IeC {\~a}o das m\IeC {\'e}tricas que representam as sa\IeC {\'\i }das do processo}{53}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.3}Defini\IeC {\c c}\IeC {\~a}o do m\IeC {\'e}todo de agrupamento dos projetos semelhantes }{54}{subsection.3.4.3}
+\contentsline {subsection}{\numberline {3.4.4}Defini\IeC {\c c}\IeC {\~a}o do m\IeC {\'e}todo de particionamento dos grupos de projetos}{56}{subsection.3.4.4}
+\contentsline {section}{\numberline {3.5}Conclus\IeC {\~o}es}{56}{section.3.5}
+\contentsline {chapter}{\numberline {4}Estima\IeC {\c c}\IeC {\~a}o dos juros em projetos de software livre}{57}{chapter.4}
+\contentsline {section}{\numberline {4.1}Introdu\IeC {\c c}\IeC {\~a}o}{57}{section.4.1}
+\contentsline {section}{\numberline {4.2}Entradas}{57}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}O modelo de assiduidade e qualidade da colabora\IeC {\c c}\IeC {\~a}o}{59}{subsection.4.2.1}
+\contentsline {subsubsection}{Qualidade da colabora\IeC {\c c}\IeC {\~a}o}{59}{section*.27}
+\contentsline {subsubsection}{Assiduidade dos colaboradores}{65}{section*.29}
+\contentsline {subsubsection}{\IeC {\'I}ndice de colabora\IeC {\c c}\IeC {\~a}o}{65}{section*.30}
+\contentsline {section}{\numberline {4.3}Sa\IeC {\'\i }das}{66}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Linhas de c\IeC {\'o}digo}{66}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}\textit {Pull Requests}}{68}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}Popularidade}{68}{subsection.4.3.3}
+\contentsline {section}{\numberline {4.4}M\IeC {\'e}todo de agrupamento dos projetos semelhantes}{69}{section.4.4}
+\contentsline {section}{\numberline {4.5}M\IeC {\'e}todo de particionamento dos grupos de projetos}{69}{section.4.5}
+\contentsline {section}{\numberline {4.6}Conclus\IeC {\~o}es}{70}{section.4.6}
+\contentsline {part}{III\hspace {1em}O estudo de caso}{71}{part.3}
+\contentsline {chapter}{\numberline {5}Planejamento do estudo de caso}{73}{chapter.5}
+\contentsline {section}{\numberline {5.1}Introdu\IeC {\c c}\IeC {\~a}o}{73}{section.5.1}
+\contentsline {section}{\numberline {5.2}Dados do estudo de caso}{74}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Minera\IeC {\c c}\IeC {\~a}o de reposit\IeC {\'o}rios}{75}{subsection.5.2.1}
+\contentsline {section}{\numberline {5.3}Etapas do estudo de caso}{75}{section.5.3}
+\contentsline {section}{\numberline {5.4}Ferramenta de automatiza\IeC {\c c}\IeC {\~a}o do estudo de caso: GitResearch}{77}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}Arquitetura}{78}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}Passos do processamento}{80}{subsection.5.4.2}
+\contentsline {section}{\numberline {5.5}Outras ferramentas utilizadas}{82}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}GitHub}{83}{subsection.5.5.1}
+\contentsline {subsection}{\numberline {5.5.2}GHTorrent}{83}{subsection.5.5.2}
+\contentsline {subsection}{\numberline {5.5.3}O SonarQube}{86}{subsection.5.5.3}
+\contentsline {subsection}{\numberline {5.5.4}Medi\IeC {\c c}\IeC {\~a}o da d\IeC {\'\i }vida t\IeC {\'e}cnica}{89}{subsection.5.5.4}
+\contentsline {subsection}{\numberline {5.5.5}Limita\IeC {\c c}\IeC {\~o}es na medi\IeC {\c c}\IeC {\~a}o da d\IeC {\'\i }vida t\IeC {\'e}cnica}{92}{subsection.5.5.5}
+\contentsline {section}{\numberline {5.6}Conclus\IeC {\~o}es}{93}{section.5.6}
+\contentsline {chapter}{\numberline {6}Execu\IeC {\c c}\IeC {\~a}o do estudo de caso}{95}{chapter.6}
+\contentsline {section}{\numberline {6.1}Introdu\IeC {\c c}\IeC {\~a}o}{95}{section.6.1}
+\contentsline {section}{\numberline {6.2}Sele\IeC {\c c}\IeC {\~a}o}{96}{section.6.2}
+\contentsline {section}{\numberline {6.3}Sele\IeC {\c c}\IeC {\~a}o dos projetos candidatos}{96}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Exclus\IeC {\~a}o dos projetos incompat\IeC {\'\i }veis}{96}{subsection.6.3.1}
+\contentsline {section}{\numberline {6.4}Agrupamento dos projetos}{102}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}Extra\IeC {\c c}\IeC {\~a}o das descri\IeC {\c c}\IeC {\~o}es dos projetos}{103}{subsection.6.4.1}
+\contentsline {subsection}{\numberline {6.4.2}Pr\IeC {\'e}-processamento}{103}{subsection.6.4.2}
+\contentsline {subsection}{\numberline {6.4.3}Execu\IeC {\c c}\IeC {\~a}o do LDA}{104}{subsection.6.4.3}
+\contentsline {subsubsection}{Resultado do LDA}{105}{section*.43}
+\contentsline {section}{\numberline {6.5}Extra\IeC {\c c}\IeC {\~a}o dos dados}{109}{section.6.5}
+\contentsline {section}{\numberline {6.6}Execu\IeC {\c c}\IeC {\~a}o do SonarQube nos projetos}{109}{section.6.6}
+\contentsline {section}{\numberline {6.7}Extra\IeC {\c c}\IeC {\~a}o dos resultado do SonarQube}{111}{section.6.7}
+\contentsline {section}{\numberline {6.8}C\IeC {\'a}lculo das m\IeC {\'e}tricas}{112}{section.6.8}
+\contentsline {subsection}{\numberline {6.8.1}C\IeC {\'a}lculo da colabora\IeC {\c c}\IeC {\~a}o}{112}{subsection.6.8.1}
+\contentsline {subsubsection}{Colaboradores/Dia}{112}{section*.48}
+\contentsline {subsubsection}{Quantidade de colaboradores}{113}{section*.49}
+\contentsline {subsubsection}{Assiduidade e qualidade da colabora\IeC {\c c}\IeC {\~a}o}{113}{section*.50}
+\contentsline {paragraph}{Qualidade de colabora\IeC {\c c}\IeC {\~a}o}{113}{section*.51}
+\contentsline {paragraph}{Assiduidade}{115}{section*.53}
+\contentsline {subsection}{\numberline {6.8.2}C\IeC {\'a}lculo da produtividade}{115}{subsection.6.8.2}
+\contentsline {section}{\numberline {6.9}C\IeC {\'a}lculo dos juros}{116}{section.6.9}
+\contentsline {section}{\numberline {6.10}An\IeC {\'a}lise}{116}{section.6.10}
+\contentsline {subsection}{\numberline {6.10.1}An\IeC {\'a}lise dos resultados}{117}{subsection.6.10.1}
+\contentsline {subsection}{\numberline {6.10.2}Distrui\IeC {\c c}\IeC {\~a}o dos projetos por t\IeC {\'o}picos}{118}{subsection.6.10.2}
+\contentsline {subsection}{\numberline {6.10.3}D\IeC {\'\i }vida t\IeC {\'e}cnica}{121}{subsection.6.10.3}
+\contentsline {subsection}{\numberline {6.10.4}Tamanho dos projetos}{126}{subsection.6.10.4}
+\contentsline {subsection}{\numberline {6.10.5}Correla\IeC {\c c}\IeC {\~o}es entre a d\IeC {\'\i }vida t\IeC {\'e}cnica e as m\IeC {\'e}tricas de tamanho}{128}{subsection.6.10.5}
+\contentsline {subsection}{\numberline {6.10.6}Colabora\IeC {\c c}\IeC {\~a}o}{131}{subsection.6.10.6}
+\contentsline {subsubsection}{Colaboradores/Dia}{132}{section*.72}
+\contentsline {subsubsection}{Quantidade de colaboradores}{133}{section*.74}
+\contentsline {subsubsection}{Assiduidade e qualidade da colabora\IeC {\c c}\IeC {\~a}o}{133}{section*.76}
+\contentsline {subsection}{\numberline {6.10.7}Produtividade}{134}{subsection.6.10.7}
+\contentsline {section}{\numberline {6.11}An\IeC {\'a}lise dos juros}{136}{section.6.11}
+\contentsline {section}{\numberline {6.12}Conclus\IeC {\~o}es}{139}{section.6.12}
+\contentsline {part}{IV\hspace {1em}Conclus\IeC {\~a}o}{141}{part.4}
+\contentsline {chapter}{\numberline {7}Conclus\IeC {\~a}o}{143}{chapter.7}
+\contentsline {section}{\numberline {7.1}Resumo}{143}{section.7.1}
+\contentsline {section}{\numberline {7.2}Resultados}{144}{section.7.2}
+\contentsline {section}{\numberline {7.3}Principais contribui\IeC {\c c}\IeC {\~o}es}{145}{section.7.3}
+\contentsline {subsection}{\numberline {7.3.1}Diferen\IeC {\c c}as e semelhan\IeC {\c c}as dos trabalhos relacionados e esta pesquisa}{146}{subsection.7.3.1}
+\contentsline {section}{\numberline {7.4}Trabalhos futuros}{148}{section.7.4}
+\contentsline {chapter}{\numberline {A}Controle de vers\IeC {\~o}es utilizando o Git}{149}{appendix.A}
+\contentsline {section}{\numberline {A.1}Comandos Git}{151}{section.A.1}
+\contentsline {chapter}{Refer\^encias Bibliogr\'aficas}{153}{appendix*.87}
 \contentsfinish 

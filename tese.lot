@@ -1,34 +1,34 @@
 \select@language {brazil}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {1.1}{\ignorespaces Resumo dos trabalhos encontrados no mapeamento sistem\IeC {\'a}tico.\relax }}{8}{table.1.1}
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {2.1}{\ignorespaces Sin\IeC {\^o}nimos do termo ``d\IeC {\'\i }vida t\IeC {\'e}cnica''. Adaptado de \cite {poliakov2015systematic}\relax }}{20}{table.caption.16}
+\contentsline {table}{\numberline {2.2}{\ignorespaces Resumo dos trabalhos encontrados no mapeamento sistem\IeC {\'a}tico.\relax }}{38}{table.2.2}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces Quantidade de linhas de c\IeC {\'o}digo, n\IeC {\'u}mero de desenvolvedores, n\IeC {\'u}mero de desenvolvedores ajustado e produtividade de tr\IeC {\^e}s projetos de software fict\IeC {\'\i }cios.\relax }}{40}{table.caption.23}
-\contentsline {table}{\numberline {3.2}{\ignorespaces Atividades necess\IeC {\'a}rias para a cria\IeC {\c c}\IeC {\~a}o de um modelo concreto de estima\IeC {\c c}\IeC {\~a}o dos juros da d\IeC {\'\i }vida t\IeC {\'e}cnica espec\IeC {\'\i }fico.\relax }}{45}{table.caption.25}
-\addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces M\IeC {\'e}tricas extra\IeC {\'\i }das dos projetos.\relax }}{81}{table.4.1}
-\contentsline {table}{\numberline {4.2}{\ignorespaces Exemplo de c\IeC {\'a}lculo da d\IeC {\'\i }vida t\IeC {\'e}cnica com o SonarQube. A vari\IeC {\'a}vel \textit {m} representa o tempo necess\IeC {\'a}rio para escrever uma linha de c\IeC {\'o}digo. O valor padr\IeC {\~a}o no SonarQube \IeC {\'e} de 30 minutos. Adaptado de \cite {de2017technical}.\relax }}{83}{table.caption.37}
-\contentsline {table}{\numberline {4.3}{\ignorespaces Exemplos de regras para identifica\IeC {\c c}\IeC {\~a}o de d\IeC {\'\i }vidas t\IeC {\'e}cnicas no SonarQube.\relax }}{84}{table.caption.38}
-\addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Regras para a exclus\IeC {\~a}o de projetos do estudo de caso\relax }}{91}{table.5.1}
-\contentsline {table}{\numberline {5.2}{\ignorespaces Transforma\IeC {\c c}\IeC {\~o}es realizadas no texto das descri\IeC {\c c}\IeC {\~o}es dos projetos\relax }}{96}{table.caption.41}
-\contentsline {table}{\numberline {5.3}{\ignorespaces T\IeC {\'o}picos e suas palavras.\relax }}{100}{table.5.3}
-\contentsline {table}{\numberline {5.4}{\ignorespaces Sum\IeC {\'a}rio das medidas descritivas das m\IeC {\'e}tricas obtidas dos projetos.\relax }}{110}{table.caption.54}
-\contentsline {table}{\numberline {5.5}{\ignorespaces T\IeC {\'o}picos agrupados em dom\IeC {\'\i }nios.\relax }}{112}{table.caption.56}
-\contentsline {table}{\numberline {5.6}{\ignorespaces Medidas descritivas dos modelos de colabora\IeC {\c c}\IeC {\~a}o\relax }}{124}{table.caption.70}
-\contentsline {table}{\numberline {5.7}{\ignorespaces Os 10 projetos com uma maior quantidade de colaboradores/dias.\relax }}{124}{table.caption.72}
-\contentsline {table}{\numberline {5.8}{\ignorespaces Os 10 projetos com uma maior quantidade de colaboradores\relax }}{125}{table.caption.74}
-\contentsline {table}{\numberline {5.9}{\ignorespaces Os dez colaboradores com maior pagerank.\relax }}{125}{table.caption.76}
-\contentsline {table}{\numberline {5.10}{\ignorespaces Os 10 projetos com o maior \IeC {\'\i }ndice de colabora\IeC {\c c}\IeC {\~a}o(IC).\relax }}{126}{table.caption.77}
-\contentsline {table}{\numberline {5.11}{\ignorespaces Coeficientes angular e coeficiente de determina\IeC {\c c}\IeC {\~a}o dos modelos de regress\IeC {\~a}o usados para o c\IeC {\'a}lculo da produtividades do projetos.\relax }}{126}{table.caption.78}
-\contentsline {table}{\numberline {5.12}{\ignorespaces Os 10 projetos mais produtivos de acordo com o modelo de colabora\IeC {\c c}\IeC {\~a}o de quantidade.\relax }}{127}{table.caption.79}
-\contentsline {table}{\numberline {5.13}{\ignorespaces Os 10 projetos mais produtivos de acordo com o modelo de colabora\IeC {\c c}\IeC {\~a}o de assiduidade e qualidade (IC).\relax }}{127}{table.caption.80}
-\contentsline {table}{\numberline {5.14}{\ignorespaces Os 10 projetos mais produtivos de acordo com o modelo de colabora\IeC {\c c}\IeC {\~a}o de colaboradores/dia (C/D).\relax }}{128}{table.caption.81}
-\contentsline {table}{\numberline {5.15}{\ignorespaces Estima\IeC {\c c}\IeC {\~a}o dos juros da d\IeC {\'\i }vida t\IeC {\'e}cnica por dom\IeC {\'\i }nio utilizando os tr\IeC {\^e}s modelos de produtividade: (1) Quantidade de colaboradores (2) Assiduidade e qualidade da colabora\IeC {\c c}\IeC {\~a}o (3) Colaboradores/Dia\relax }}{129}{table.caption.82}
-\contentsline {table}{\numberline {5.16}{\ignorespaces Estima\IeC {\c c}\IeC {\~a}o dos juros da d\IeC {\'\i }vida t\IeC {\'e}cnica por t\IeC {\'o}pico utilizando os tr\IeC {\^e}s modelos de produtividade: (1) Quantidade de colaboradores (2) Assiduidade e qualidade da colabora\IeC {\c c}\IeC {\~a}o (3) Colaboradores/Dia\relax }}{131}{table.5.16}
+\contentsline {table}{\numberline {3.1}{\ignorespaces Quantidade de linhas de c\IeC {\'o}digo, n\IeC {\'u}mero de desenvolvedores, n\IeC {\'u}mero de desenvolvedores ajustado e produtividade de tr\IeC {\^e}s projetos de software fict\IeC {\'\i }cios.\relax }}{46}{table.caption.24}
+\contentsline {table}{\numberline {3.2}{\ignorespaces Atividades necess\IeC {\'a}rias para a cria\IeC {\c c}\IeC {\~a}o de um modelo concreto de estima\IeC {\c c}\IeC {\~a}o dos juros da d\IeC {\'\i }vida t\IeC {\'e}cnica espec\IeC {\'\i }fico.\relax }}{51}{table.caption.26}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {A.1}{\ignorespaces Comandos b\IeC {\'a}sicos do GIT.\relax }}{142}{table.caption.85}
+\contentsline {table}{\numberline {5.1}{\ignorespaces M\IeC {\'e}tricas extra\IeC {\'\i }das dos projetos.\relax }}{89}{table.5.1}
+\contentsline {table}{\numberline {5.2}{\ignorespaces Exemplo de c\IeC {\'a}lculo da d\IeC {\'\i }vida t\IeC {\'e}cnica com o SonarQube. A vari\IeC {\'a}vel \textit {m} representa o tempo necess\IeC {\'a}rio para escrever uma linha de c\IeC {\'o}digo. O valor padr\IeC {\~a}o no SonarQube \IeC {\'e} de 30 minutos. Adaptado de \cite {de2017technical}.\relax }}{91}{table.caption.38}
+\contentsline {table}{\numberline {5.3}{\ignorespaces Exemplos de regras para identifica\IeC {\c c}\IeC {\~a}o de d\IeC {\'\i }vidas t\IeC {\'e}cnicas no SonarQube.\relax }}{92}{table.caption.39}
 \addvspace {10\p@ }
+\contentsline {table}{\numberline {6.1}{\ignorespaces Regras para a exclus\IeC {\~a}o de projetos do estudo de caso\relax }}{99}{table.6.1}
+\contentsline {table}{\numberline {6.2}{\ignorespaces Transforma\IeC {\c c}\IeC {\~o}es realizadas no texto das descri\IeC {\c c}\IeC {\~o}es dos projetos\relax }}{104}{table.caption.42}
+\contentsline {table}{\numberline {6.3}{\ignorespaces T\IeC {\'o}picos e suas palavras.\relax }}{108}{table.6.3}
+\contentsline {table}{\numberline {6.4}{\ignorespaces Sum\IeC {\'a}rio das medidas descritivas das m\IeC {\'e}tricas obtidas dos projetos.\relax }}{118}{table.caption.55}
+\contentsline {table}{\numberline {6.5}{\ignorespaces T\IeC {\'o}picos agrupados em dom\IeC {\'\i }nios.\relax }}{120}{table.caption.57}
+\contentsline {table}{\numberline {6.6}{\ignorespaces Medidas descritivas dos modelos de colabora\IeC {\c c}\IeC {\~a}o\relax }}{132}{table.caption.71}
+\contentsline {table}{\numberline {6.7}{\ignorespaces Os 10 projetos com uma maior quantidade de colaboradores/dias.\relax }}{132}{table.caption.73}
+\contentsline {table}{\numberline {6.8}{\ignorespaces Os 10 projetos com uma maior quantidade de colaboradores\relax }}{133}{table.caption.75}
+\contentsline {table}{\numberline {6.9}{\ignorespaces Os dez colaboradores com maior pagerank.\relax }}{133}{table.caption.77}
+\contentsline {table}{\numberline {6.10}{\ignorespaces Os 10 projetos com o maior \IeC {\'\i }ndice de colabora\IeC {\c c}\IeC {\~a}o(IC).\relax }}{134}{table.caption.78}
+\contentsline {table}{\numberline {6.11}{\ignorespaces Coeficientes angular e coeficiente de determina\IeC {\c c}\IeC {\~a}o dos modelos de regress\IeC {\~a}o usados para o c\IeC {\'a}lculo da produtividades do projetos.\relax }}{134}{table.caption.79}
+\contentsline {table}{\numberline {6.12}{\ignorespaces Os 10 projetos mais produtivos de acordo com o modelo de colabora\IeC {\c c}\IeC {\~a}o de quantidade.\relax }}{135}{table.caption.80}
+\contentsline {table}{\numberline {6.13}{\ignorespaces Os 10 projetos mais produtivos de acordo com o modelo de colabora\IeC {\c c}\IeC {\~a}o de assiduidade e qualidade (IC).\relax }}{135}{table.caption.81}
+\contentsline {table}{\numberline {6.14}{\ignorespaces Os 10 projetos mais produtivos de acordo com o modelo de colabora\IeC {\c c}\IeC {\~a}o de colaboradores/dia (C/D).\relax }}{136}{table.caption.82}
+\contentsline {table}{\numberline {6.15}{\ignorespaces Estima\IeC {\c c}\IeC {\~a}o dos juros da d\IeC {\'\i }vida t\IeC {\'e}cnica por dom\IeC {\'\i }nio utilizando os tr\IeC {\^e}s modelos de produtividade: (1) Quantidade de colaboradores (2) Assiduidade e qualidade da colabora\IeC {\c c}\IeC {\~a}o (3) Colaboradores/Dia\relax }}{137}{table.caption.83}
+\contentsline {table}{\numberline {6.16}{\ignorespaces Estima\IeC {\c c}\IeC {\~a}o dos juros da d\IeC {\'\i }vida t\IeC {\'e}cnica por t\IeC {\'o}pico utilizando os tr\IeC {\^e}s modelos de produtividade: (1) Quantidade de colaboradores (2) Assiduidade e qualidade da colabora\IeC {\c c}\IeC {\~a}o (3) Colaboradores/Dia\relax }}{139}{table.6.16}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {A.1}{\ignorespaces Comandos b\IeC {\'a}sicos do GIT.\relax }}{152}{table.caption.86}
 \contentsfinish 
